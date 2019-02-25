@@ -1,0 +1,365 @@
+[
+    {
+        "wordText": "agitation",
+        "phoneticScript": "/adʒɪˈteɪʃ(ə)n/",
+        "syllable": "aj-i-tey-shuh n",
+        "definitions": [
+            {
+                "type": "NOUN",
+                "definitionText": "disturbance usually in protest.",
+                "examples": [
+                    "They would go on a work -to-rule agitation.",
+                    "Depression can also cause anxiety and agitation."
+                ],
+                "synonyms": [
+                    "disturbance",
+                    "unrest"
+                ],
+                "otherLanguages": {
+                    "telugu": "ఆందోళన,  కలవరము",
+                    "tamil": "",
+                    "hindi": ""
+                }
+            },
+            {
+                "type": "VERB",
+                "definitionText": "",
+                "examples": [
+                    "",
+                    ""
+                ],
+                "synonyms": [],
+                "otherLanguages": {
+                    "telugu": "",
+                    "tamil": "",
+                    "hindi": ""
+                }
+            }
+        ],
+        "tags": [
+            "basic"
+        ],
+        "lastEdited": 1487766370079
+    },
+    {
+        "wordText": "captive",
+        "phoneticScript": "/ˈkæp tɪv/",
+        "syllable": "kap-tiv",
+        "definitions": [
+            {
+                "type": "NOUN",
+                "definitionText": " A person who has been taken prisoner or an animal that has been confined.",
+                "examples": [
+                    "The policeman put a pair of handcuffs on the captive.",
+                    "The terrorists were holding several diplomats captive."
+                ],
+                "synonyms": [
+                    "convict",
+                    "detainee",
+                    "prisoner"
+                ],
+                "otherLanguages": {
+                    "telugu": "కైదీలు,బంధిలు",
+                    "tamil": "",
+                    "hindi": ""
+                }
+            },
+            {
+                "type": "VERB",
+                "definitionText": "",
+                "examples": [
+                    "",
+                    ""
+                ],
+                "synonyms": [],
+                "otherLanguages": {
+                    "telugu": "",
+                    "tamil": "",
+                    "hindi": ""
+                }
+            }
+        ],
+        "tags": [
+            "common"
+        ],
+        "lastEdited": 1487766577069
+    },
+    {
+        "wordText": "Drown ",
+        "phoneticScript": " /draʊn/",
+        "syllable": "droun",
+        "definitions": [
+            {
+                "type": "VERB",
+                "definitionText": "To (cause to) die by being unable to breathe underwater.",
+                "examples": [
+                    "Many animals were drowned by the tidal wave.",
+                    "Two fishermen were drowned when their motor boat capsized."
+                ],
+                "synonyms": [
+                    "dip.",
+                    "immerse",
+                    "sink."
+                ],
+                "otherLanguages": {
+                    "telugu": "మునిగిపోవుట,ముంచుట.",
+                    "tamil": "",
+                    "hindi": ""
+                }
+            },
+            {
+                "type": "VERB",
+                "definitionText": "",
+                "examples": [
+                    "",
+                    ""
+                ],
+                "synonyms": [],
+                "otherLanguages": {
+                    "telugu": "",
+                    "tamil": "",
+                    "hindi": ""
+                }
+            }
+        ],
+        "tags": [
+            "basic"
+        ],
+        "lastEdited": 1487767281083
+    },
+    {
+        "wordText": "figure out",
+        "phoneticScript": "/ˈfɪɡə aʊt/",
+        "syllable": "fig-yer-out",
+        "definitions": [
+            {
+                "type": "PHRASEL VERB",
+                "definitionText": "Solve or discover the cause of a problem.",
+                "examples": [
+                    "We couldn't figure out where all the money had gone.",
+                    "He was trying to figure out why the car wasn't working."
+                ],
+                "synonyms": [
+                    "understand",
+                    "work out"
+                ],
+                "otherLanguages": {
+                    "telugu": "అర్ధం చేసుకొను, భావనచేసుట",
+                    "tamil": "",
+                    "hindi": ""
+                }
+            }
+        ],
+        "tags": [
+            "basic"
+        ],
+        "lastEdited": 1487698333363
+    },
+    {
+        "wordText": "hunger strike",
+        "phoneticScript": "/ˈhʌŋ·ɡər ˌstrɑɪk/",
+        "syllable": "huhng-ger-strahyk",
+        "definitions": [
+            {
+                "type": "NOUN",
+                "definitionText": "A prolonged refusal to eat.",
+                "examples": [
+                    "One hundred students began a hunger strike.",
+                    "Political prisoners who had gone on hunger strike."
+                ],
+                "synonyms": [
+                    "fasting",
+                    "voluntry fast"
+                ],
+                "otherLanguages": {
+                    "telugu": "నిరాహారదీక్ష, నిరశనదీక్ష.",
+                    "tamil": "",
+                    "hindi": ""
+                }
+            },
+            {
+                "type": "VERB",
+                "definitionText": "",
+                "examples": [
+                    "",
+                    ""
+                ],
+                "synonyms": [],
+                "otherLanguages": {
+                    "telugu": "",
+                    "tamil": "",
+                    "hindi": ""
+                }
+            }
+        ],
+        "tags": [
+            "common"
+        ],
+        "lastEdited": 1487766767704
+    },
+    {
+        "wordText": "rehabilitation",
+        "phoneticScript": "/riːəbɪlɪˈteɪʃ(ə)n/",
+        "syllable": "re-ha-bil-i-ta-tion",
+        "definitions": [
+            {
+                "type": "NOUN",
+                "definitionText": "The action of restoring someone to health or normal life through training and therapy after imprisonment, addiction, or illness.",
+                "examples": [
+                    "she underwent rehabilitation and was walking within three weeks...",
+                    "The bridge requires immediate rehabilitation to remain open."
+                ],
+                "synonyms": [
+                    "eestablishment",
+                    "recovery",
+                    "restoration"
+                ],
+                "otherLanguages": {
+                    "telugu": "పునరుద్ధరణ,పునరావాసం, ఆశ్రయణం.",
+                    "hindi": "पुनर्वास",
+                    "tamil": "புனர்வாழ்வு"
+                }
+            },
+            {
+                "type": "VERB",
+                "definitionText": "",
+                "examples": [
+                    "",
+                    ""
+                ],
+                "synonyms": [],
+                "otherLanguages": {}
+            }
+        ],
+        "tags": [
+            "basic"
+        ],
+        "lastEdited": 1487663565848
+    },
+    {
+        "wordText": "sensitise",
+        "phoneticScript": "/sensiˌtīz/",
+        "syllable": "sen-si-tahyz",
+        "definitions": [
+            {
+                "type": "VERB",
+                "definitionText": "make sensitive ; aware",
+                "examples": [
+                    "My tongue became sensitized to good wine",
+                    "he wanted to sensitise the people"
+                ],
+                "synonyms": [
+                    "alter",
+                    "change"
+                ],
+                "otherLanguages": {
+                    "telugu": "సున్నితం చేయు, అవగాహన",
+                    "tamil": "",
+                    "hindi": ""
+                }
+            },
+            {
+                "type": "VERB",
+                "definitionText": "",
+                "examples": [
+                    "",
+                    ""
+                ],
+                "synonyms": [],
+                "otherLanguages": {
+                    "telugu": "",
+                    "tamil": "",
+                    "hindi": ""
+                }
+            }
+        ],
+        "tags": [
+            "common"
+        ],
+        "lastEdited": 1487766831161
+    },
+    {
+        "wordText": "tiff",
+        "phoneticScript": " /tɪf/",
+        "syllable": "tif",
+        "definitions": [
+            {
+                "type": "NOUN",
+                "definitionText": "A petty quarrel, especially one between friends or lovers.",
+                "examples": [
+                    "The tiff between minister and revenue officials took a turn for the worse.",
+                    "Joanna had a tiff with her boyfriend"
+                ],
+                "synonyms": [
+                    "argument",
+                    "quarrel"
+                ],
+                "otherLanguages": {
+                    "telugu": "చిన్న తగవు, చిరాకు",
+                    "tamil": "",
+                    "hindi": ""
+                }
+            },
+            {
+                "type": "VERB",
+                "definitionText": "",
+                "examples": [
+                    "",
+                    ""
+                ],
+                "synonyms": [],
+                "otherLanguages": {
+                    "telugu": "",
+                    "tamil": "",
+                    "hindi": ""
+                }
+            }
+        ],
+        "tags": [
+            "basic"
+        ],
+        "lastEdited": 1487766859456
+    },
+    {
+        "wordText": "weird",
+        "phoneticScript": "/wɪəd/ ",
+        "syllable": "weerd",
+        "definitions": [
+            {
+                "type": "ADJECTIVE",
+                "definitionText": "Strange and different from anything natural or ordinary.",
+                "examples": [
+                    " I heard some kind of weird sound that came from the sea.",
+                    "A weird supernatural calamity has thrust part of Japan up into the air like a tower."
+                ],
+                "synonyms": [
+                    "mysterious",
+                    "unnatural"
+                ],
+                "otherLanguages": {
+                    "telugu": "వింతైన, అసాధారణ",
+                    "tamil": "",
+                    "hindi": ""
+                }
+            },
+            {
+                "type": "VERB",
+                "definitionText": "",
+                "examples": [
+                    "",
+                    ""
+                ],
+                "synonyms": [],
+                "otherLanguages": {
+                    "telugu": "",
+                    "tamil": "",
+                    "hindi": ""
+                }
+            }
+        ],
+        "tags": [
+            "common"
+        ],
+        "lastEdited": 1487766098499
+    }
+]
