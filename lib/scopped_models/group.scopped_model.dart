@@ -65,6 +65,10 @@ class GroupScoppedModel extends Model {
   markWordAs(WordReviewMark markAs) {
     Word word = _activeWord;
     word.learingReview.updateReview(markAs);
+    print('Marking the word as ' +
+        markAs.toString() +
+        word.learingReview.markName);
+    print("..............................");
     _isShowingWordDefinition = true;
     notifyListeners();
   }

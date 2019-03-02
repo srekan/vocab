@@ -4,6 +4,7 @@ import 'package:fluttery/layout.dart';
 import '../scopped_models/group.scopped_model.dart';
 import '../models/word.model.dart';
 import '../models/learning_review.dart';
+import '../components/progress_chart.dart';
 
 class GroupDetailScreen extends StatelessWidget {
   Widget _buildCardStack() {
@@ -17,7 +18,7 @@ class GroupDetailScreen extends StatelessWidget {
           child: Container(
             width: anchorBounds.width,
             height: anchorBounds.height,
-            padding: EdgeInsets.all(16.0),
+            padding: EdgeInsets.all(10.0),
             child: WordProfileCard(),
           ),
         );
@@ -49,18 +50,15 @@ class WordProfileCard extends StatelessWidget {
       right: 0.0,
       bottom: 0.0,
       child: Container(
-        decoration: BoxDecoration(
-          gradient: LinearGradient(
-            begin: Alignment.topCenter,
-            end: Alignment.bottomCenter,
-            colors: [
-              Colors.transparent,
-              Colors.blueGrey.withOpacity(0.8),
-            ],
+        padding: EdgeInsets.only(bottom: 20.0),
+        child: ScopedModel<GroupScoppedModel>(
+          model: groupScoppedModelInstance,
+          child: ScopedModelDescendant<GroupScoppedModel>(
+            builder: (context, child, model) {
+              return ProgressChart.withWordsData(model.activeGroup.words);
+            },
           ),
         ),
-        padding: EdgeInsets.all(16.0),
-        child: Text('Descriptions..'),
       ),
     );
   }
@@ -86,7 +84,7 @@ class WordProfileCard extends StatelessWidget {
                 model: groupScoppedModelInstance,
                 child: _WordBrowser(),
               ),
-              // _buildProfileSynopsis(),
+              _buildProfileSynopsis(),
             ],
           ),
         ),
@@ -96,7 +94,7 @@ class WordProfileCard extends StatelessWidget {
 }
 
 class _WordBrowser extends StatelessWidget {
-  Row _buildButtonsRow(model) {
+  Widget _buildButtonsRow(model) {
     if (model.isShowingWordDefinition) {
       return Row(
         mainAxisSize: MainAxisSize.max,
@@ -146,7 +144,7 @@ class _WordBrowser extends StatelessWidget {
         Column(
           children: <Widget>[
             Container(
-              margin: EdgeInsets.fromLTRB(0, 40.0, 0, 0),
+              margin: EdgeInsets.only(top: 10.0),
               child: Text(
                 activeWord.wordText,
                 style: TextStyle(
@@ -156,7 +154,7 @@ class _WordBrowser extends StatelessWidget {
               ),
             ),
             Container(
-              margin: EdgeInsets.fromLTRB(0, 0, 0, 40.0),
+              margin: EdgeInsets.only(bottom: 10.0),
               child: Text(
                 "${activeWord.syllable}",
                 style: TextStyle(
