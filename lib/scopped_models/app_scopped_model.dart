@@ -5,22 +5,26 @@ class User {
   final String name;
   final String token;
 
-  User({
-    @required this.name,
-    @required this.token
-  });
+  User({@required this.name, @required this.token});
 }
+
 class AppScoppedModel extends Model {
   User user;
-  String errorMessage;
-  void signIn({String username, String password}){
+  String errorMessage = "";
+  void signIn({String username, String password}) {
     print('signing in...' + username + password);
-    if(username == 'abc' && password == 'abc'){
+    if (username == 'abc' && password == 'abc') {
       user = User(name: username, token: 'dummy token');
       errorMessage = "";
-      // TODO: Navigate to Groups Screen
     } else {
       errorMessage = "User name or Password are invalid. Please try again";
     }
+
+    print("The new error message: $errorMessage");
+    notifyListeners();
+  }
+
+  String getErrorMessage() {
+    return errorMessage;
   }
 }
