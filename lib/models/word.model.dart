@@ -1,22 +1,10 @@
-enum WordType {
-  NOUN,
-  VERB,
-}
+import './learning_review.dart';
+
 enum Language {
   TELUGU,
   TAMIL,
   HINDI,
   MALAYALAM,
-}
-WordType getWordTypeByString(String type) {
-  switch (type) {
-    case 'NOUN':
-      return WordType.NOUN;
-    case 'VERB':
-      return WordType.VERB;
-    default:
-      return WordType.NOUN;
-  }
 }
 
 Language getLanguageByString(String lang) {
@@ -35,7 +23,7 @@ Language getLanguageByString(String lang) {
 }
 
 class Definition {
-  WordType type;
+  String type;
   String definitionText;
   List<String> examples = [];
   List<String> synonyms = [];
@@ -61,7 +49,7 @@ class Definition {
     }
 
     return Definition(
-      type: getWordTypeByString(d['type']),
+      type: d['type'],
       definitionText: d['definitionText'],
       examples: _examples,
       synonyms: _synonyms,
@@ -77,6 +65,7 @@ class Word {
   String syllable;
   List<Definition> definitions = [];
   List<String> tags = [];
+  LearningReview learingReview = LearningReview();
 
   Word({
     this.id,

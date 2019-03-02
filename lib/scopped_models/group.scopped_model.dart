@@ -1,6 +1,7 @@
 import 'package:scoped_model/scoped_model.dart';
 import '../models/group.model.dart';
 import '../models/word.model.dart';
+import '../models/learning_review.dart';
 import 'dart:convert';
 import 'package:flutter/services.dart' show rootBundle;
 
@@ -11,13 +12,17 @@ Future<Map<String, dynamic>> parseJsonFromAssets(String assetsPath) async {
       .then((jsonStr) => jsonDecode(jsonStr));
 }
 
-enum MarkWord { KNOWN, UNKNOWN }
-
 class GroupScoppedModel extends Model {
-  List<Group> groups = [];
-  String screenName = "GroupsScreen";
-  Group activeGroup;
-  int activeWordIndex = -1;
+  List<Group> _groups = [];
+  Group _activeGroup;
+  Word _activeWord;
+  bool _isShowingWordDefinition = false;
+
+  List<Group> get groups => _groups;
+  Group get activeGroup => _activeGroup;
+  Word get activeWord => _activeWord;
+  bool get isShowingWordDefinition => _isShowingWordDefinition;
+
   GroupScoppedModel() {
     getData();
   }
@@ -25,7 +30,7 @@ class GroupScoppedModel extends Model {
   getData() async {
     Map<String, dynamic> dmap =
         await parseJsonFromAssets('assets/vocab-data.json');
-    List<Group> _groups = [];
+    List<Group> __groups = [];
     List<Word> _words = [];
     for (var item in dmap['words']) {
       var word = Word.fromJson(item);
@@ -39,35 +44,54 @@ class GroupScoppedModel extends Model {
         _wordsInGroup.add(_words.firstWhere((e) => e.id == cId));
       }
       group.words = _wordsInGroup;
-      _groups.add(group);
+      __groups.add(group);
     }
-    groups = _groups;
+    _groups = __groups;
     print(_groups);
     notifyListeners();
   }
 
   setActiveGroup(group) {
-    activeGroup = group;
-    setActiveWordIndex(0);
+    _activeGroup = group;
+    setActiveWord(_activeGroup.words[0]);
   }
 
-  setActiveWordIndex(int index) {
-    activeWordIndex = index;
+  setActiveWord(Word word) {
+    _activeWord = word;
+    _isShowingWordDefinition = false;
     notifyListeners();
   }
 
-  markWordAs(MarkWord markAs) {
-    // TODO: use markAs to determine the state of the word - NEW / LEARNT / LEARNING3 / LEARNING2 / LEARNING1
-    // For now, we will change the index
+  markWordAs(WordReviewMark markAs) {
+    Word word = _activeWord;
+    word.learingReview.updateReview(markAs);
+    _isShowingWordDefinition = true;
+    notifyListeners();
+  }
 
-    int _newWordIndex = -1;
-    if (activeWordIndex + 1 == activeGroup.words.length) {
-      _newWordIndex = 0;
-    } else {
-      _newWordIndex = activeWordIndex + 1;
+  gotoNextWord() {
+    List<Word> words = [];
+
+    for (var item in _activeGroup.words) {
+      if (item.learingReview.markName != 'MASTERED') {
+        words.add(item);
+      }
+    }
+    for (var item in words) {
+      print(item.wordText);
+    }
+    // TODO: if there is only one word to master, pick a word from mastered list
+    // TODO: consider all words when all words are mastered
+    words.shuffle();
+    for (var item in words) {
+      print(item.wordText);
     }
 
-    setActiveWordIndex(_newWordIndex);
+    while (words[0] == _activeWord) {
+      words.shuffle();
+    }
+
+    setActiveWord(words[0]);
   }
 }
 

@@ -12,7 +12,6 @@ class AppScoppedModel extends Model {
   User user;
   String errorMessage = "";
   void signIn({String username, String password}) {
-    print('signing in...' + username + password);
     if (username == 'abc' && password == 'abc') {
       user = User(name: username, token: 'dummy token');
       errorMessage = "";

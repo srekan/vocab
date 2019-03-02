@@ -2,22 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:scoped_model/scoped_model.dart';
 import 'package:fluttery/layout.dart';
 import '../scopped_models/group.scopped_model.dart';
-import '../models/group.model.dart';
 import '../models/word.model.dart';
+import '../models/learning_review.dart';
 
 class GroupDetailScreen extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return ScopedModel<GroupScoppedModel>(
-      model: groupScoppedModelInstance,
-      child: _GroupDetailScreenContents(),
-    );
-  }
-}
-
-class _GroupDetailScreenContents extends StatelessWidget {
-  Widget _buildCardStack(
-      Group activeGroup, int activeWordIndex, Function markWordAs) {
+  Widget _buildCardStack() {
     return AnchoredOverlay(
       showOverlay: true,
       child: Center(),
@@ -29,11 +18,7 @@ class _GroupDetailScreenContents extends StatelessWidget {
             width: anchorBounds.width,
             height: anchorBounds.height,
             padding: EdgeInsets.all(16.0),
-            child: WordProfileCard(
-              activeGroup: activeGroup,
-              activeWordIndex: activeWordIndex,
-              markWordAs: markWordAs,
-            ),
+            child: WordProfileCard(),
           ),
         );
       },
@@ -42,30 +27,22 @@ class _GroupDetailScreenContents extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final model =
-        ScopedModel.of<GroupScoppedModel>(context, rebuildOnChange: true);
-    final Group activeGroup = model.activeGroup;
-    final Function markWordAs = model.markWordAs;
-    final int activeWordIndex = model.activeWordIndex;
     return Scaffold(
       appBar: AppBar(
-        title: Text(activeGroup.name),
-      ),
-      body: _buildCardStack(activeGroup, activeWordIndex, markWordAs),
+          title: ScopedModel<GroupScoppedModel>(
+        model: groupScoppedModelInstance,
+        child: ScopedModelDescendant<GroupScoppedModel>(
+          builder: (context, child, model) {
+            return Text(model.activeGroup.name);
+          },
+        ),
+      )),
+      body: _buildCardStack(),
     );
   }
 }
 
 class WordProfileCard extends StatelessWidget {
-  final Group activeGroup;
-  final int activeWordIndex;
-  final Function markWordAs;
-  WordProfileCard({
-    @required this.activeGroup,
-    @required this.activeWordIndex,
-    @required this.markWordAs,
-  });
-
   Widget _buildProfileSynopsis() {
     return Positioned(
       left: 0.0,
@@ -105,10 +82,9 @@ class WordProfileCard extends StatelessWidget {
           child: Stack(
             fit: StackFit.expand,
             children: <Widget>[
-              _WordBrowser(
-                words: activeGroup.words,
-                markWordAs: markWordAs,
-                activeWordIndex: activeWordIndex,
+              ScopedModel<GroupScoppedModel>(
+                model: groupScoppedModelInstance,
+                child: _WordBrowser(),
               ),
               // _buildProfileSynopsis(),
             ],
@@ -120,17 +96,49 @@ class WordProfileCard extends StatelessWidget {
 }
 
 class _WordBrowser extends StatelessWidget {
-  final List<Word> words;
-  final int activeWordIndex;
-  final Function markWordAs;
-  _WordBrowser({
-    @required this.words,
-    @required this.activeWordIndex,
-    @required this.markWordAs,
-  });
+  Row _buildButtonsRow(model) {
+    if (model.isShowingWordDefinition) {
+      return Row(
+        mainAxisSize: MainAxisSize.max,
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.end,
+        children: <Widget>[
+          RaisedButton(
+            child: Text('Next Word'),
+            onPressed: () {
+              model.gotoNextWord();
+            },
+          )
+        ],
+      );
+    }
+
+    return Row(
+      mainAxisSize: MainAxisSize.max,
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      crossAxisAlignment: CrossAxisAlignment.end,
+      children: <Widget>[
+        RaisedButton(
+          child: Text('I know this word'),
+          onPressed: () {
+            model.markWordAs(WordReviewMark.KNOWN);
+          },
+        ),
+        RaisedButton(
+          child: Text('I Do not know this word'),
+          onPressed: () {
+            model.markWordAs(WordReviewMark.UNKNOWN);
+          },
+        ),
+      ],
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
+    final model =
+        ScopedModel.of<GroupScoppedModel>(context, rebuildOnChange: true);
+    final activeWord = model.activeWord;
     return Stack(
       fit: StackFit.expand,
       children: <Widget>[
@@ -140,34 +148,26 @@ class _WordBrowser extends StatelessWidget {
             Container(
               margin: EdgeInsets.fromLTRB(0, 40.0, 0, 0),
               child: Text(
-                words[activeWordIndex].wordText,
+                activeWord.wordText,
                 style: TextStyle(
                   color: Colors.brown,
                   fontSize: 40.0,
                 ),
               ),
             ),
-            /*
-            Container(
-              child: Text(
-                "${words[activeWordIndex].phoneticScript}",
-                style: TextStyle(
-                  color: Colors.brown,
-                  fontSize: 20.0,
-                ),
-              ),
-            ),
-            */
             Container(
               margin: EdgeInsets.fromLTRB(0, 0, 0, 40.0),
               child: Text(
-                "${words[activeWordIndex].syllable}",
+                "${activeWord.syllable}",
                 style: TextStyle(
                   color: Colors.brown,
                   fontSize: 20.0,
                 ),
               ),
             ),
+            model.isShowingWordDefinition
+                ? WordDefinition(word: activeWord)
+                : Container(),
             Container(
               child: Text(
                 'This is a new word in this set',
@@ -178,29 +178,92 @@ class _WordBrowser extends StatelessWidget {
             ),
             Padding(
               padding: EdgeInsets.all(10.0),
-              child: Row(
-                mainAxisSize: MainAxisSize.max,
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                crossAxisAlignment: CrossAxisAlignment.end,
-                children: <Widget>[
-                  RaisedButton(
-                    child: Text('I know this word'),
-                    onPressed: () {
-                      markWordAs(MarkWord.KNOWN);
-                    },
-                  ),
-                  RaisedButton(
-                    child: Text('I Do not know this word'),
-                    onPressed: () {
-                      markWordAs(MarkWord.UNKNOWN);
-                    },
-                  ),
-                ],
-              ),
+              child: _buildButtonsRow(model),
             ),
           ],
         ),
       ],
+    );
+  }
+}
+
+class WordDefinition extends StatelessWidget {
+  final Word word;
+  WordDefinition({
+    @required this.word,
+  });
+
+  Widget _buildSynonyms(List<String> synonyms) {
+    if (synonyms.length == 0) {
+      return Container();
+    }
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: <Widget>[
+        Text(
+          'Synonyms:',
+          style: TextStyle(
+            fontStyle: FontStyle.italic,
+          ),
+        ),
+        Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: synonyms.map((sy) {
+            return Text('-- ' + sy);
+          }).toList(),
+        )
+      ],
+    );
+  }
+
+  Widget _buildExamples(List<String> examples) {
+    if (examples.length == 0) {
+      return Container();
+    }
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: <Widget>[
+        Text(
+          'Examples:',
+          style: TextStyle(
+            fontStyle: FontStyle.italic,
+          ),
+        ),
+        Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: examples.map((sy) {
+            return Text('-- ' + sy);
+          }).toList(),
+        )
+      ],
+    );
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: word.definitions.map((def) {
+        return Padding(
+          padding: EdgeInsets.only(left: 20.0, right: 20.0),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: <Widget>[
+              Text(
+                def.type.toLowerCase(),
+                style: TextStyle(
+                  fontWeight: FontWeight.w700,
+                  fontStyle: FontStyle.italic,
+                ),
+              ),
+              Text(def.definitionText),
+              Container(height: 10.0),
+              _buildExamples(def.examples),
+              Container(height: 10.0),
+              _buildSynonyms(def.synonyms),
+            ],
+          ),
+        );
+      }).toList(),
     );
   }
 }
