@@ -65,7 +65,7 @@ class Word {
   String syllable;
   List<Definition> definitions = [];
   List<String> tags = [];
-  LearningReview learingReview = LearningReview();
+  LearningReview learingReview;
 
   Word({
     this.id,
@@ -74,6 +74,7 @@ class Word {
     this.tags,
     this.phoneticScript,
     this.syllable,
+    this.learingReview,
   });
   factory Word.fromJson(Map<String, dynamic> d) {
     List<Definition> _definitions = [];
@@ -84,13 +85,14 @@ class Word {
     for (var item in d['tags']) {
       _tags.add(item);
     }
+
     return Word(
-      id: d['id'],
-      wordText: d['wordText'],
-      phoneticScript: d['phoneticScript'],
-      syllable: d['syllable'],
-      definitions: _definitions,
-      tags: _tags,
-    );
+        id: d['id'],
+        wordText: d['wordText'],
+        phoneticScript: d['phoneticScript'],
+        syllable: d['syllable'],
+        definitions: _definitions,
+        tags: _tags,
+        learingReview: LearningReview.fromString(d['learningState']));
   }
 }

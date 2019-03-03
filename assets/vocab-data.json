@@ -1,20 +1,20 @@
 {
     "groups": [{
-        "id": "8b3486bc-3cc5-11e9-b8d0-51894a218d81",
-        "name": "advanced",
-        "children": ["8b33c340-3cc5-11e9-b8d0-51894a218d81", "8b33ea5b-3cc5-11e9-b8d0-51894a218d81", "8b33ea77-3cc5-11e9-b8d0-51894a218d81", "8b33ea97-3cc5-11e9-b8d0-51894a218d81", "8b33eb02-3cc5-11e9-b8d0-51894a218d81", "8b33eb10-3cc5-11e9-b8d0-51894a218d81", "8b341162-3cc5-11e9-b8d0-51894a218d81", "8b341174-3cc5-11e9-b8d0-51894a218d81", "8b341180-3cc5-11e9-b8d0-51894a218d81", "8b3411a4-3cc5-11e9-b8d0-51894a218d81", "8b3411a5-3cc5-11e9-b8d0-51894a218d81", "8b3411ae-3cc5-11e9-b8d0-51894a218d81", "8b3438be-3cc5-11e9-b8d0-51894a218d81", "8b3438c7-3cc5-11e9-b8d0-51894a218d81", "8b3438d7-3cc5-11e9-b8d0-51894a218d81", "8b3438e5-3cc5-11e9-b8d0-51894a218d81", "8b34390e-3cc5-11e9-b8d0-51894a218d81", "8b345f84-3cc5-11e9-b8d0-51894a218d81", "8b3486a0-3cc5-11e9-b8d0-51894a218d81", "8b3486a3-3cc5-11e9-b8d0-51894a218d81", "8b3486a6-3cc5-11e9-b8d0-51894a218d81"]
-    }, {
-        "id": "8b3486bd-3cc5-11e9-b8d0-51894a218d81",
-        "name": "common",
-        "children": ["8b33ea53-3cc5-11e9-b8d0-51894a218d81", "8b33ea5a-3cc5-11e9-b8d0-51894a218d81", "8b33ea60-3cc5-11e9-b8d0-51894a218d81", "8b33ea6b-3cc5-11e9-b8d0-51894a218d81", "8b33ea6f-3cc5-11e9-b8d0-51894a218d81", "8b33ea87-3cc5-11e9-b8d0-51894a218d81", "8b33ea89-3cc5-11e9-b8d0-51894a218d81", "8b33ea9f-3cc5-11e9-b8d0-51894a218d81", "8b33eaaa-3cc5-11e9-b8d0-51894a218d81", "8b33eab4-3cc5-11e9-b8d0-51894a218d81", "8b33eaec-3cc5-11e9-b8d0-51894a218d81", "8b33eaf0-3cc5-11e9-b8d0-51894a218d81", "8b33eb06-3cc5-11e9-b8d0-51894a218d81", "8b341171-3cc5-11e9-b8d0-51894a218d81", "8b341187-3cc5-11e9-b8d0-51894a218d81", "8b34118b-3cc5-11e9-b8d0-51894a218d81", "8b341191-3cc5-11e9-b8d0-51894a218d81", "8b341193-3cc5-11e9-b8d0-51894a218d81", "8b3411a8-3cc5-11e9-b8d0-51894a218d81", "8b34387e-3cc5-11e9-b8d0-51894a218d81", "8b34388d-3cc5-11e9-b8d0-51894a218d81", "8b343894-3cc5-11e9-b8d0-51894a218d81", "8b343895-3cc5-11e9-b8d0-51894a218d81", "8b34389f-3cc5-11e9-b8d0-51894a218d81", "8b3438c1-3cc5-11e9-b8d0-51894a218d81", "8b3438c2-3cc5-11e9-b8d0-51894a218d81", "8b3438c9-3cc5-11e9-b8d0-51894a218d81", "8b3438cc-3cc5-11e9-b8d0-51894a218d81", "8b3438ce-3cc5-11e9-b8d0-51894a218d81", "8b3438dc-3cc5-11e9-b8d0-51894a218d81", "8b3438f7-3cc5-11e9-b8d0-51894a218d81", "8b34390a-3cc5-11e9-b8d0-51894a218d81", "8b343910-3cc5-11e9-b8d0-51894a218d81", "8b345f92-3cc5-11e9-b8d0-51894a218d81", "8b348690-3cc5-11e9-b8d0-51894a218d81", "8b348697-3cc5-11e9-b8d0-51894a218d81", "8b3486ad-3cc5-11e9-b8d0-51894a218d81", "8b3486b3-3cc5-11e9-b8d0-51894a218d81"]
-    }, {
         "id": "8b3486be-3cc5-11e9-b8d0-51894a218d81",
-        "name": "basic",
+        "name": "Basic1",
         "children": ["8b33ea5c-3cc5-11e9-b8d0-51894a218d81", "8b33ead1-3cc5-11e9-b8d0-51894a218d81", "8b33eae2-3cc5-11e9-b8d0-51894a218d81", "8b33eafb-3cc5-11e9-b8d0-51894a218d81", "8b33eb0b-3cc5-11e9-b8d0-51894a218d81", "8b341169-3cc5-11e9-b8d0-51894a218d81", "8b34388c-3cc5-11e9-b8d0-51894a218d81", "8b3438cb-3cc5-11e9-b8d0-51894a218d81", "8b3438de-3cc5-11e9-b8d0-51894a218d81", "8b348691-3cc5-11e9-b8d0-51894a218d81"]
     }, {
         "id": "8b3486bf-3cc5-11e9-b8d0-51894a218d81",
-        "name": "fundamental",
+        "name": "Basic2",
         "children": ["8b33ea8f-3cc5-11e9-b8d0-51894a218d81", "8b33eaa4-3cc5-11e9-b8d0-51894a218d81", "8b34117e-3cc5-11e9-b8d0-51894a218d81", "8b345f8d-3cc5-11e9-b8d0-51894a218d81"]
+    }, {
+        "id": "8b3486bd-3cc5-11e9-b8d0-51894a218d81",
+        "name": "Advanced1",
+        "children": ["8b33ea53-3cc5-11e9-b8d0-51894a218d81", "8b33ea5a-3cc5-11e9-b8d0-51894a218d81", "8b33ea60-3cc5-11e9-b8d0-51894a218d81", "8b33ea6b-3cc5-11e9-b8d0-51894a218d81", "8b33ea6f-3cc5-11e9-b8d0-51894a218d81", "8b33ea87-3cc5-11e9-b8d0-51894a218d81", "8b33ea89-3cc5-11e9-b8d0-51894a218d81", "8b33ea9f-3cc5-11e9-b8d0-51894a218d81", "8b33eaaa-3cc5-11e9-b8d0-51894a218d81", "8b33eab4-3cc5-11e9-b8d0-51894a218d81", "8b33eaec-3cc5-11e9-b8d0-51894a218d81", "8b33eaf0-3cc5-11e9-b8d0-51894a218d81", "8b33eb06-3cc5-11e9-b8d0-51894a218d81", "8b341171-3cc5-11e9-b8d0-51894a218d81", "8b341187-3cc5-11e9-b8d0-51894a218d81", "8b34118b-3cc5-11e9-b8d0-51894a218d81", "8b341191-3cc5-11e9-b8d0-51894a218d81", "8b341193-3cc5-11e9-b8d0-51894a218d81", "8b3411a8-3cc5-11e9-b8d0-51894a218d81", "8b34387e-3cc5-11e9-b8d0-51894a218d81", "8b34388d-3cc5-11e9-b8d0-51894a218d81", "8b343894-3cc5-11e9-b8d0-51894a218d81", "8b343895-3cc5-11e9-b8d0-51894a218d81", "8b34389f-3cc5-11e9-b8d0-51894a218d81", "8b3438c1-3cc5-11e9-b8d0-51894a218d81", "8b3438c2-3cc5-11e9-b8d0-51894a218d81", "8b3438c9-3cc5-11e9-b8d0-51894a218d81", "8b3438cc-3cc5-11e9-b8d0-51894a218d81", "8b3438ce-3cc5-11e9-b8d0-51894a218d81", "8b3438dc-3cc5-11e9-b8d0-51894a218d81", "8b3438f7-3cc5-11e9-b8d0-51894a218d81", "8b34390a-3cc5-11e9-b8d0-51894a218d81", "8b343910-3cc5-11e9-b8d0-51894a218d81", "8b345f92-3cc5-11e9-b8d0-51894a218d81", "8b348690-3cc5-11e9-b8d0-51894a218d81", "8b348697-3cc5-11e9-b8d0-51894a218d81", "8b3486ad-3cc5-11e9-b8d0-51894a218d81", "8b3486b3-3cc5-11e9-b8d0-51894a218d81"]
+    }, {
+        "id": "8b3486bc-3cc5-11e9-b8d0-51894a218d81",
+        "name": "Advanced2",
+        "children": ["8b33c340-3cc5-11e9-b8d0-51894a218d81", "8b33ea5b-3cc5-11e9-b8d0-51894a218d81", "8b33ea77-3cc5-11e9-b8d0-51894a218d81", "8b33ea97-3cc5-11e9-b8d0-51894a218d81", "8b33eb02-3cc5-11e9-b8d0-51894a218d81", "8b33eb10-3cc5-11e9-b8d0-51894a218d81", "8b341162-3cc5-11e9-b8d0-51894a218d81", "8b341174-3cc5-11e9-b8d0-51894a218d81", "8b341180-3cc5-11e9-b8d0-51894a218d81", "8b3411a4-3cc5-11e9-b8d0-51894a218d81", "8b3411a5-3cc5-11e9-b8d0-51894a218d81", "8b3411ae-3cc5-11e9-b8d0-51894a218d81", "8b3438be-3cc5-11e9-b8d0-51894a218d81", "8b3438c7-3cc5-11e9-b8d0-51894a218d81", "8b3438d7-3cc5-11e9-b8d0-51894a218d81", "8b3438e5-3cc5-11e9-b8d0-51894a218d81", "8b34390e-3cc5-11e9-b8d0-51894a218d81", "8b345f84-3cc5-11e9-b8d0-51894a218d81", "8b3486a0-3cc5-11e9-b8d0-51894a218d81", "8b3486a3-3cc5-11e9-b8d0-51894a218d81", "8b3486a6-3cc5-11e9-b8d0-51894a218d81"]
     }],
     "words": [{
         "wordText": "abduction",
@@ -31,7 +31,7 @@
                 "hindi": "अपहरण , अपावर्तन"
             }
         }],
-        "tags": ["advanced"],
+        "tags": ["Advanced2"],
         "lastEdited": 1490677976982,
         "id": "8b33c340-3cc5-11e9-b8d0-51894a218d81",
         "groupIds": ["8b3486bc-3cc5-11e9-b8d0-51894a218d81"]
@@ -107,7 +107,7 @@
                 "hindi": ""
             }
         }],
-        "tags": ["common"],
+        "tags": ["Advanced1"],
         "lastEdited": 1490678153464,
         "id": "8b33ea53-3cc5-11e9-b8d0-51894a218d81",
         "groupIds": ["8b3486bd-3cc5-11e9-b8d0-51894a218d81"]
@@ -240,7 +240,7 @@
                 "hindi": "मिलावट करना, लूट करना,अपवित्र करना"
             }
         }],
-        "tags": ["common"],
+        "tags": ["Advanced1"],
         "lastEdited": 1490678273627,
         "id": "8b33ea5a-3cc5-11e9-b8d0-51894a218d81",
         "groupIds": ["8b3486bd-3cc5-11e9-b8d0-51894a218d81"]
@@ -259,7 +259,7 @@
                 "hindi": ""
             }
         }],
-        "tags": ["advanced"],
+        "tags": ["Advanced2"],
         "lastEdited": 1490678356443,
         "id": "8b33ea5b-3cc5-11e9-b8d0-51894a218d81",
         "groupIds": ["8b3486bc-3cc5-11e9-b8d0-51894a218d81"]
@@ -278,7 +278,7 @@
                 "hindi": ""
             }
         }],
-        "tags": ["basic"],
+        "tags": ["Basic1"],
         "lastEdited": 1490678496420,
         "id": "8b33ea5c-3cc5-11e9-b8d0-51894a218d81",
         "groupIds": ["8b3486be-3cc5-11e9-b8d0-51894a218d81"]
@@ -354,7 +354,7 @@
                 "hindi": "आरोपित कथित ,अफ़वाही"
             }
         }],
-        "tags": ["common"],
+        "tags": ["Advanced1"],
         "lastEdited": 1490678722552,
         "id": "8b33ea60-3cc5-11e9-b8d0-51894a218d81",
         "groupIds": ["8b3486bd-3cc5-11e9-b8d0-51894a218d81"]
@@ -563,7 +563,7 @@
                 "hindi": ""
             }
         }],
-        "tags": ["common"],
+        "tags": ["Advanced1"],
         "lastEdited": 1490678979475,
         "id": "8b33ea6b-3cc5-11e9-b8d0-51894a218d81",
         "groupIds": ["8b3486bd-3cc5-11e9-b8d0-51894a218d81"]
@@ -639,7 +639,7 @@
                 "hindi": "तारीफ करना,वाहवाही करना"
             }
         }],
-        "tags": ["common"],
+        "tags": ["Advanced1"],
         "lastEdited": 1490679143267,
         "id": "8b33ea6f-3cc5-11e9-b8d0-51894a218d81",
         "groupIds": ["8b3486bd-3cc5-11e9-b8d0-51894a218d81"]
@@ -791,7 +791,7 @@
                 "hindi": ""
             }
         }],
-        "tags": ["advanced"],
+        "tags": ["Advanced2"],
         "lastEdited": 1490679285824,
         "id": "8b33ea77-3cc5-11e9-b8d0-51894a218d81",
         "groupIds": ["8b3486bc-3cc5-11e9-b8d0-51894a218d81"]
@@ -1095,7 +1095,7 @@
                 "hindi": ""
             }
         }],
-        "tags": ["common"],
+        "tags": ["Advanced1"],
         "lastEdited": 1490679836215,
         "id": "8b33ea87-3cc5-11e9-b8d0-51894a218d81",
         "groupIds": ["8b3486bd-3cc5-11e9-b8d0-51894a218d81"]
@@ -1133,7 +1133,7 @@
                 "hindi": "तेजी से बढना, धूम मचाना"
             }
         }],
-        "tags": ["common"],
+        "tags": ["Advanced1"],
         "lastEdited": 1490680035778,
         "id": "8b33ea89-3cc5-11e9-b8d0-51894a218d81",
         "groupIds": ["8b3486bd-3cc5-11e9-b8d0-51894a218d81"]
@@ -1247,7 +1247,7 @@
                 "hindi": " खींचना,पहुँचाना  ,लगाना"
             }
         }],
-        "tags": ["fundamental"],
+        "tags": ["basic2"],
         "lastEdited": 1491978075322,
         "id": "8b33ea8f-3cc5-11e9-b8d0-51894a218d81",
         "groupIds": ["8b3486bf-3cc5-11e9-b8d0-51894a218d81"]
@@ -1399,7 +1399,7 @@
                 "hindi": "कैदी , बंदी, दास"
             }
         }],
-        "tags": ["advanced"],
+        "tags": ["Advanced2"],
         "lastEdited": 1490680579957,
         "id": "8b33ea97-3cc5-11e9-b8d0-51894a218d81",
         "groupIds": ["8b3486bc-3cc5-11e9-b8d0-51894a218d81"]
@@ -1551,7 +1551,7 @@
                 "hindi": ""
             }
         }],
-        "tags": ["common"],
+        "tags": ["Advanced1"],
         "lastEdited": 1490680790552,
         "id": "8b33ea9f-3cc5-11e9-b8d0-51894a218d81",
         "groupIds": ["8b3486bd-3cc5-11e9-b8d0-51894a218d81"]
@@ -1646,7 +1646,7 @@
                 "hindi": " आना,उगना, पहुंचना"
             }
         }],
-        "tags": ["fundamental"],
+        "tags": ["basic2"],
         "lastEdited": 1491979088830,
         "id": "8b33eaa4-3cc5-11e9-b8d0-51894a218d81",
         "groupIds": ["8b3486bf-3cc5-11e9-b8d0-51894a218d81"]
@@ -1760,7 +1760,7 @@
                 "hindi": ""
             }
         }],
-        "tags": ["common"],
+        "tags": ["Advanced1"],
         "lastEdited": 1490681052876,
         "id": "8b33eaaa-3cc5-11e9-b8d0-51894a218d81",
         "groupIds": ["8b3486bd-3cc5-11e9-b8d0-51894a218d81"]
@@ -1950,7 +1950,7 @@
                 "hindi": ""
             }
         }],
-        "tags": ["common"],
+        "tags": ["Advanced1"],
         "lastEdited": 1490681247901,
         "id": "8b33eab4-3cc5-11e9-b8d0-51894a218d81",
         "groupIds": ["8b3486bd-3cc5-11e9-b8d0-51894a218d81"]
@@ -2501,7 +2501,7 @@
                 "hindi": ""
             }
         }],
-        "tags": ["basic"],
+        "tags": ["Basic1"],
         "lastEdited": 1490681366891,
         "id": "8b33ead1-3cc5-11e9-b8d0-51894a218d81",
         "groupIds": ["8b3486be-3cc5-11e9-b8d0-51894a218d81"]
@@ -2824,7 +2824,7 @@
                 "hindi": ""
             }
         }],
-        "tags": ["basic"],
+        "tags": ["Basic1"],
         "lastEdited": 1490681756982,
         "id": "8b33eae2-3cc5-11e9-b8d0-51894a218d81",
         "groupIds": ["8b3486be-3cc5-11e9-b8d0-51894a218d81"]
@@ -3014,7 +3014,7 @@
                 "hindi": ""
             }
         }],
-        "tags": ["common"],
+        "tags": ["Advanced1"],
         "lastEdited": 1488996913998,
         "id": "8b33eaec-3cc5-11e9-b8d0-51894a218d81",
         "groupIds": ["8b3486bd-3cc5-11e9-b8d0-51894a218d81"]
@@ -3090,7 +3090,7 @@
                 "hindi": ""
             }
         }],
-        "tags": ["common"],
+        "tags": ["Advanced1"],
         "lastEdited": 1488391191030,
         "id": "8b33eaf0-3cc5-11e9-b8d0-51894a218d81",
         "groupIds": ["8b3486bd-3cc5-11e9-b8d0-51894a218d81"]
@@ -3299,7 +3299,7 @@
                 "hindi": "डूबाना, डूबना"
             }
         }],
-        "tags": ["basic"],
+        "tags": ["Basic1"],
         "lastEdited": 1490334068594,
         "id": "8b33eafb-3cc5-11e9-b8d0-51894a218d81",
         "groupIds": ["8b3486be-3cc5-11e9-b8d0-51894a218d81"]
@@ -3432,7 +3432,7 @@
                 "hindi": ""
             }
         }],
-        "tags": ["advanced"],
+        "tags": ["Advanced2"],
         "lastEdited": 1488600999791,
         "id": "8b33eb02-3cc5-11e9-b8d0-51894a218d81",
         "groupIds": ["8b3486bc-3cc5-11e9-b8d0-51894a218d81"]
@@ -3508,7 +3508,7 @@
                 "hindi": ""
             }
         }],
-        "tags": ["common"],
+        "tags": ["Advanced1"],
         "lastEdited": 1488391863038,
         "id": "8b33eb06-3cc5-11e9-b8d0-51894a218d81",
         "groupIds": ["8b3486bd-3cc5-11e9-b8d0-51894a218d81"]
@@ -3603,7 +3603,7 @@
                 "hindi": "बढ़ाना,वृद्धि करना,विस्तार करना"
             }
         }],
-        "tags": ["basic"],
+        "tags": ["Basic1"],
         "lastEdited": 1490336719375,
         "id": "8b33eb0b-3cc5-11e9-b8d0-51894a218d81",
         "groupIds": ["8b3486be-3cc5-11e9-b8d0-51894a218d81"]
@@ -3698,7 +3698,7 @@
                 "hindi": ""
             }
         }],
-        "tags": ["advanced"],
+        "tags": ["Advanced2"],
         "lastEdited": 1488608422029,
         "id": "8b33eb10-3cc5-11e9-b8d0-51894a218d81",
         "groupIds": ["8b3486bc-3cc5-11e9-b8d0-51894a218d81"]
@@ -3888,7 +3888,7 @@
                 "hindi": "फुरती से, शीघ्र, तेज़"
             }
         }],
-        "tags": ["advanced"],
+        "tags": ["Advanced2"],
         "lastEdited": 1490341319824,
         "id": "8b341162-3cc5-11e9-b8d0-51894a218d81",
         "groupIds": ["8b3486bc-3cc5-11e9-b8d0-51894a218d81"]
@@ -4021,7 +4021,7 @@
                 "hindi": ""
             }
         }],
-        "tags": ["basic"],
+        "tags": ["Basic1"],
         "lastEdited": 1487698333363,
         "id": "8b341169-3cc5-11e9-b8d0-51894a218d81",
         "groupIds": ["8b3486be-3cc5-11e9-b8d0-51894a218d81"]
@@ -4173,7 +4173,7 @@
                 "hindi": ""
             }
         }],
-        "tags": ["common"],
+        "tags": ["Advanced1"],
         "lastEdited": 1488995879032,
         "id": "8b341171-3cc5-11e9-b8d0-51894a218d81",
         "groupIds": ["8b3486bd-3cc5-11e9-b8d0-51894a218d81"]
@@ -4230,7 +4230,7 @@
                 "hindi": ""
             }
         }],
-        "tags": ["advanced"],
+        "tags": ["Advanced2"],
         "lastEdited": 1490414576977,
         "id": "8b341174-3cc5-11e9-b8d0-51894a218d81",
         "groupIds": ["8b3486bc-3cc5-11e9-b8d0-51894a218d81"]
@@ -4420,7 +4420,7 @@
                 "hindi": " भूला देना, खो देना, देना"
             }
         }],
-        "tags": ["fundamental"],
+        "tags": ["basic2"],
         "lastEdited": 1491977495459,
         "id": "8b34117e-3cc5-11e9-b8d0-51894a218d81",
         "groupIds": ["8b3486bf-3cc5-11e9-b8d0-51894a218d81"]
@@ -4458,7 +4458,7 @@
                 "hindi": ""
             }
         }],
-        "tags": ["advanced"],
+        "tags": ["Advanced2"],
         "lastEdited": 1488392407417,
         "id": "8b341180-3cc5-11e9-b8d0-51894a218d81",
         "groupIds": ["8b3486bc-3cc5-11e9-b8d0-51894a218d81"]
@@ -4591,7 +4591,7 @@
                 "hindi": ""
             }
         }],
-        "tags": ["common"],
+        "tags": ["Advanced1"],
         "lastEdited": 1488478911239,
         "id": "8b341187-3cc5-11e9-b8d0-51894a218d81",
         "groupIds": ["8b3486bd-3cc5-11e9-b8d0-51894a218d81"]
@@ -4667,7 +4667,7 @@
                 "hindi": "भूख हड़ताल, अनशन"
             }
         }],
-        "tags": ["common"],
+        "tags": ["Advanced1"],
         "lastEdited": 1490332984041,
         "id": "8b34118b-3cc5-11e9-b8d0-51894a218d81",
         "groupIds": ["8b3486bd-3cc5-11e9-b8d0-51894a218d81"]
@@ -4781,7 +4781,7 @@
                 "hindi": ""
             }
         }],
-        "tags": ["common"],
+        "tags": ["Advanced1"],
         "lastEdited": 1488995602276,
         "id": "8b341191-3cc5-11e9-b8d0-51894a218d81",
         "groupIds": ["8b3486bd-3cc5-11e9-b8d0-51894a218d81"]
@@ -4819,7 +4819,7 @@
                 "hindi": ""
             }
         }],
-        "tags": ["common"],
+        "tags": ["Advanced1"],
         "lastEdited": 1489818869718,
         "id": "8b341193-3cc5-11e9-b8d0-51894a218d81",
         "groupIds": ["8b3486bd-3cc5-11e9-b8d0-51894a218d81"]
@@ -5142,7 +5142,7 @@
                 "hindi": "रहस्यमय, गूढ"
             }
         }],
-        "tags": ["advanced"],
+        "tags": ["Advanced2"],
         "lastEdited": 1490334139744,
         "id": "8b3411a4-3cc5-11e9-b8d0-51894a218d81",
         "groupIds": ["8b3486bc-3cc5-11e9-b8d0-51894a218d81"]
@@ -5161,7 +5161,7 @@
                 "hindi": ""
             }
         }],
-        "tags": ["advanced"],
+        "tags": ["Advanced2"],
         "lastEdited": 1488599135166,
         "id": "8b3411a5-3cc5-11e9-b8d0-51894a218d81",
         "groupIds": ["8b3486bc-3cc5-11e9-b8d0-51894a218d81"]
@@ -5218,7 +5218,7 @@
                 "hindi": ""
             }
         }],
-        "tags": ["common"],
+        "tags": ["Advanced1"],
         "lastEdited": 1488459567655,
         "id": "8b3411a8-3cc5-11e9-b8d0-51894a218d81",
         "groupIds": ["8b3486bd-3cc5-11e9-b8d0-51894a218d81"]
@@ -5332,7 +5332,7 @@
                 "hindi": ""
             }
         }],
-        "tags": ["advanced"],
+        "tags": ["Advanced2"],
         "lastEdited": 1488515415424,
         "id": "8b3411ae-3cc5-11e9-b8d0-51894a218d81",
         "groupIds": ["8b3486bc-3cc5-11e9-b8d0-51894a218d81"]
@@ -5636,7 +5636,7 @@
                 "hindi": ""
             }
         }],
-        "tags": ["common"],
+        "tags": ["Advanced1"],
         "lastEdited": 1488996619674,
         "id": "8b34387e-3cc5-11e9-b8d0-51894a218d81",
         "groupIds": ["8b3486bd-3cc5-11e9-b8d0-51894a218d81"]
@@ -5902,7 +5902,7 @@
                 "hindi": ""
             }
         }],
-        "tags": ["basic"],
+        "tags": ["Basic1"],
         "lastEdited": 1490423880150,
         "id": "8b34388c-3cc5-11e9-b8d0-51894a218d81",
         "groupIds": ["8b3486be-3cc5-11e9-b8d0-51894a218d81"]
@@ -5921,7 +5921,7 @@
                 "hindi": "सनसनीखेज़ नाटक"
             }
         }],
-        "tags": ["common"],
+        "tags": ["Advanced1"],
         "lastEdited": 1490341270908,
         "id": "8b34388d-3cc5-11e9-b8d0-51894a218d81",
         "groupIds": ["8b3486bd-3cc5-11e9-b8d0-51894a218d81"]
@@ -6054,7 +6054,7 @@
                 "hindi": "दुर्घटना, दुर्भाग्यपूर्ण, आपदा"
             }
         }],
-        "tags": ["common"],
+        "tags": ["Advanced1"],
         "lastEdited": 1490337029264,
         "id": "8b343894-3cc5-11e9-b8d0-51894a218d81",
         "groupIds": ["8b3486bd-3cc5-11e9-b8d0-51894a218d81"]
@@ -6073,7 +6073,7 @@
                 "hindi": ""
             }
         }],
-        "tags": ["common"],
+        "tags": ["Advanced1"],
         "lastEdited": 1489033097105,
         "id": "8b343895-3cc5-11e9-b8d0-51894a218d81",
         "groupIds": ["8b3486bd-3cc5-11e9-b8d0-51894a218d81"]
@@ -6263,7 +6263,7 @@
                 "hindi": "दर्शक, प्रेक्षक, व्यूअर"
             }
         }],
-        "tags": ["common"],
+        "tags": ["Advanced1"],
         "lastEdited": 1490336942902,
         "id": "8b34389f-3cc5-11e9-b8d0-51894a218d81",
         "groupIds": ["8b3486bd-3cc5-11e9-b8d0-51894a218d81"]
@@ -6852,7 +6852,7 @@
                 "hindi": ""
             }
         }],
-        "tags": ["advanced"],
+        "tags": ["Advanced2"],
         "lastEdited": 1488514902152,
         "id": "8b3438be-3cc5-11e9-b8d0-51894a218d81",
         "groupIds": ["8b3486bc-3cc5-11e9-b8d0-51894a218d81"]
@@ -6909,7 +6909,7 @@
                 "hindi": ""
             }
         }],
-        "tags": ["common"],
+        "tags": ["Advanced1"],
         "lastEdited": 1488600116105,
         "id": "8b3438c1-3cc5-11e9-b8d0-51894a218d81",
         "groupIds": ["8b3486bd-3cc5-11e9-b8d0-51894a218d81"]
@@ -6928,7 +6928,7 @@
                 "hindi": ""
             }
         }],
-        "tags": ["common"],
+        "tags": ["Advanced1"],
         "lastEdited": 1488459042119,
         "id": "8b3438c2-3cc5-11e9-b8d0-51894a218d81",
         "groupIds": ["8b3486bd-3cc5-11e9-b8d0-51894a218d81"]
@@ -7023,7 +7023,7 @@
                 "hindi": ""
             }
         }],
-        "tags": ["advanced"],
+        "tags": ["Advanced2"],
         "lastEdited": 1488457857555,
         "id": "8b3438c7-3cc5-11e9-b8d0-51894a218d81",
         "groupIds": ["8b3486bc-3cc5-11e9-b8d0-51894a218d81"]
@@ -7061,7 +7061,7 @@
                 "hindi": ""
             }
         }],
-        "tags": ["common"],
+        "tags": ["Advanced1"],
         "lastEdited": 1488025068847,
         "id": "8b3438c9-3cc5-11e9-b8d0-51894a218d81",
         "groupIds": ["8b3486bd-3cc5-11e9-b8d0-51894a218d81"]
@@ -7099,7 +7099,7 @@
                 "hindi": "प्रतिवाद, विरोध"
             }
         }],
-        "tags": ["basic"],
+        "tags": ["Basic1"],
         "lastEdited": 1490336638617,
         "id": "8b3438cb-3cc5-11e9-b8d0-51894a218d81",
         "groupIds": ["8b3486be-3cc5-11e9-b8d0-51894a218d81"]
@@ -7118,7 +7118,7 @@
                 "hindi": "वुद्धीमान, बुद्धिमत्तापूर्ण, सावधानी "
             }
         }],
-        "tags": ["common"],
+        "tags": ["Advanced1"],
         "lastEdited": 1490338608712,
         "id": "8b3438cc-3cc5-11e9-b8d0-51894a218d81",
         "groupIds": ["8b3486bd-3cc5-11e9-b8d0-51894a218d81"]
@@ -7156,7 +7156,7 @@
                 "hindi": ""
             }
         }],
-        "tags": ["common"],
+        "tags": ["Advanced1"],
         "lastEdited": 1488610559522,
         "id": "8b3438ce-3cc5-11e9-b8d0-51894a218d81",
         "groupIds": ["8b3486bd-3cc5-11e9-b8d0-51894a218d81"]
@@ -7327,7 +7327,7 @@
                 "hindi": ""
             }
         }],
-        "tags": ["advanced"],
+        "tags": ["Advanced2"],
         "lastEdited": 1488477958985,
         "id": "8b3438d7-3cc5-11e9-b8d0-51894a218d81",
         "groupIds": ["8b3486bc-3cc5-11e9-b8d0-51894a218d81"]
@@ -7422,7 +7422,7 @@
                 "hindi": ""
             }
         }],
-        "tags": ["common"],
+        "tags": ["Advanced1"],
         "lastEdited": 1489030036220,
         "id": "8b3438dc-3cc5-11e9-b8d0-51894a218d81",
         "groupIds": ["8b3486bd-3cc5-11e9-b8d0-51894a218d81"]
@@ -7460,7 +7460,7 @@
                 "hindi": "पुनः प्रतिष्ठा, स्वास्थ्यलाभ, बहाली "
             }
         }],
-        "tags": ["basic"],
+        "tags": ["Basic1"],
         "lastEdited": 1490333111731,
         "id": "8b3438de-3cc5-11e9-b8d0-51894a218d81",
         "groupIds": ["8b3486be-3cc5-11e9-b8d0-51894a218d81"]
@@ -7593,7 +7593,7 @@
                 "hindi": " रद्द करना,मिटा देना,पत्ता दबाना"
             }
         }],
-        "tags": ["advanced"],
+        "tags": ["Advanced2"],
         "lastEdited": 1490424268323,
         "id": "8b3438e5-3cc5-11e9-b8d0-51894a218d81",
         "groupIds": ["8b3486bc-3cc5-11e9-b8d0-51894a218d81"]
@@ -7935,7 +7935,7 @@
                 "hindi": ""
             }
         }],
-        "tags": ["common"],
+        "tags": ["Advanced1"],
         "lastEdited": 1487766831161,
         "id": "8b3438f7-3cc5-11e9-b8d0-51894a218d81",
         "groupIds": ["8b3486bd-3cc5-11e9-b8d0-51894a218d81"]
@@ -8296,7 +8296,7 @@
                 "hindi": "नेतृत्व करना, नेता, अगुआई करना "
             }
         }],
-        "tags": ["common"],
+        "tags": ["Advanced1"],
         "lastEdited": 1490933037215,
         "id": "8b34390a-3cc5-11e9-b8d0-51894a218d81",
         "groupIds": ["8b3486bd-3cc5-11e9-b8d0-51894a218d81"]
@@ -8372,7 +8372,7 @@
                 "hindi": ""
             }
         }],
-        "tags": ["advanced"],
+        "tags": ["Advanced2"],
         "lastEdited": 1488390885692,
         "id": "8b34390e-3cc5-11e9-b8d0-51894a218d81",
         "groupIds": ["8b3486bc-3cc5-11e9-b8d0-51894a218d81"]
@@ -8410,7 +8410,7 @@
                 "hindi": "हलचल , मिलाना,उमड़ना"
             }
         }],
-        "tags": ["common"],
+        "tags": ["Advanced1"],
         "lastEdited": 1490593724992,
         "id": "8b343910-3cc5-11e9-b8d0-51894a218d81",
         "groupIds": ["8b3486bd-3cc5-11e9-b8d0-51894a218d81"]
@@ -8524,7 +8524,7 @@
                 "hindi": ""
             }
         }],
-        "tags": ["advanced"],
+        "tags": ["Advanced2"],
         "lastEdited": 1488478437657,
         "id": "8b345f84-3cc5-11e9-b8d0-51894a218d81",
         "groupIds": ["8b3486bc-3cc5-11e9-b8d0-51894a218d81"]
@@ -8695,7 +8695,7 @@
                 "hindi": "पकड़ना, खा लेना,जान लेना"
             }
         }],
-        "tags": ["fundamental"],
+        "tags": ["basic2"],
         "lastEdited": 1491977134912,
         "id": "8b345f8d-3cc5-11e9-b8d0-51894a218d81",
         "groupIds": ["8b3486bf-3cc5-11e9-b8d0-51894a218d81"]
@@ -8790,7 +8790,7 @@
                 "hindi": ""
             }
         }],
-        "tags": ["common"],
+        "tags": ["Advanced1"],
         "lastEdited": 1488996194733,
         "id": "8b345f92-3cc5-11e9-b8d0-51894a218d81",
         "groupIds": ["8b3486bd-3cc5-11e9-b8d0-51894a218d81"]
@@ -8809,7 +8809,7 @@
                 "hindi": "ज़ोर,ठेलना,जोर डालना."
             }
         }],
-        "tags": ["common"],
+        "tags": ["Advanced1"],
         "lastEdited": 1490594004960,
         "id": "8b348690-3cc5-11e9-b8d0-51894a218d81",
         "groupIds": ["8b3486bd-3cc5-11e9-b8d0-51894a218d81"]
@@ -8828,7 +8828,7 @@
                 "hindi": ""
             }
         }],
-        "tags": ["basic"],
+        "tags": ["Basic1"],
         "lastEdited": 1487766859456,
         "id": "8b348691-3cc5-11e9-b8d0-51894a218d81",
         "groupIds": ["8b3486be-3cc5-11e9-b8d0-51894a218d81"]
@@ -8942,7 +8942,7 @@
                 "hindi": ""
             }
         }],
-        "tags": ["common"],
+        "tags": ["Advanced1"],
         "lastEdited": 1489902486096,
         "id": "8b348697-3cc5-11e9-b8d0-51894a218d81",
         "groupIds": ["8b3486bd-3cc5-11e9-b8d0-51894a218d81"]
@@ -9113,7 +9113,7 @@
                 "hindi": ""
             }
         }],
-        "tags": ["advanced"],
+        "tags": ["Advanced2"],
         "lastEdited": 1488609786948,
         "id": "8b3486a0-3cc5-11e9-b8d0-51894a218d81",
         "groupIds": ["8b3486bc-3cc5-11e9-b8d0-51894a218d81"]
@@ -9170,7 +9170,7 @@
                 "hindi": "बेमिसाल, अपूर्व, अनोखा "
             }
         }],
-        "tags": ["advanced"],
+        "tags": ["Advanced2"],
         "lastEdited": 1490338550448,
         "id": "8b3486a3-3cc5-11e9-b8d0-51894a218d81",
         "groupIds": ["8b3486bc-3cc5-11e9-b8d0-51894a218d81"]
@@ -9227,7 +9227,7 @@
                 "hindi": ""
             }
         }],
-        "tags": ["advanced"],
+        "tags": ["Advanced2"],
         "lastEdited": 1488459293666,
         "id": "8b3486a6-3cc5-11e9-b8d0-51894a218d81",
         "groupIds": ["8b3486bc-3cc5-11e9-b8d0-51894a218d81"]
@@ -9360,7 +9360,7 @@
                 "hindi": "पीडित व्यक्ति, दोषित,घायल"
             }
         }],
-        "tags": ["common"],
+        "tags": ["Advanced1"],
         "lastEdited": 1490336848981,
         "id": "8b3486ad-3cc5-11e9-b8d0-51894a218d81",
         "groupIds": ["8b3486bd-3cc5-11e9-b8d0-51894a218d81"]
@@ -9474,7 +9474,7 @@
                 "hindi": "अजीब, अतिप्राकृतिक"
             }
         }],
-        "tags": ["common"],
+        "tags": ["Advanced1"],
         "lastEdited": 1490333213223,
         "id": "8b3486b3-3cc5-11e9-b8d0-51894a218d81",
         "groupIds": ["8b3486bd-3cc5-11e9-b8d0-51894a218d81"]
