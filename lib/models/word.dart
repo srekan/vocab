@@ -1,5 +1,3 @@
-import './learning_review.dart';
-
 enum Language {
   TELUGU,
   TAMIL,
@@ -65,7 +63,6 @@ class Word {
   String syllable;
   List<Definition> definitions = [];
   List<String> tags = [];
-  LearningReview learingReview;
 
   Word({
     this.id,
@@ -74,7 +71,6 @@ class Word {
     this.tags,
     this.phoneticScript,
     this.syllable,
-    this.learingReview,
   });
   factory Word.fromJson(Map<String, dynamic> d) {
     List<Definition> _definitions = [];
@@ -87,12 +83,12 @@ class Word {
     }
 
     return Word(
-        id: d['id'],
-        wordText: d['wordText'],
-        phoneticScript: d['phoneticScript'],
-        syllable: d['syllable'],
-        definitions: _definitions,
-        tags: _tags,
-        learingReview: LearningReview.fromString(d['learningState']));
+      id: d['id'],
+      wordText: d['wordText'],
+      phoneticScript: d['phoneticScript'],
+      syllable: d['syllable'],
+      definitions: _definitions,
+      tags: _tags,
+    );
   }
 }

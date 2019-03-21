@@ -1,24 +1,46 @@
 import 'package:flutter/material.dart';
 import 'package:scoped_model/scoped_model.dart';
-import '../scopped_models/group.scopped_model.dart';
-import '../models/group.model.dart';
-import '../models/word.model.dart';
+import '../scoped_models/group_scoped_model.dart';
+import '../models/group.dart';
+import '../models/word.dart';
 import '../models/review.dart';
 import '../components/progress_chart.dart';
 import '../components/app_drawer.dart';
 import '../root_data.dart';
 
-class GroupsScreen extends StatelessWidget {
+class DashBoardScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ScopedModel<GroupScoppedModel>(
-      model: RootData.groups,
-      child: _GroupsScreenContents(),
+      model: rootdata.groups,
+      child: ScopedModelDescendant<GroupScoppedModel>(
+          builder: (context, child, model) {
+        return _GroupsListContents(
+          groups: model.groups,
+          setActiveGroup: model.setActiveGroup,
+          resetGroup: model.resetGroup,
+          reviewMap: model.reviewMap,
+          getReviewId: model.getReviewId,
+        );
+      }),
     );
   }
 }
 
-class _GroupsScreenContents extends StatelessWidget {
+class _GroupsListContents extends StatelessWidget {
+  final List<Group> groups;
+  final Map<String, String> reviewMap;
+  final Function setActiveGroup;
+  final Function resetGroup;
+  final Function getReviewId;
+  _GroupsListContents({
+    @required this.groups,
+    @required this.setActiveGroup,
+    @required this.resetGroup,
+    @required this.reviewMap,
+    @required this.getReviewId,
+  });
+
   Future<String> createResetGroupAlertDialog(
       BuildContext context, String groupName) {
     return showDialog(
@@ -48,14 +70,14 @@ class _GroupsScreenContents extends StatelessWidget {
         });
   }
 
-  Widget _buildSubtitle(List<Word> words) {
+  Widget _buildSubtitle(Group group, List<Word> words) {
     final masterWords = [];
     final otherWords = [];
-    for (var item in words) {
-      if (item.learingReview.markName == ReviewName.MASTERED) {
-        masterWords.add(item);
+    for (var word in words) {
+      if (reviewMap[getReviewId(group, word)] == ReviewName.MASTERED) {
+        masterWords.add(word);
       } else {
-        otherWords.add(item);
+        otherWords.add(word);
       }
     }
 
@@ -80,10 +102,6 @@ class _GroupsScreenContents extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final model =
-        ScopedModel.of<GroupScoppedModel>(context, rebuildOnChange: true);
-    final List<Group> groups = model.groups;
-    final Function setActiveGroup = model.setActiveGroup;
     return Scaffold(
       drawer: AppDrawer(),
       appBar: AppBar(
@@ -101,18 +119,19 @@ class _GroupsScreenContents extends StatelessWidget {
                           leading: Container(
                             child: ProgressChart.withWordsData(
                               words: group.words,
+                              reviewMap: reviewMap,
                               height: 100.0,
                               width: 100.0,
                               disableDiscriptions: true,
+                              group: group,
+                              getReviewId: getReviewId,
                             ),
                           ),
                           title: Text(
                             group.name,
-                            style: TextStyle(
-                              fontSize: 20.0,
-                            ),
+                            style: Theme.of(context).textTheme.headline,
                           ),
-                          subtitle: _buildSubtitle(group.words),
+                          subtitle: _buildSubtitle(group, group.words),
                           onTap: () {
                             setActiveGroup(group);
                             Navigator.of(context).pushNamed('group_detail');
@@ -129,7 +148,7 @@ class _GroupsScreenContents extends StatelessWidget {
                                           context, group.name)
                                       .then((value) {
                                     if (value == 'RESET') {
-                                      model.resetGroup(group);
+                                      resetGroup(group);
                                       SnackBar snackBar = SnackBar(
                                         content: Text('Group got reset.'),
                                       );

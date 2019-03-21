@@ -1,6 +1,6 @@
 import 'package:scoped_model/scoped_model.dart';
-import '../models/group.model.dart';
-import '../models/word.model.dart';
+import '../models/group.dart';
+import '../models/word.dart';
 import '../models/review.dart';
 import 'dart:convert';
 import 'package:flutter/services.dart' show rootBundle;
@@ -19,6 +19,7 @@ class GroupScoppedModel extends Model {
   Word _activeWord;
   bool _isShowingWordDefinition = false;
   String _preferredLanguage = 'telugu'; // TODO: derive it from local storage
+  Map<String, String> reviewMap = {};
 
   SharedPreferences get prefs => _prefs;
   List<Group> get groups => _groups;
@@ -38,24 +39,25 @@ class GroupScoppedModel extends Model {
         await parseJsonFromAssets('assets/vocab-data.json');
     List<Group> __groups = [];
     List<Word> _words = [];
+
     for (var item in dmap['words']) {
-      item['learningState'] =
-          await _getLearningReviewFromLocalStorage(item['id']);
       var word = Word.fromJson(item);
       _words.add(word);
     }
+
     for (var item in dmap['groups']) {
       var group = Group.fromJson(item);
-
       List<Word> _wordsInGroup = [];
       for (var cId in item['children']) {
-        _wordsInGroup.add(_words.firstWhere((e) => e.id == cId));
+        Word word = _words.firstWhere((e) => e.id == cId);
+        _wordsInGroup.add(word);
+        String mapId = getReviewId(group, word);
+        reviewMap[mapId] = _getLearningReviewFromLocalStorage(mapId);
       }
       group.words = _wordsInGroup;
       __groups.add(group);
     }
     _groups = __groups;
-    print(_groups);
     notifyListeners();
   }
 
@@ -71,17 +73,20 @@ class GroupScoppedModel extends Model {
   }
 
   resetGroup(Group group) {
-    for (var item in group.words) {
-      item.learingReview.resetReview();
+    for (var word in group.words) {
+      String mapId = getReviewId(group, word);
+
+      reviewMap[mapId] = Review.reviewNames[0];
+      _prefs.setString(mapId, reviewMap[mapId]);
     }
     notifyListeners();
   }
 
   markWordAs(ReviewMark markAs) {
-    Word word = _activeWord;
-    word.learingReview.updateReview(markAs);
+    String mapId = getReviewId(_activeGroup, _activeWord);
+    reviewMap[mapId] = _getNextReview(markAs, reviewMap[mapId]);
     _isShowingWordDefinition = true;
-    _prefs.setString(_activeWord.id, word.learingReview.toString());
+    _prefs.setString(mapId, reviewMap[mapId]);
     notifyListeners();
   }
 
@@ -89,11 +94,12 @@ class GroupScoppedModel extends Model {
     List<Word> words = [];
     List<Word> masteredWords = [];
 
-    for (var item in _activeGroup.words) {
-      if (item.learingReview.markName != ReviewName.MASTERED) {
-        words.add(item);
+    for (var word in _activeGroup.words) {
+      String mapId = getReviewId(_activeGroup, word);
+      if (reviewMap[mapId] != 'MASTERED') {
+        words.add(word);
       } else {
-        masteredWords.add(item);
+        masteredWords.add(word);
       }
     }
 
@@ -117,6 +123,7 @@ class GroupScoppedModel extends Model {
 
   String _getLearningReviewFromLocalStorage(String id) {
     var reviewName = _prefs.getString(id);
+
     switch (reviewName) {
       case 'NEW':
       case 'LEARNING4':
@@ -129,5 +136,26 @@ class GroupScoppedModel extends Model {
         reviewName = 'NEW';
         return reviewName;
     }
+  }
+
+  String _getNextReview(ReviewMark markAs, String currentReview) {
+    int markIndex = Review.reviewNames.indexWhere((e) => e == currentReview);
+    if (markAs == ReviewMark.KNOWN) {
+      if (markIndex == 0) {
+        markIndex = Review.maxIndex;
+      } else {
+        markIndex++;
+        if (markIndex > Review.maxIndex) {
+          markIndex = Review.maxIndex;
+        }
+      }
+    } else {
+      markIndex = 1;
+    }
+    return Review.reviewNames[markIndex];
+  }
+
+  String getReviewId(Group group, Word word) {
+    return group.name + '-' + word.wordText;
   }
 }

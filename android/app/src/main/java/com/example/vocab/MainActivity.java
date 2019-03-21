@@ -1,4 +1,4 @@
-package com.example.helloflutter;
+package com.example.vocab;
 
 import android.os.Bundle;
 import io.flutter.app.FlutterActivity;

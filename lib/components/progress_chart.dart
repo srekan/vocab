@@ -1,10 +1,14 @@
 import 'package:charts_flutter/flutter.dart' as charts;
 import 'package:flutter/material.dart';
-import '../models/word.model.dart';
+import '../models/word.dart';
+import '../models/group.dart';
 import '../models/review.dart';
 
 class ProgressChart extends StatelessWidget {
   final List<charts.Series> seriesList;
+  final Function getReviewId;
+  final Group group;
+  final Map<String, String> reviewMap;
   final bool animate;
   final double height;
   final double width;
@@ -13,9 +17,12 @@ class ProgressChart extends StatelessWidget {
   ProgressChart(
     this.seriesList, {
     this.animate,
-    this.height,
-    this.width,
+    @required this.height,
+    @required this.width,
     this.disableDiscriptions,
+    @required this.reviewMap,
+    @required this.group,
+    @required this.getReviewId,
   });
 
   factory ProgressChart.withWordsData({
@@ -23,6 +30,9 @@ class ProgressChart extends StatelessWidget {
     double height,
     double width,
     bool disableDiscriptions,
+    @required reviewMap,
+    @required group,
+    @required getReviewId,
   }) {
     final scores = {
       ReviewName.NEW: 0,
@@ -30,10 +40,10 @@ class ProgressChart extends StatelessWidget {
       ReviewName.MASTERED: 0,
     };
 
-    for (var item in words) {
-      final markName = item.learingReview.markName;
+    for (var word in words) {
+      final markName = reviewMap[getReviewId(group, word)];
       if (markName == ReviewName.NEW || markName == ReviewName.MASTERED) {
-        scores[item.learingReview.markName] += 1;
+        scores[markName] += 1;
       } else {
         scores[ReviewName.LEARNING] += 1;
       }
@@ -69,6 +79,9 @@ class ProgressChart extends StatelessWidget {
       height: height,
       width: width,
       disableDiscriptions: disableDiscriptions,
+      reviewMap: reviewMap,
+      group: group,
+      getReviewId: getReviewId,
     );
   }
 

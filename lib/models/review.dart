@@ -1,14 +1,15 @@
 import 'package:flutter/material.dart';
 
 enum ReviewMark { KNOWN, UNKNOWN }
-enum ReviewName {
-  NEW,
-  LEARNING,
-  LEARNING4,
-  LEARNING3,
-  LEARNING2,
-  LEARNING1,
-  MASTERED,
+
+abstract class ReviewName {
+  static final NEW = 'NEW';
+  static final LEARNING = 'LEARNING';
+  static final LEARNING4 = 'LEARNING4';
+  static final LEARNING3 = 'LEARNING3';
+  static final LEARNING2 = 'LEARNING2';
+  static final LEARNING1 = 'LEARNING1';
+  static final MASTERED = 'MASTERED';
 }
 
 class ReviewColors {
@@ -20,7 +21,7 @@ class ReviewColors {
 }
 
 class Review {
-  static final list = [
+  static final reviewNames = [
     ReviewName.NEW,
     ReviewName.LEARNING4,
     ReviewName.LEARNING3,
@@ -28,14 +29,14 @@ class Review {
     ReviewName.LEARNING1,
     ReviewName.MASTERED,
   ];
-
-  static bool isLearningReview(ReviewName name) {
+  static int maxIndex = Review.reviewNames.length - 1;
+  static bool isLearningReview(String name) {
     switch (name) {
-      case ReviewName.LEARNING:
-      case ReviewName.LEARNING1:
-      case ReviewName.LEARNING2:
-      case ReviewName.LEARNING3:
-      case ReviewName.LEARNING4:
+      case 'LEARNING':
+      case 'LEARNING1':
+      case 'LEARNING2':
+      case 'LEARNING3':
+      case 'LEARNING4':
         return true;
       default:
         return false;

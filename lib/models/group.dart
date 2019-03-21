@@ -1,4 +1,4 @@
-import './word.model.dart';
+import './word.dart';
 
 class Group {
   String id;

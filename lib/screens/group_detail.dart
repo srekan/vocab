@@ -1,114 +1,84 @@
 import 'package:flutter/material.dart';
 import 'package:scoped_model/scoped_model.dart';
-import 'package:fluttery/layout.dart';
-import '../scopped_models/group.scopped_model.dart';
-import '../models/word.model.dart';
+import '../scoped_models/group_scoped_model.dart';
+import '../models/word.dart';
+import '../models/group.dart';
 import '../components/progress_chart.dart';
 import '../models/review.dart';
 import '../root_data.dart';
 
 class GroupDetailScreen extends StatelessWidget {
-  Widget _buildCardStack() {
-    return AnchoredOverlay(
-      showOverlay: true,
-      child: Center(),
-      overlayBuilder:
-          (BuildContext buildContext, Rect anchorBounds, Offset anchor) {
-        return CenterAbout(
-          position: anchor,
-          child: Container(
-            width: anchorBounds.width,
-            height: anchorBounds.height,
-            padding: EdgeInsets.all(10.0),
-            child: WordProfileCard(),
-          ),
-        );
-      },
-    );
-  }
-
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-          title: ScopedModel<GroupScoppedModel>(
-        model: RootData.groups,
-        child: ScopedModelDescendant<GroupScoppedModel>(
-          builder: (context, child, model) {
-            return Text(model.activeGroup.name);
-          },
-        ),
-      )),
-      body: _buildCardStack(),
-    );
-  }
-}
-
-class WordProfileCard extends StatelessWidget {
-  Widget _buildProfileSynopsis() {
-    return Positioned(
-      left: 0.0,
-      right: 0.0,
-      bottom: 0.0,
-      child: Container(
-        padding: EdgeInsets.only(bottom: 20.0),
-        child: ScopedModel<GroupScoppedModel>(
-          model: RootData.groups,
-          child: ScopedModelDescendant<GroupScoppedModel>(
-            builder: (context, child, model) {
-              return ProgressChart.withWordsData(
-                words: model.activeGroup.words,
-                height: 200.0,
-              );
-            },
-          ),
-        ),
-      ),
-    );
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      decoration:
-          BoxDecoration(borderRadius: BorderRadius.circular(10.0), boxShadow: [
-        BoxShadow(
-          color: Color(0x11000000),
-          blurRadius: 5.0,
-          spreadRadius: 2.0,
-        ),
-      ]),
-      child: ClipRRect(
-        borderRadius: BorderRadius.circular(10.0),
-        child: Material(
-          child: Stack(
-            fit: StackFit.expand,
-            children: <Widget>[
-              ScopedModel<GroupScoppedModel>(
-                model: RootData.groups,
-                child: _WordBrowser(),
-              ),
-              _buildProfileSynopsis(),
-            ],
-          ),
-        ),
+    return ScopedModel<GroupScoppedModel>(
+      model: rootdata.groups,
+      child: ScopedModelDescendant<GroupScoppedModel>(
+        builder: (context, child, model) {
+          return Scaffold(
+            appBar: AppBar(
+              title: Text(model.activeGroup.name),
+            ),
+            body: Column(
+              mainAxisSize: MainAxisSize.max,
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: <Widget>[
+                _WordBrowser(
+                  activeWord: model.activeWord,
+                  activeGroup: model.activeGroup,
+                  preferredLanguage: model.preferredLanguage,
+                  isShowingWordDefinition: model.isShowingWordDefinition,
+                  gotoNextWord: model.gotoNextWord,
+                  markWordAs: model.markWordAs,
+                  reviewMap: model.reviewMap,
+                  getReviewId: model.getReviewId,
+                ),
+                ProgressChart.withWordsData(
+                  words: model.activeGroup.words,
+                  height: 200.0,
+                  group: model.activeGroup,
+                  getReviewId: model.getReviewId,
+                  reviewMap: model.reviewMap,
+                ),
+              ],
+            ),
+          );
+        },
       ),
     );
   }
 }
 
 class _WordBrowser extends StatelessWidget {
-  Widget _buildButtonsRow(model) {
-    if (model.isShowingWordDefinition) {
+  final Word activeWord;
+  final Group activeGroup;
+  final String preferredLanguage;
+  final bool isShowingWordDefinition;
+  final Function gotoNextWord;
+  final Function markWordAs;
+  final Function getReviewId;
+  final Map<String, String> reviewMap;
+  _WordBrowser({
+    @required this.activeWord,
+    @required this.activeGroup,
+    @required this.preferredLanguage,
+    @required this.isShowingWordDefinition,
+    @required this.gotoNextWord,
+    @required this.markWordAs,
+    @required this.getReviewId,
+    @required this.reviewMap,
+  });
+  Widget _buildButtonsRow(BuildContext context) {
+    if (isShowingWordDefinition == true) {
       return Row(
         mainAxisSize: MainAxisSize.max,
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.end,
         children: <Widget>[
           RaisedButton(
+            textTheme: Theme.of(context).buttonTheme.textTheme,
             child: Text('Next Word'),
             onPressed: () {
-              model.gotoNextWord();
+              gotoNextWord();
             },
           )
         ],
@@ -125,13 +95,13 @@ class _WordBrowser extends StatelessWidget {
           RaisedButton(
             child: Text('I know this word'),
             onPressed: () {
-              model.markWordAs(ReviewMark.KNOWN);
+              markWordAs(ReviewMark.KNOWN);
             },
           ),
           RaisedButton(
             child: Text('I Do not know this word'),
             onPressed: () {
-              model.markWordAs(ReviewMark.UNKNOWN);
+              markWordAs(ReviewMark.UNKNOWN);
             },
           ),
         ],
@@ -139,7 +109,7 @@ class _WordBrowser extends StatelessWidget {
     );
   }
 
-  Widget _buildWordLearningDescription(ReviewName markName) {
+  Widget _buildWordLearningDescription(BuildContext context, String markName) {
     var desc = 'This is a new word in this set';
     var color = ReviewColors.newWordDark;
     if (markName == ReviewName.MASTERED) {
@@ -147,7 +117,7 @@ class _WordBrowser extends StatelessWidget {
       color = ReviewColors.mastered;
     }
 
-    if (Review.isLearningReview(markName)) {
+    if (Review.isLearningReview(markName) == true) {
       var name = markName.toString();
       var lastChar = name[name.length - 1];
       desc = "You have to review this word $lastChar more time(s)";
@@ -156,65 +126,48 @@ class _WordBrowser extends StatelessWidget {
     return Container(
       child: Text(
         desc,
-        style: TextStyle(
-          color: color,
-        ),
+        style: Theme.of(context).textTheme.subtitle.merge(TextStyle(
+              color: color,
+            )),
       ),
     );
   }
 
   @override
   Widget build(BuildContext context) {
-    final model =
-        ScopedModel.of<GroupScoppedModel>(context, rebuildOnChange: true);
-    final activeWord = model.activeWord;
-    final preferredLanguage = model.preferredLanguage;
-    return Stack(
-      fit: StackFit.expand,
+    return Column(
       children: <Widget>[
-        // Word Heading
-        Column(
+        SizedBox(height: 8.0),
+        Text(
+          activeWord.wordText,
+          style: Theme.of(context).textTheme.display2,
+        ),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Container(
-              margin: EdgeInsets.only(top: 10.0),
-              child: Text(
-                activeWord.wordText,
-                style: TextStyle(
-                  color: Colors.brown,
-                  fontSize: 40.0,
-                ),
-              ),
+            Icon(
+              Icons.volume_up,
+              color: Colors.brown[100],
             ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: <Widget>[
-                Icon(
-                  Icons.volume_up,
-                  color: Colors.brown[100],
-                ),
-                Text(
-                  "${activeWord.syllable}",
-                  style: TextStyle(
-                    color: Colors.brown,
-                    fontSize: 15.0,
-                  ),
-                )
-              ],
-            ),
-            model.isShowingWordDefinition
-                ? WordDefinition(
-                    word: activeWord,
-                    preferredLanguage: preferredLanguage,
-                  )
-                : Container(),
-            SizedBox(height: 30.0),
-            model.isShowingWordDefinition
-                ? Container()
-                : _buildWordLearningDescription(
-                    activeWord.learingReview.markName),
-            _buildButtonsRow(model),
+            Text(
+              activeWord.syllable,
+              style: Theme.of(context).textTheme.subhead,
+            )
           ],
         ),
+        isShowingWordDefinition == true
+            ? WordDefinition(
+                word: activeWord,
+                preferredLanguage: preferredLanguage,
+              )
+            : Container(),
+        SizedBox(height: 30.0),
+        isShowingWordDefinition == true
+            ? Container()
+            : _buildWordLearningDescription(
+                context, reviewMap[getReviewId(activeGroup, activeWord)]),
+        SizedBox(height: 8.0),
+        _buildButtonsRow(context),
       ],
     );
   }

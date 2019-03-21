@@ -1,41 +1,22 @@
 import 'package:flutter/material.dart';
-import 'package:scoped_model/scoped_model.dart';
-import './scopped_models/app_scopped_model.dart';
-import './screens/signin.dart';
-import './screens/home.dart';
-import './screens/groups.dart';
-import './screens/profile.dart';
-import './screens/notifications.dart';
-import './screens/settings.dart';
-import './screens/about.dart';
+import './screens/splash.dart';
+import './screens/dashboard.dart';
 import './screens/group_detail.dart';
-import './root_data.dart';
 
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
+  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    var app = MaterialApp(
-        title: 'Flutter Demo',
-        theme: ThemeData(
-          primarySwatch: Colors.blue,
-        ),
-        home: HomeScreen(),
-        routes: {
-          'home': (context) => HomeScreen(),
-          'profile': (context) => ProfileScreen(),
-          'notifications': (context) => NotificationsScreen(),
-          'settings': (context) => SettingsScreen(),
-          'about': (context) => AboutScreen(),
-          'groups': (context) => GroupsScreen(),
-          'group_detail': (context) => GroupDetailScreen(),
-          'signin': (context) => SignInScreen(),
-        });
-
-    return ScopedModel<AppScoppedModel>(
-      model: RootData.app,
-      child: app,
+    return MaterialApp(
+      title: 'Vocabulary App',
+      theme: ThemeData(primarySwatch: Colors.amber),
+      home: SplashScreen(),
+      routes: {
+        'dash_board': (context) => DashBoardScreen(),
+        'group_detail': (context) => GroupDetailScreen(),
+      },
     );
   }
 }
