@@ -39,6 +39,6 @@ class Group {
 
     progress[ReviewName.NEW] = scores[ReviewName.NEW];
     progress[ReviewName.LEARNING] = scores[ReviewName.LEARNING];
-    progress[ReviewName.LEARNING] = scores[ReviewName.MASTERED];
+    progress[ReviewName.MASTERED] = scores[ReviewName.MASTERED];
   }
 }
