@@ -12,7 +12,7 @@ class _RootData {
     _context = context;
     isAppInitialized = true;
     Timer(const Duration(milliseconds: 1000), () {
-      Navigator.of(_context).pushNamed('dash_board');
+      Navigator.of(_context).pushReplacementNamed('dash_board');
     });
   }
 }

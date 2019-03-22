@@ -118,13 +118,10 @@ class _GroupsListContents extends StatelessWidget {
                         ListTile(
                           leading: Container(
                             child: ProgressChart.withWordsData(
-                              words: group.words,
-                              reviewMap: reviewMap,
                               height: 100.0,
                               width: 100.0,
                               disableDiscriptions: true,
                               group: group,
-                              getReviewId: getReviewId,
                             ),
                           ),
                           title: Text(

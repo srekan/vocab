@@ -1,14 +1,11 @@
 import 'package:charts_flutter/flutter.dart' as charts;
 import 'package:flutter/material.dart';
-import '../models/word.dart';
 import '../models/group.dart';
 import '../models/review.dart';
 
 class ProgressChart extends StatelessWidget {
   final List<charts.Series> seriesList;
-  final Function getReviewId;
   final Group group;
-  final Map<String, String> reviewMap;
   final bool animate;
   final double height;
   final double width;
@@ -20,39 +17,22 @@ class ProgressChart extends StatelessWidget {
     @required this.height,
     @required this.width,
     this.disableDiscriptions,
-    @required this.reviewMap,
     @required this.group,
-    @required this.getReviewId,
   });
 
   factory ProgressChart.withWordsData({
-    List<Word> words,
     double height,
     double width,
     bool disableDiscriptions,
     @required reviewMap,
     @required group,
     @required getReviewId,
+    animate,
   }) {
-    final scores = {
-      ReviewName.NEW: 0,
-      ReviewName.LEARNING: 0,
-      ReviewName.MASTERED: 0,
-    };
-
-    for (var word in words) {
-      final markName = reviewMap[getReviewId(group, word)];
-      if (markName == ReviewName.NEW || markName == ReviewName.MASTERED) {
-        scores[markName] += 1;
-      } else {
-        scores[ReviewName.LEARNING] += 1;
-      }
-    }
-
     final data = [
-      LinearProgress(0, scores[ReviewName.NEW]),
-      LinearProgress(1, scores[ReviewName.LEARNING]),
-      LinearProgress(2, scores[ReviewName.MASTERED]),
+      LinearProgress(0, group.progress[ReviewName.NEW]),
+      LinearProgress(1, group.progress[ReviewName.LEARNING]),
+      LinearProgress(2, group.progress[ReviewName.MASTERED]),
     ];
 
     var _labelAccessorFn = (LinearProgress row, _) =>
@@ -75,13 +55,11 @@ class ProgressChart extends StatelessWidget {
 
     return ProgressChart(
       seriesList,
-      animate: true,
+      animate: animate == true,
       height: height,
       width: width,
       disableDiscriptions: disableDiscriptions,
-      reviewMap: reviewMap,
       group: group,
-      getReviewId: getReviewId,
     );
   }
 

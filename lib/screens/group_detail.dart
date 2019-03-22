@@ -32,12 +32,13 @@ class GroupDetailScreen extends StatelessWidget {
                   reviewMap: model.reviewMap,
                   getReviewId: model.getReviewId,
                 ),
-                ProgressChart.withWordsData(
-                  words: model.activeGroup.words,
-                  height: 200.0,
-                  group: model.activeGroup,
-                  getReviewId: model.getReviewId,
-                  reviewMap: model.reviewMap,
+                Align(
+                  child: ProgressChart.withWordsData(
+                    // height: model.isShowingWordDefinition ? 150 : 200,
+                    height: 200,
+                    group: model.activeGroup,
+                    animate: true,
+                  ),
                 ),
               ],
             ),
@@ -236,11 +237,14 @@ class WordDefinition extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
-                  Text(
-                    def.otherLanguages[preferredLanguage],
-                    style: TextStyle(
-                      color: Colors.indigo,
-                      fontSize: 15.0,
+                  Flexible(
+                    child: Text(
+                      def.otherLanguages[preferredLanguage],
+                      style: Theme.of(context).textTheme.subhead.merge(
+                            TextStyle(
+                              color: Colors.indigo,
+                            ),
+                          ),
                     ),
                   ),
                 ],

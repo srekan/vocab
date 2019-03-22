@@ -53,8 +53,10 @@ class GroupScoppedModel extends Model {
         _wordsInGroup.add(word);
         String mapId = getReviewId(group, word);
         reviewMap[mapId] = _getLearningReviewFromLocalStorage(mapId);
+        group.reviewMap[mapId] = reviewMap[mapId];
       }
       group.words = _wordsInGroup;
+      group.updateProgress();
       __groups.add(group);
     }
     _groups = __groups;
@@ -75,16 +77,19 @@ class GroupScoppedModel extends Model {
   resetGroup(Group group) {
     for (var word in group.words) {
       String mapId = getReviewId(group, word);
-
       reviewMap[mapId] = Review.reviewNames[0];
+      group.reviewMap[mapId] = reviewMap[mapId];
       _prefs.setString(mapId, reviewMap[mapId]);
     }
+    group.updateProgress();
     notifyListeners();
   }
 
   markWordAs(ReviewMark markAs) {
     String mapId = getReviewId(_activeGroup, _activeWord);
     reviewMap[mapId] = _getNextReview(markAs, reviewMap[mapId]);
+    _activeGroup.reviewMap[mapId] = reviewMap[mapId];
+    _activeGroup.updateProgress();
     _isShowingWordDefinition = true;
     _prefs.setString(mapId, reviewMap[mapId]);
     notifyListeners();
