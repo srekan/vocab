@@ -1,0 +1,2177 @@
+{
+    "version": "20190323",
+    "groups": [{
+        "id": "WEEK1-DAY1",
+        "name": "WEEK1-DAY1",
+        "children": ["40124650-4933-11e9-aa16-13eb7a6d613d", "40124652-4933-11e9-aa16-13eb7a6d613d", "40124654-4933-11e9-aa16-13eb7a6d613d", "40124655-4933-11e9-aa16-13eb7a6d613d", "40126d61-4933-11e9-aa16-13eb7a6d613d", "40126d62-4933-11e9-aa16-13eb7a6d613d", "40126d63-4933-11e9-aa16-13eb7a6d613d"]
+    }, {
+        "id": "WEEK1-DAY2",
+        "name": "WEEK1-DAY2",
+        "children": ["40124656-4933-11e9-aa16-13eb7a6d613d", "40126d65-4933-11e9-aa16-13eb7a6d613d", "40126d66-4933-11e9-aa16-13eb7a6d613d", "40126d67-4933-11e9-aa16-13eb7a6d613d", "40126d6a-4933-11e9-aa16-13eb7a6d613d", "40126d6c-4933-11e9-aa16-13eb7a6d613d", "40126d6d-4933-11e9-aa16-13eb7a6d613d"]
+    }, {
+        "id": "WEEK1-DAY3",
+        "name": "WEEK1-DAY3",
+        "children": ["40124653-4933-11e9-aa16-13eb7a6d613d", "40126d60-4933-11e9-aa16-13eb7a6d613d", "40126d64-4933-11e9-aa16-13eb7a6d613d", "40126d68-4933-11e9-aa16-13eb7a6d613d", "40126d69-4933-11e9-aa16-13eb7a6d613d", "40126d6b-4933-11e9-aa16-13eb7a6d613d", "40126d6e-4933-11e9-aa16-13eb7a6d613d"]
+    }, {
+        "id": "WEEK1-DAY4",
+        "name": "WEEK1-DAY4",
+        "children": ["40126d70-4933-11e9-aa16-13eb7a6d613d", "40126d73-4933-11e9-aa16-13eb7a6d613d", "40126d75-4933-11e9-aa16-13eb7a6d613d", "40126d76-4933-11e9-aa16-13eb7a6d613d", "40126d78-4933-11e9-aa16-13eb7a6d613d", "40126d79-4933-11e9-aa16-13eb7a6d613d", "40126d7a-4933-11e9-aa16-13eb7a6d613d"]
+    }, {
+        "id": "WEEK1-DAY5",
+        "name": "WEEK1-DAY5",
+        "children": ["40124651-4933-11e9-aa16-13eb7a6d613d", "40126d6f-4933-11e9-aa16-13eb7a6d613d", "40126d71-4933-11e9-aa16-13eb7a6d613d", "40126d72-4933-11e9-aa16-13eb7a6d613d", "40126d74-4933-11e9-aa16-13eb7a6d613d", "40126d77-4933-11e9-aa16-13eb7a6d613d", "40126d7b-4933-11e9-aa16-13eb7a6d613d"]
+    }, {
+        "id": "WEEK1",
+        "name": "WEEK1",
+        "children": ["40124650-4933-11e9-aa16-13eb7a6d613d", "40124651-4933-11e9-aa16-13eb7a6d613d", "40124652-4933-11e9-aa16-13eb7a6d613d", "40124653-4933-11e9-aa16-13eb7a6d613d", "40124654-4933-11e9-aa16-13eb7a6d613d", "40124655-4933-11e9-aa16-13eb7a6d613d", "40124656-4933-11e9-aa16-13eb7a6d613d", "40126d60-4933-11e9-aa16-13eb7a6d613d", "40126d61-4933-11e9-aa16-13eb7a6d613d", "40126d62-4933-11e9-aa16-13eb7a6d613d", "40126d63-4933-11e9-aa16-13eb7a6d613d", "40126d64-4933-11e9-aa16-13eb7a6d613d", "40126d65-4933-11e9-aa16-13eb7a6d613d", "40126d66-4933-11e9-aa16-13eb7a6d613d", "40126d67-4933-11e9-aa16-13eb7a6d613d", "40126d68-4933-11e9-aa16-13eb7a6d613d", "40126d69-4933-11e9-aa16-13eb7a6d613d", "40126d6a-4933-11e9-aa16-13eb7a6d613d", "40126d6b-4933-11e9-aa16-13eb7a6d613d", "40126d6c-4933-11e9-aa16-13eb7a6d613d", "40126d6d-4933-11e9-aa16-13eb7a6d613d", "40126d6e-4933-11e9-aa16-13eb7a6d613d", "40126d6f-4933-11e9-aa16-13eb7a6d613d", "40126d70-4933-11e9-aa16-13eb7a6d613d", "40126d71-4933-11e9-aa16-13eb7a6d613d", "40126d72-4933-11e9-aa16-13eb7a6d613d", "40126d73-4933-11e9-aa16-13eb7a6d613d", "40126d74-4933-11e9-aa16-13eb7a6d613d", "40126d75-4933-11e9-aa16-13eb7a6d613d", "40126d76-4933-11e9-aa16-13eb7a6d613d", "40126d77-4933-11e9-aa16-13eb7a6d613d", "40126d78-4933-11e9-aa16-13eb7a6d613d", "40126d79-4933-11e9-aa16-13eb7a6d613d", "40126d7a-4933-11e9-aa16-13eb7a6d613d", "40126d7b-4933-11e9-aa16-13eb7a6d613d"]
+    }, {
+        "id": "WEEK2-DAY1",
+        "name": "WEEK2-DAY1",
+        "children": ["40126d7c-4933-11e9-aa16-13eb7a6d613d", "40126d7f-4933-11e9-aa16-13eb7a6d613d", "40126d80-4933-11e9-aa16-13eb7a6d613d", "40126d81-4933-11e9-aa16-13eb7a6d613d", "40126d84-4933-11e9-aa16-13eb7a6d613d", "40126d8c-4933-11e9-aa16-13eb7a6d613d", "40126d94-4933-11e9-aa16-13eb7a6d613d"]
+    }, {
+        "id": "WEEK2-DAY2",
+        "name": "WEEK2-DAY2",
+        "children": ["40126d82-4933-11e9-aa16-13eb7a6d613d", "40126d83-4933-11e9-aa16-13eb7a6d613d", "40126d87-4933-11e9-aa16-13eb7a6d613d", "40126d89-4933-11e9-aa16-13eb7a6d613d", "40126d8e-4933-11e9-aa16-13eb7a6d613d", "40126d9d-4933-11e9-aa16-13eb7a6d613d", "40126d9e-4933-11e9-aa16-13eb7a6d613d"]
+    }, {
+        "id": "WEEK2-DAY3",
+        "name": "WEEK2-DAY3",
+        "children": ["40126d7e-4933-11e9-aa16-13eb7a6d613d", "40126d85-4933-11e9-aa16-13eb7a6d613d", "40126d8a-4933-11e9-aa16-13eb7a6d613d", "40126d8b-4933-11e9-aa16-13eb7a6d613d", "40126d8d-4933-11e9-aa16-13eb7a6d613d", "40126d9a-4933-11e9-aa16-13eb7a6d613d", "40126d9b-4933-11e9-aa16-13eb7a6d613d"]
+    }, {
+        "id": "WEEK2-DAY4",
+        "name": "WEEK2-DAY4",
+        "children": ["40126d7d-4933-11e9-aa16-13eb7a6d613d", "40126d8f-4933-11e9-aa16-13eb7a6d613d", "40126d90-4933-11e9-aa16-13eb7a6d613d", "40126d92-4933-11e9-aa16-13eb7a6d613d", "40126d96-4933-11e9-aa16-13eb7a6d613d", "40126d97-4933-11e9-aa16-13eb7a6d613d", "40126d99-4933-11e9-aa16-13eb7a6d613d"]
+    }, {
+        "id": "WEEK2-DAY5",
+        "name": "WEEK2-DAY5",
+        "children": ["40126d86-4933-11e9-aa16-13eb7a6d613d", "40126d88-4933-11e9-aa16-13eb7a6d613d", "40126d91-4933-11e9-aa16-13eb7a6d613d", "40126d93-4933-11e9-aa16-13eb7a6d613d", "40126d95-4933-11e9-aa16-13eb7a6d613d", "40126d98-4933-11e9-aa16-13eb7a6d613d", "40126d9c-4933-11e9-aa16-13eb7a6d613d"]
+    }, {
+        "id": "WEEK2",
+        "name": "WEEK2",
+        "children": ["40126d7c-4933-11e9-aa16-13eb7a6d613d", "40126d7d-4933-11e9-aa16-13eb7a6d613d", "40126d7e-4933-11e9-aa16-13eb7a6d613d", "40126d7f-4933-11e9-aa16-13eb7a6d613d", "40126d80-4933-11e9-aa16-13eb7a6d613d", "40126d81-4933-11e9-aa16-13eb7a6d613d", "40126d82-4933-11e9-aa16-13eb7a6d613d", "40126d83-4933-11e9-aa16-13eb7a6d613d", "40126d84-4933-11e9-aa16-13eb7a6d613d", "40126d85-4933-11e9-aa16-13eb7a6d613d", "40126d86-4933-11e9-aa16-13eb7a6d613d", "40126d87-4933-11e9-aa16-13eb7a6d613d", "40126d88-4933-11e9-aa16-13eb7a6d613d", "40126d89-4933-11e9-aa16-13eb7a6d613d", "40126d8a-4933-11e9-aa16-13eb7a6d613d", "40126d8b-4933-11e9-aa16-13eb7a6d613d", "40126d8c-4933-11e9-aa16-13eb7a6d613d", "40126d8d-4933-11e9-aa16-13eb7a6d613d", "40126d8e-4933-11e9-aa16-13eb7a6d613d", "40126d8f-4933-11e9-aa16-13eb7a6d613d", "40126d90-4933-11e9-aa16-13eb7a6d613d", "40126d91-4933-11e9-aa16-13eb7a6d613d", "40126d92-4933-11e9-aa16-13eb7a6d613d", "40126d93-4933-11e9-aa16-13eb7a6d613d", "40126d94-4933-11e9-aa16-13eb7a6d613d", "40126d95-4933-11e9-aa16-13eb7a6d613d", "40126d96-4933-11e9-aa16-13eb7a6d613d", "40126d97-4933-11e9-aa16-13eb7a6d613d", "40126d98-4933-11e9-aa16-13eb7a6d613d", "40126d99-4933-11e9-aa16-13eb7a6d613d", "40126d9a-4933-11e9-aa16-13eb7a6d613d", "40126d9b-4933-11e9-aa16-13eb7a6d613d", "40126d9c-4933-11e9-aa16-13eb7a6d613d", "40126d9d-4933-11e9-aa16-13eb7a6d613d", "40126d9e-4933-11e9-aa16-13eb7a6d613d"]
+    }, {
+        "id": "WEEK3-DAY1",
+        "name": "WEEK3-DAY1",
+        "children": ["40126d9f-4933-11e9-aa16-13eb7a6d613d", "40126da4-4933-11e9-aa16-13eb7a6d613d", "40126daa-4933-11e9-aa16-13eb7a6d613d", "40126dac-4933-11e9-aa16-13eb7a6d613d", "40126dad-4933-11e9-aa16-13eb7a6d613d", "40126db2-4933-11e9-aa16-13eb7a6d613d", "40126dba-4933-11e9-aa16-13eb7a6d613d", "40126dc0-4933-11e9-aa16-13eb7a6d613d"]
+    }, {
+        "id": "WEEK3-DAY2",
+        "name": "WEEK3-DAY2",
+        "children": ["40126da1-4933-11e9-aa16-13eb7a6d613d", "40126da5-4933-11e9-aa16-13eb7a6d613d", "40126da9-4933-11e9-aa16-13eb7a6d613d", "40126dab-4933-11e9-aa16-13eb7a6d613d", "40126daf-4933-11e9-aa16-13eb7a6d613d", "40126dc1-4933-11e9-aa16-13eb7a6d613d"]
+    }, {
+        "id": "WEEK3-DAY3",
+        "name": "WEEK3-DAY3",
+        "children": ["40126da3-4933-11e9-aa16-13eb7a6d613d", "40126da7-4933-11e9-aa16-13eb7a6d613d", "40126dae-4933-11e9-aa16-13eb7a6d613d", "40126db0-4933-11e9-aa16-13eb7a6d613d", "40126db1-4933-11e9-aa16-13eb7a6d613d", "40126db3-4933-11e9-aa16-13eb7a6d613d", "40126dbe-4933-11e9-aa16-13eb7a6d613d"]
+    }, {
+        "id": "WEEK3-DAY4",
+        "name": "WEEK3-DAY4",
+        "children": ["40126da0-4933-11e9-aa16-13eb7a6d613d", "40126da8-4933-11e9-aa16-13eb7a6d613d", "40126db4-4933-11e9-aa16-13eb7a6d613d", "40126db5-4933-11e9-aa16-13eb7a6d613d", "40126db7-4933-11e9-aa16-13eb7a6d613d", "40126db9-4933-11e9-aa16-13eb7a6d613d", "40126dbc-4933-11e9-aa16-13eb7a6d613d"]
+    }, {
+        "id": "WEEK3-DAY5",
+        "name": "WEEK3-DAY5",
+        "children": ["40126da2-4933-11e9-aa16-13eb7a6d613d", "40126da6-4933-11e9-aa16-13eb7a6d613d", "40126db6-4933-11e9-aa16-13eb7a6d613d", "40126db8-4933-11e9-aa16-13eb7a6d613d", "40126dbb-4933-11e9-aa16-13eb7a6d613d", "40126dbd-4933-11e9-aa16-13eb7a6d613d", "40126dbf-4933-11e9-aa16-13eb7a6d613d"]
+    }, {
+        "id": "WEEK3",
+        "name": "WEEK3",
+        "children": ["40126d9f-4933-11e9-aa16-13eb7a6d613d", "40126da0-4933-11e9-aa16-13eb7a6d613d", "40126da1-4933-11e9-aa16-13eb7a6d613d", "40126da2-4933-11e9-aa16-13eb7a6d613d", "40126da3-4933-11e9-aa16-13eb7a6d613d", "40126da4-4933-11e9-aa16-13eb7a6d613d", "40126da5-4933-11e9-aa16-13eb7a6d613d", "40126da6-4933-11e9-aa16-13eb7a6d613d", "40126da7-4933-11e9-aa16-13eb7a6d613d", "40126da8-4933-11e9-aa16-13eb7a6d613d", "40126da9-4933-11e9-aa16-13eb7a6d613d", "40126daa-4933-11e9-aa16-13eb7a6d613d", "40126dab-4933-11e9-aa16-13eb7a6d613d", "40126dac-4933-11e9-aa16-13eb7a6d613d", "40126dad-4933-11e9-aa16-13eb7a6d613d", "40126dae-4933-11e9-aa16-13eb7a6d613d", "40126daf-4933-11e9-aa16-13eb7a6d613d", "40126db0-4933-11e9-aa16-13eb7a6d613d", "40126db1-4933-11e9-aa16-13eb7a6d613d", "40126db2-4933-11e9-aa16-13eb7a6d613d", "40126db3-4933-11e9-aa16-13eb7a6d613d", "40126db4-4933-11e9-aa16-13eb7a6d613d", "40126db5-4933-11e9-aa16-13eb7a6d613d", "40126db6-4933-11e9-aa16-13eb7a6d613d", "40126db7-4933-11e9-aa16-13eb7a6d613d", "40126db8-4933-11e9-aa16-13eb7a6d613d", "40126db9-4933-11e9-aa16-13eb7a6d613d", "40126dba-4933-11e9-aa16-13eb7a6d613d", "40126dbb-4933-11e9-aa16-13eb7a6d613d", "40126dbc-4933-11e9-aa16-13eb7a6d613d", "40126dbd-4933-11e9-aa16-13eb7a6d613d", "40126dbe-4933-11e9-aa16-13eb7a6d613d", "40126dbf-4933-11e9-aa16-13eb7a6d613d", "40126dc0-4933-11e9-aa16-13eb7a6d613d", "40126dc1-4933-11e9-aa16-13eb7a6d613d"]
+    }],
+    "words": [{
+        "wordText": "adorn",
+        "phoneticScript": "/əˈdɔrn/",
+        "syllable": "uh-dawrn",
+        "definitions": [{
+            "type": "VERB",
+            "definitionText": "Make more beautiful or attractive.",
+            "examples": ["pictures and prints adorned his walls"],
+            "synonyms": ["add ornament to", "decorate", "embellish"],
+            "otherLanguages": {
+                "telugu": "అలంకరించు,సజ్జీకరించు.",
+                "tamil": "",
+                "hindi": " सजाना, की शोभा बढ़ाना",
+                "malayalam": ""
+            }
+        }],
+        "tags": ["WEEK1", "WEEK1-DAY1"],
+        "lastEdited": 1552630893220,
+        "id": "40124650-4933-11e9-aa16-13eb7a6d613d",
+        "groupIds": ["WEEK1", "WEEK1-DAY1"]
+    }, {
+        "wordText": "alleged",
+        "phoneticScript": "/əˈledʒd/",
+        "syllable": "uh-lej-id",
+        "definitions": [{
+            "type": "ADJECTIVE",
+            "definitionText": "said or thought by some people to be the stated bad or illegal thing, although you have no proof.",
+            "examples": ["It took 15 years for the alleged criminals to prove their innocence.", "The British Museum, too, says it knows nothing about any alleged fakes in its displays."],
+            "synonyms": ["declared but not proved", "claimed", "rumoured", "supposed"],
+            "otherLanguages": {
+                "telugu": "ఆరోపించిన, ఆరోపిత, చెప్పబడిన.",
+                "tamil": "",
+                "hindi": "आरोपित कथित ,अफ़वाही",
+                "malayalam": "ആരോപിതമായ,     ആരോപിക്കപ്പെട്ട"
+            }
+        }],
+        "tags": ["WEEK1", "WEEK1-DAY5"],
+        "lastEdited": 1552632810099,
+        "id": "40124651-4933-11e9-aa16-13eb7a6d613d",
+        "groupIds": ["WEEK1", "WEEK1-DAY5"]
+    }, {
+        "wordText": "appear",
+        "phoneticScript": "əˈpɪər",
+        "syllable": "uh-peer ",
+        "definitions": [{
+            "type": "VERB",
+            "definitionText": "Come into sight; become visible or noticeable, especially without apparent cause.",
+            "examples": ["He suddenly appeared in the doorway."],
+            "synonyms": ["become visible", "come into sight", "come into view."],
+            "otherLanguages": {
+                "telugu": "కనబడు, హాజరగు; స్ఫురించు, ప్రత్యక్షమౌట",
+                "tamil": "",
+                "hindi": " दिखाई पड़ना, रूप लेना, आकृति करना",
+                "malayalam": ""
+            }
+        }],
+        "tags": ["WEEK1", "WEEK1-DAY1"],
+        "lastEdited": 1552631009906,
+        "id": "40124652-4933-11e9-aa16-13eb7a6d613d",
+        "groupIds": ["WEEK1", "WEEK1-DAY1"]
+    }, {
+        "wordText": "asset",
+        "phoneticScript": "/ˈæs.et/",
+        "syllable": "as-et ",
+        "definitions": [{
+            "type": "NOUN",
+            "definitionText": "a useful or valuable quality, skill, or person",
+            "examples": ["Knowledge of languages is a real asset in this sort of work."],
+            "synonyms": ["benefit", "recommendation.", "strength"],
+            "otherLanguages": {
+                "telugu": " ఆస్తి; ధనము; ధనసర్వస్వము; ఒక వ్యక్తియొక్కగాని కంపెనీయొక్కగాని ఆస్తి.",
+                "tamil": "",
+                "hindi": " सम्पत्ति,परिसंपत्ति",
+                "malayalam": ""
+            }
+        }],
+        "tags": ["WEEK1", "WEEK1-DAY3"],
+        "lastEdited": 1552631908734,
+        "id": "40124653-4933-11e9-aa16-13eb7a6d613d",
+        "groupIds": ["WEEK1", "WEEK1-DAY3"]
+    }, {
+        "wordText": "bring",
+        "phoneticScript": "/brɪŋ/",
+        "syllable": "bring ",
+        "definitions": [{
+            "type": "NOUN",
+            "definitionText": "to cause to come into a particular position, state, or effect",
+            "examples": ["These lamps will bring a good price."],
+            "synonyms": ["bring", "fetch", "take"],
+            "otherLanguages": {
+                "telugu": "తెచ్చు,పిలిౘుకొని వచ్చు, తీసికొనివచ్చు",
+                "tamil": "",
+                "hindi": " खींचना,पहुँचाना  ,लगाना",
+                "malayalam": ""
+            }
+        }],
+        "tags": ["WEEK1", "WEEK1-DAY1"],
+        "lastEdited": 1552630977409,
+        "id": "40124654-4933-11e9-aa16-13eb7a6d613d",
+        "groupIds": ["WEEK1", "WEEK1-DAY1"]
+    }, {
+        "wordText": "campaign",
+        "phoneticScript": "kamˈpeɪn",
+        "syllable": " kam-peyn",
+        "definitions": [{
+            "type": "NOUN",
+            "definitionText": "a planned group of especially political, business, that are intended to achieve a particular aim.",
+            "examples": ["They're busy campaigning against the building of a new motorway near here."],
+            "synonyms": ["military operation,crusade,   struggle,manoeuvres."],
+            "otherLanguages": {
+                "telugu": "ప్రచారం,దండయాత్ర, ఉద్యమం",
+                "tamil": "",
+                "hindi": "मुहीम,अभियान चलाना",
+                "malayalam": ""
+            }
+        }],
+        "tags": ["WEEK1", "WEEK1-DAY1"],
+        "lastEdited": 1552631118103,
+        "id": "40124655-4933-11e9-aa16-13eb7a6d613d",
+        "groupIds": ["WEEK1", "WEEK1-DAY1"]
+    }, {
+        "wordText": "captive",
+        "phoneticScript": "/ˈkæp tɪv/ ",
+        "syllable": "kap-tiv",
+        "definitions": [{
+            "type": "NOUN",
+            "definitionText": "A person who has been taken prisoner or an animal that has been confined.",
+            "examples": ["The policeman put a pair of handcuffs on the captive.", "The terrorists were holding several diplomats captive."],
+            "synonyms": ["convict", "prisoner", "slave"],
+            "otherLanguages": {
+                "telugu": "బంధిలు, కైదీలు.",
+                "tamil": "",
+                "hindi": "कैदी , बंदी, दास",
+                "malayalam": "കൂട്ടിലടയ്‌ക്കപ്പെട്ട, തടവുകാരന്‍, ജയില്‍പ്പുള്ളി"
+            }
+        }],
+        "tags": ["WEEK1", "WEEK1-DAY2"],
+        "lastEdited": 1552631520268,
+        "id": "40124656-4933-11e9-aa16-13eb7a6d613d",
+        "groupIds": ["WEEK1", "WEEK1-DAY2"]
+    }, {
+        "wordText": "coalition",
+        "phoneticScript": "ˌkoʊ əˈlɪʃ ən",
+        "syllable": "koh-uh-lish-uh n",
+        "definitions": [{
+            "type": "NOUN",
+            "definitionText": "a group of people or organizations working together to achieve something:",
+            "examples": ["A coalition of environmental groups is working on a plan to reduce pollution in the city."],
+            "synonyms": ["affiliation", "bloc", "union"],
+            "otherLanguages": {
+                "telugu": " మిశ్రమం, సంకీర్ణం; తాత్కాలిక ఒప్పందం/ కూటమి",
+                "tamil": "",
+                "hindi": "सहमिलन, संयुक्त सरकार, मेल ",
+                "malayalam": ""
+            }
+        }],
+        "tags": ["WEEK1", "WEEK1-DAY3"],
+        "lastEdited": 1552631744550,
+        "id": "40126d60-4933-11e9-aa16-13eb7a6d613d",
+        "groupIds": ["WEEK1", "WEEK1-DAY3"]
+    }, {
+        "wordText": "come",
+        "phoneticScript": "/kʌm/",
+        "syllable": "kuhm",
+        "definitions": [{
+            "type": "VERB",
+            "definitionText": "to approach or move toward a particular person or place:",
+            "examples": ["Success comes to those who strive."],
+            "synonyms": ["approach", "draw near", "move closer"],
+            "otherLanguages": {
+                "telugu": "వచ్చు, చేరు, ఆగు, సంభవించు",
+                "tamil": "",
+                "hindi": " आना,उगना, पहुंचना",
+                "malayalam": ""
+            }
+        }],
+        "tags": ["WEEK1", "WEEK1-DAY1"],
+        "lastEdited": 1552630943582,
+        "id": "40126d61-4933-11e9-aa16-13eb7a6d613d",
+        "groupIds": ["WEEK1", "WEEK1-DAY1"]
+    }, {
+        "wordText": "dawn",
+        "phoneticScript": "/dɔn/",
+        "syllable": "[dawn]",
+        "definitions": [{
+            "type": "NOUN",
+            "definitionText": "The first appearance of light in the sky before sunrise.",
+            "examples": ["We woke at dawn."],
+            "synonyms": ["aurora", "morning"],
+            "otherLanguages": {
+                "telugu": "అరుణోదయకాలము, వేకువ",
+                "tamil": "",
+                "hindi": "",
+                "malayalam": "പ്രാരംഭം, ഉദയം, അരുണോദയം"
+            }
+        }],
+        "tags": ["WEEK1", "WEEK1-DAY1"],
+        "lastEdited": 1552631057289,
+        "id": "40126d62-4933-11e9-aa16-13eb7a6d613d",
+        "groupIds": ["WEEK1", "WEEK1-DAY1"]
+    }, {
+        "wordText": "debut",
+        "phoneticScript": "ˈdeɪbjuː",
+        "syllable": "[dey-byoo, di-, dey-byoo, deb-yoo]",
+        "definitions": [{
+            "type": "NOUN",
+            "definitionText": "to perform or be introduced to the public for the first time.",
+            "examples": ["a debut album."],
+            "synonyms": ["entry, first appearance, introduction, launching, unveiling"],
+            "otherLanguages": {
+                "telugu": "ప్రారంభము, ప్రవేశము; క్రొత్తగా సభలో ప్రసంగింౘుట",
+                "tamil": "",
+                "hindi": "प्रारंभ,प्रथम प्रदर्शन होना,प्रथम अभिनय.",
+                "malayalam": ""
+            }
+        }],
+        "tags": ["WEEK1", "WEEK1-DAY1"],
+        "lastEdited": 1552631089954,
+        "id": "40126d63-4933-11e9-aa16-13eb7a6d613d",
+        "groupIds": ["WEEK1", "WEEK1-DAY1"]
+    }, {
+        "wordText": "denounce",
+        "phoneticScript": "/dɪˈnaʊns/",
+        "syllable": "dih-nouns",
+        "definitions": [{
+            "type": "VERB",
+            "definitionText": "to criticize something or someone strongly and publicly.",
+            "examples": ["We must denounce injustice and oppression."],
+            "synonyms": ["condemn", "criticize", "discredit"],
+            "otherLanguages": {
+                "telugu": "నిరసించు, తప్పులెన్ను, నిందించు, దూషించు, విమర్శించు.",
+                "tamil": "",
+                "hindi": "निंदा करना, धमकाना, आरोप लगाना",
+                "malayalam": ""
+            }
+        }],
+        "tags": ["WEEK1", "WEEK1-DAY3"],
+        "lastEdited": 1552631782240,
+        "id": "40126d64-4933-11e9-aa16-13eb7a6d613d",
+        "groupIds": ["WEEK1", "WEEK1-DAY3"]
+    }, {
+        "wordText": "earthling",
+        "phoneticScript": "/ˈɜrθ lɪŋ/",
+        "syllable": "urth-ling",
+        "definitions": [{
+            "type": "NOUN",
+            "definitionText": "a word used by aliens to refer to an inhabitant of the earth.",
+            "examples": ["How can we know the actual number of earthlings that are sceptics?"],
+            "synonyms": ["human being", "member of the human race", "personage"],
+            "otherLanguages": {
+                "telugu": "భూజంతువు, మర్త్యుఁడు.",
+                "tamil": "",
+                "hindi": " पृथ्वीवासी",
+                "malayalam": ""
+            }
+        }],
+        "tags": ["WEEK1", "WEEK1-DAY2"],
+        "lastEdited": 1552631290136,
+        "id": "40126d65-4933-11e9-aa16-13eb7a6d613d",
+        "groupIds": ["WEEK1", "WEEK1-DAY2"]
+    }, {
+        "wordText": "enhance",
+        "phoneticScript": "/ɪnˈhɑːns/",
+        "syllable": "en-hans",
+        "definitions": [{
+            "type": "VERB",
+            "definitionText": "To improve the quality, amount, or strength of something.",
+            "examples": ["His refusal does nothing to enhance his reputation.", "The presence of this extra quality will enhance your mark."],
+            "synonyms": ["enrich", "improve", "raise"],
+            "otherLanguages": {
+                "telugu": "వృద్ధిచేయు, అధికంచేయు,   మెరుగుపరుచు.",
+                "tamil": "",
+                "hindi": "बढ़ाना,वृद्धि करना,विस्तार करना",
+                "malayalam": ""
+            }
+        }],
+        "tags": ["WEEK1", "WEEK1-DAY2"],
+        "lastEdited": 1552631692298,
+        "id": "40126d66-4933-11e9-aa16-13eb7a6d613d",
+        "groupIds": ["WEEK1", "WEEK1-DAY2"]
+    }, {
+        "wordText": "fantasy",
+        "phoneticScript": "ˈfæn tə si, -zi",
+        "syllable": "fan-tuh-see, -zee",
+        "definitions": [{
+            "type": "NOUN",
+            "definitionText": "The faculty or activity of imagining impossible or improbable things.",
+            "examples": ["his researches had moved into the realms of fantasy’."],
+            "synonyms": ["creativity", "fancy", "imagination"],
+            "otherLanguages": {
+                "telugu": "కల్పనాశక్తి, స్వప్నం, భ్రమ, విపరీత భావన, వాస్తవాతీత గాథ.",
+                "tamil": "",
+                "hindi": "भ्रम,कल्पना,अनुमान",
+                "malayalam": ""
+            }
+        }],
+        "tags": ["WEEK1", "WEEK1-DAY2"],
+        "lastEdited": 1552631332924,
+        "id": "40126d67-4933-11e9-aa16-13eb7a6d613d",
+        "groupIds": ["WEEK1", "WEEK1-DAY2"]
+    }, {
+        "wordText": "gadget",
+        "phoneticScript": "/ˈgædʒ ɪt/",
+        "syllable": "gaj-it",
+        "definitions": [{
+            "type": "NOUN",
+            "definitionText": "a small device or machine with a particular purpose.",
+            "examples": ["a variety of kitchen gadgets’"],
+            "synonyms": ["appliance", "device", "instrument", "machine"],
+            "otherLanguages": {
+                "telugu": "యంత్రసాధనం,ఉపాయం, యుక్తి (యంత్రంలో) చిన్న అమరిక/ కీలకం, యంత్రపరికరం.",
+                "tamil": "",
+                "hindi": " यंत्र, टूम",
+                "malayalam": ""
+            }
+        }],
+        "tags": ["WEEK1", "WEEK1-DAY3"],
+        "lastEdited": 1552631882981,
+        "id": "40126d68-4933-11e9-aa16-13eb7a6d613d",
+        "groupIds": ["WEEK1", "WEEK1-DAY3"]
+    }, {
+        "wordText": "heed",
+        "phoneticScript": "/hid/",
+        "syllable": "heed",
+        "definitions": [{
+            "type": "VERB",
+            "definitionText": ".to pay attention to something, especially advice or a warning.",
+            "examples": ["he should have heeded the warnings"],
+            "synonyms": ["consider", "pay attention to", "take into account"],
+            "otherLanguages": {
+                "telugu": "లక్ష్యపెట్టు, ఆదరంగా విను, మెలఁకువ, జాగ్రత్త.",
+                "tamil": "",
+                "hindi": " मन लगाना, ध्यान देना",
+                "malayalam": ""
+            }
+        }],
+        "tags": ["WEEK1", "WEEK1-DAY3"],
+        "lastEdited": 1552631948757,
+        "id": "40126d69-4933-11e9-aa16-13eb7a6d613d",
+        "groupIds": ["WEEK1", "WEEK1-DAY3"]
+    }, {
+        "wordText": "impact",
+        "phoneticScript": "ˈɪm pækt",
+        "syllable": "im-pakt",
+        "definitions": [{
+            "type": "NOUN",
+            "definitionText": "The action of one object coming forcibly into contact with another.",
+            "examples": ["The new proposals were intended to soften the impact of the reformed tax system."],
+            "synonyms": ["collision", "effect", "percussion"],
+            "otherLanguages": {
+                "telugu": "ప్రభావం, సంఘటన, తాకిడి.",
+                "tamil": "",
+                "hindi": "प्रभाव,गहरा असर डालना,धक्का",
+                "malayalam": ""
+            }
+        }],
+        "tags": ["WEEK1", "WEEK1-DAY2"],
+        "lastEdited": 1552631364620,
+        "id": "40126d6a-4933-11e9-aa16-13eb7a6d613d",
+        "groupIds": ["WEEK1", "WEEK1-DAY2"]
+    }, {
+        "wordText": "imposing",
+        "phoneticScript": "/ɪmˈpoʊ zɪŋ/",
+        "syllable": "im-poh-zing",
+        "definitions": [{
+            "type": "ADJECTIVE",
+            "definitionText": "Grand and impressive in appearance.",
+            "examples": ["He was an imposing figure on stage."],
+            "synonyms": ["awesome", "impressive", "stunning"],
+            "otherLanguages": {
+                "telugu": "గంభీరమైన,ఆశ్చర్యకరమైన, అద్భుతావహమైన",
+                "tamil": "",
+                "hindi": " प्रभावशाली, प्रभाव डालने वाला.",
+                "malayalam": ""
+            }
+        }],
+        "tags": ["WEEK1", "WEEK1-DAY3"],
+        "lastEdited": 1552631847086,
+        "id": "40126d6b-4933-11e9-aa16-13eb7a6d613d",
+        "groupIds": ["WEEK1", "WEEK1-DAY3"]
+    }, {
+        "wordText": "jowl",
+        "phoneticScript": "/dʒaʊl, dʒoʊl/",
+        "syllable": "joul, johl",
+        "definitions": [{
+            "type": "NOUN",
+            "definitionText": "the loose skin and flesh under the jaw:",
+            "examples": ["she had a large nose and heavy jowls’"],
+            "synonyms": ["the cheek", "the jaw."],
+            "otherLanguages": {
+                "telugu": "చెంప దవుడ.",
+                "tamil": "",
+                "hindi": " कपोल, गाल",
+                "malayalam": ""
+            }
+        }],
+        "tags": ["WEEK1", "WEEK1-DAY2"],
+        "lastEdited": 1552631556519,
+        "id": "40126d6c-4933-11e9-aa16-13eb7a6d613d",
+        "groupIds": ["WEEK1", "WEEK1-DAY2"]
+    }, {
+        "wordText": "kick-start",
+        "phoneticScript": "/ˈkɪkˌstɑrt/",
+        "syllable": "kik-stahrt",
+        "definitions": [{
+            "type": "VERB",
+            "definitionText": "to make something start to happen, happen more quickly, or improve.",
+            "examples": ["Taxes were drastically cut in an attempt to kick-start the economy."],
+            "synonyms": ["regenerate", "restore", "revive"],
+            "otherLanguages": {
+                "telugu": "తొలి అడుగు",
+                "tamil": "",
+                "hindi": " झटके से बल लगाकर शुरु करना,  तेज़ी लाना",
+                "malayalam": ""
+            }
+        }],
+        "tags": ["WEEK1", "WEEK1-DAY2"],
+        "lastEdited": 1552631654451,
+        "id": "40126d6d-4933-11e9-aa16-13eb7a6d613d",
+        "groupIds": ["WEEK1", "WEEK1-DAY2"]
+    }, {
+        "wordText": "label",
+        "phoneticScript": "ˈleɪ bəl",
+        "syllable": "ley-buh l",
+        "definitions": [{
+            "type": "NOUN",
+            "definitionText": ".a word or a phrase that is used to describe the characteristics or qualities of people, activities, or things, often in a way that is unfair.",
+            "examples": ["the alcohol content is clearly stated on the label"],
+            "synonyms": ["marker", "sticker", "tag"],
+            "otherLanguages": {
+                "telugu": "గుర్తు, చీటీ,ముద్ర.",
+                "tamil": "",
+                "hindi": "लेबुल,सूचक पत्र,नाम-पत्र",
+                "malayalam": ""
+            }
+        }],
+        "tags": ["WEEK1", "WEEK1-DAY3"],
+        "lastEdited": 1552631812398,
+        "id": "40126d6e-4933-11e9-aa16-13eb7a6d613d",
+        "groupIds": ["WEEK1", "WEEK1-DAY3"]
+    }, {
+        "wordText": "lucrative",
+        "phoneticScript": "ˈlu krə tɪv",
+        "syllable": "loo-kruh-tiv",
+        "definitions": [{
+            "type": "ADJECTIVE",
+            "definitionText": "Producing a great deal of profit.",
+            "examples": ["The merger proved to be very lucrative for both companies."],
+            "synonyms": ["gainful", "profitable", "remunerative."],
+            "otherLanguages": {
+                "telugu": "లాభదాయక, లాభసాటి.",
+                "tamil": "",
+                "hindi": "लाभदायक, फल देनेवाला,फायदे का",
+                "malayalam": ""
+            }
+        }],
+        "tags": ["WEEK1", "WEEK1-DAY5"],
+        "lastEdited": 1552632778048,
+        "id": "40126d6f-4933-11e9-aa16-13eb7a6d613d",
+        "groupIds": ["WEEK1", "WEEK1-DAY5"]
+    }, {
+        "wordText": "mandatory",
+        "phoneticScript": "",
+        "syllable": "",
+        "definitions": [{
+            "type": "ADJECTIVE",
+            "definitionText": "made necessary, usually by law or by some other rule.",
+            "examples": ["The test includes a mandatory essay question."],
+            "synonyms": ["compulsory", "obligatory", "required"],
+            "otherLanguages": {
+                "telugu": "ఆదేశక, ప్రవర్తక, విధ్యాత్మక,  ఖచ్చితంగా.",
+                "tamil": "",
+                "hindi": "अनिवार्य,अनिवार्य,बलपूर्वक",
+                "malayalam": ""
+            }
+        }],
+        "tags": ["WEEK1", "WEEK1-DAY4"],
+        "lastEdited": 1552632555261,
+        "id": "40126d70-4933-11e9-aa16-13eb7a6d613d",
+        "groupIds": ["WEEK1", "WEEK1-DAY4"]
+    }, {
+        "wordText": "mishap",
+        "phoneticScript": "/ˈmɪs.hæp/ ",
+        "syllable": "mis-hap",
+        "definitions": [{
+            "type": "NOUN",
+            "definitionText": " bad luck, or an unlucky event or accident.",
+            "examples": ["The parade was very well organized and passed without mishap.", "A series of mishaps led to the nuclear power     plant blowing up."],
+            "synonyms": ["disaster", "tragedy", "unfortunate."],
+            "otherLanguages": {
+                "telugu": "దురదృష్టము, దుర్ఘటన, విపత్తు.",
+                "tamil": "",
+                "hindi": "दुर्घटना, दुर्भाग्यपूर्ण, आपदा",
+                "malayalam": ""
+            }
+        }],
+        "tags": ["WEEK1", "WEEK1-DAY5"],
+        "lastEdited": 1552632672826,
+        "id": "40126d71-4933-11e9-aa16-13eb7a6d613d",
+        "groupIds": ["WEEK1", "WEEK1-DAY5"]
+    }, {
+        "wordText": "out burst",
+        "phoneticScript": "ˈaʊtˌbɜrst",
+        "syllable": "out-burst",
+        "definitions": [{
+            "type": "NOUN",
+            "definitionText": "a sudden release of strong emotion.",
+            "examples": ["an angry outburst from the prime minister\""],
+            "synonyms": ["blow-up", "burst", "explosion"],
+            "otherLanguages": {
+                "telugu": "వెల్లడిలో, సంగమం, అభివ్యక్తి, ద్యోతకం, వైభవం గా, వ్యక్తీకరణ, బహిర్గతం",
+                "tamil": "",
+                "hindi": "आवेग,प्रकोप,विस्फोट",
+                "malayalam": ""
+            }
+        }],
+        "tags": ["WEEK1", "WEEK1-DAY5"],
+        "lastEdited": 1552632638179,
+        "id": "40126d72-4933-11e9-aa16-13eb7a6d613d",
+        "groupIds": ["WEEK1", "WEEK1-DAY5"]
+    }, {
+        "wordText": "pétition",
+        "phoneticScript": "pəˈtɪʃ ən",
+        "syllable": "puh-tish-uh n",
+        "definitions": [{
+            "type": "NOUN",
+            "definitionText": "a formal letter to a court of law asking for a particular decision.",
+            "examples": ["They had filed a petition in federal court on behalf of the detainees."],
+            "synonyms": ["appeal", "list of protesters", "list of signatures."],
+            "otherLanguages": {
+                "telugu": "అర్జీ, మనవి, దరఖాస్తు, విజ్ఞాపన.",
+                "tamil": "",
+                "hindi": "अर्जी,विनती,दरख़ास्त",
+                "malayalam": ""
+            }
+        }],
+        "tags": ["WEEK1", "WEEK1-DAY4"],
+        "lastEdited": 1552632597319,
+        "id": "40126d73-4933-11e9-aa16-13eb7a6d613d",
+        "groupIds": ["WEEK1", "WEEK1-DAY4"]
+    }, {
+        "wordText": "reveal",
+        "phoneticScript": "/rɪˈvil/",
+        "syllable": "ri-veel",
+        "definitions": [{
+            "type": "VERB",
+            "definitionText": "to make known or show something that is surprising or that was previously secret.",
+            "examples": ["He was jailed for revealing secrets to the Russians."],
+            "synonyms": ["give the show away", "release.", "tell"],
+            "otherLanguages": {
+                "telugu": "వెల్లడిచేయు, బయటపెట్టు, వెలువ రించు.",
+                "tamil": "",
+                "hindi": " दिखाना, बताना,प्रकट करना",
+                "malayalam": ""
+            }
+        }],
+        "tags": ["WEEK1", "WEEK1-DAY5"],
+        "lastEdited": 1552632855309,
+        "id": "40126d74-4933-11e9-aa16-13eb7a6d613d",
+        "groupIds": ["WEEK1", "WEEK1-DAY5"]
+    }, {
+        "wordText": "sanitise",
+        "phoneticScript": "/ˈsæn ɪˌtaɪz/",
+        "syllable": "san-i-tahyz",
+        "definitions": [{
+            "type": "VERB",
+            "definitionText": "to make something completely clean and free from bacteria.",
+            "examples": ["The majority of public swimming pools are sanitized with chlorine."],
+            "synonyms": ["decontaminate", "purify", "sterilize"],
+            "otherLanguages": {
+                "telugu": "పరిసరాల పరిశుభ్రత.",
+                "tamil": "",
+                "hindi": " अच्छी तरह से सफ़ाई करना",
+                "malayalam": ""
+            }
+        }],
+        "tags": ["WEEK1", "WEEK1-DAY4"],
+        "lastEdited": 1552632442124,
+        "id": "40126d75-4933-11e9-aa16-13eb7a6d613d",
+        "groupIds": ["WEEK1", "WEEK1-DAY4"]
+    }, {
+        "wordText": "stir",
+        "phoneticScript": "/stɜr/ ",
+        "syllable": "stur",
+        "definitions": [{
+            "type": "VERB",
+            "definitionText": "To move or to cause something to move slightly.",
+            "examples": ["She paused to stir some milk into her coffee."],
+            "synonyms": ["disturbance", "movement"],
+            "otherLanguages": {
+                "telugu": "కదిలించు, కదుపు",
+                "tamil": "",
+                "hindi": "हलचल , मिलाना,उमड़ना",
+                "malayalam": ""
+            }
+        }],
+        "tags": ["WEEK1", "WEEK1-DAY4"],
+        "lastEdited": 1552632516589,
+        "id": "40126d76-4933-11e9-aa16-13eb7a6d613d",
+        "groupIds": ["WEEK1", "WEEK1-DAY4"]
+    }, {
+        "wordText": "suffer",
+        "phoneticScript": "ˈsʌf ər",
+        "syllable": "suhf-er",
+        "definitions": [{
+            "type": "VERB",
+            "definitionText": "to experience physical or mental pain.",
+            "examples": ["She suffers in the winter when it's cold and her joints get stiff."],
+            "synonyms": ["be in pain", "distress", "hurt"],
+            "otherLanguages": {
+                "telugu": "సహించు, భరించు, అనుభవించు, కష్టపడు",
+                "tamil": "",
+                "hindi": "सहन करना,सहना",
+                "malayalam": ""
+            }
+        }],
+        "tags": ["WEEK1", "WEEK1-DAY5"],
+        "lastEdited": 1552632714153,
+        "id": "40126d77-4933-11e9-aa16-13eb7a6d613d",
+        "groupIds": ["WEEK1", "WEEK1-DAY5"]
+    }, {
+        "wordText": "take",
+        "phoneticScript": "/teɪk/",
+        "syllable": "teyk",
+        "definitions": [{
+            "type": "VERB",
+            "definitionText": "to get into one's hold or possession by voluntary action",
+            "examples": ["take a pen and begin to write."],
+            "synonyms": ["get hold of", "get into one's hands", "lay hold of"],
+            "otherLanguages": {
+                "telugu": "తీసుకొను, పట్టుకొను, తెలుసుకొను.",
+                "tamil": "",
+                "hindi": "पकड़ना, खा लेना,जान लेना",
+                "malayalam": ""
+            }
+        }],
+        "tags": ["WEEK1", "WEEK1-DAY4"],
+        "lastEdited": 1552632920830,
+        "id": "40126d78-4933-11e9-aa16-13eb7a6d613d",
+        "groupIds": ["WEEK1", "WEEK1-DAY4"]
+    }, {
+        "wordText": "unconditional",
+        "phoneticScript": "ˌʌn kənˈdɪʃ ə nl",
+        "syllable": "uhn-kuh n-dish-uh-nl",
+        "definitions": [{
+            "type": "ADJECTIVE",
+            "definitionText": "complete and not limited in any way.",
+            "examples": ["they have my unconditional support.."],
+            "synonyms": ["imited by no condition, absolute,categoric."],
+            "otherLanguages": {
+                "telugu": "నియమము లేని,నిబంధన లేని,షరతులేని.",
+                "tamil": "",
+                "hindi": "अनियमित,असम्बन्ध,बेशर्त.",
+                "malayalam": ""
+            }
+        }],
+        "tags": ["WEEK1", "WEEK1-DAY4"],
+        "lastEdited": 1552632046603,
+        "id": "40126d79-4933-11e9-aa16-13eb7a6d613d",
+        "groupIds": ["WEEK1", "WEEK1-DAY4"]
+    }, {
+        "wordText": "vibrant",
+        "phoneticScript": "/ˈvaɪ brənt/",
+        "syllable": "vahy-bruh nt",
+        "definitions": [{
+            "type": "ADJECTIVE",
+            "definitionText": "Full of energy and life.",
+            "examples": ["The hope is that this area will develop into a vibrant commercial centre."],
+            "synonyms": ["energetic", "sparkling", "spirited"],
+            "otherLanguages": {
+                "telugu": "సచేతన, డోలాయమాన, కంప మాన, ప్రతిస్పందించే.",
+                "tamil": "",
+                "hindi": "जोशपूर्ण, चमकीले और आकर्षक",
+                "malayalam": ""
+            }
+        }],
+        "tags": ["WEEK1", "WEEK1-DAY4"],
+        "lastEdited": 1552632007396,
+        "id": "40126d7a-4933-11e9-aa16-13eb7a6d613d",
+        "groupIds": ["WEEK1", "WEEK1-DAY4"]
+    }, {
+        "wordText": "wrecked",
+        "phoneticScript": "/rɛkt/ ",
+        "syllable": "rekt",
+        "definitions": [{
+            "type": "ADJECTIVE",
+            "definitionText": "very badly damaged.",
+            "examples": ["Just look at what you've done to my coat - it's wrecked."],
+            "synonyms": ["demolish", "destroy", "smash up"],
+            "otherLanguages": {
+                "telugu": "ధ్వంసమయిన,శిథిలమైన, పాడైన.",
+                "tamil": "",
+                "hindi": " ध्वस्त, नष्ट,बरबाद",
+                "malayalam": ""
+            }
+        }],
+        "tags": ["WEEK1", "WEEK1-DAY5"],
+        "lastEdited": 1552632744503,
+        "id": "40126d7b-4933-11e9-aa16-13eb7a6d613d",
+        "groupIds": ["WEEK1", "WEEK1-DAY5"]
+    }, {
+        "wordText": "abduction",
+        "phoneticScript": "/əbˈdʌkʃn/",
+        "syllable": "ab-duhk-shuh n",
+        "definitions": [{
+            "type": "NOUN",
+            "definitionText": "The action of forcibly taking someone away against their will.",
+            "examples": ["He was charged with abduction.", "There has been a series of abductions of young children from schools in the area."],
+            "synonyms": ["hostage-taking", "kidnap"],
+            "otherLanguages": {
+                "telugu": "తీసుకొనిపోవడము, అపహరణ",
+                "tamil": "",
+                "hindi": "अपहरण , अपावर्तन",
+                "malayalam": "പിടിച്ചുകൊണ്ടുപോകല്"
+            }
+        }],
+        "tags": ["WEEK2", "WEEK2-DAY1"],
+        "lastEdited": 1552653947356,
+        "id": "40126d7c-4933-11e9-aa16-13eb7a6d613d",
+        "groupIds": ["WEEK2", "WEEK2-DAY1"]
+    }, {
+        "wordText": "accomplish",
+        "phoneticScript": "/əˈkɒmplɪʃ/",
+        "syllable": "uh-kom-plish",
+        "definitions": [{
+            "type": "VERB",
+            "definitionText": "Achieve or complete successfully.",
+            "examples": ["The students accomplished the task in less than ten minutes."],
+            "synonyms": ["achieve", "acquire", "reach"],
+            "otherLanguages": {
+                "telugu": "సాధించు, నెరవేర్చు, పూర్తిచేయు.",
+                "tamil": "",
+                "hindi": "",
+                "malayalam": "പരിപൂര്‍ണ്ണമാക്കുക,     നിറവേറ്റുക,     സഫലമാക്കുക"
+            }
+        }],
+        "tags": ["WEEK2", "WEEK2-DAY4"],
+        "lastEdited": 1552656365883,
+        "id": "40126d7d-4933-11e9-aa16-13eb7a6d613d",
+        "groupIds": ["WEEK2", "WEEK2-DAY4"]
+    }, {
+        "wordText": "assume",
+        "phoneticScript": "əˈsum",
+        "syllable": "uh-soom ",
+        "definitions": [{
+            "type": "VERB",
+            "definitionText": "to accept something to be true without question or proof.",
+            "examples": ["We mustn't assume the suspects' guilt."],
+            "synonyms": ["accept", "shoulder", "undertake"],
+            "otherLanguages": {
+                "telugu": "భావించు, ఊహించు, తలంచు, ఆరోపించుకొను",
+                "tamil": "",
+                "hindi": "ग्रहण करना,रूप बनाना,समझना",
+                "malayalam": ""
+            }
+        }],
+        "tags": ["WEEK2", "WEEK2-DAY3"],
+        "lastEdited": 1552656081442,
+        "id": "40126d7e-4933-11e9-aa16-13eb7a6d613d",
+        "groupIds": ["WEEK2", "WEEK2-DAY3"]
+    }, {
+        "wordText": "blissful",
+        "phoneticScript": "/ˈblɪs fəl/",
+        "syllable": " blis-fuh l",
+        "definitions": [{
+            "type": "ADJECTIVE",
+            "definitionText": "Providing perfect happiness or great joy. Extremely happy; full of joy.",
+            "examples": ["We spent a blissful year together before things started to go wrong.", "a blissful couple holding a baby."],
+            "synonyms": ["cheerful", "blessed", "joyful"],
+            "otherLanguages": {
+                "telugu": "ఆనందకరమైన, ఆహ్లాదకరమైన.",
+                "tamil": "",
+                "hindi": "",
+                "malayalam": " പരമാനന്ദമായ"
+            }
+        }],
+        "tags": ["WEEK2", "WEEK2-DAY1"],
+        "lastEdited": 1552654029860,
+        "id": "40126d7f-4933-11e9-aa16-13eb7a6d613d",
+        "groupIds": ["WEEK2", "WEEK2-DAY1"]
+    }, {
+        "wordText": "capsize",
+        "phoneticScript": "/ˈkæp saɪz/ ",
+        "syllable": "kap-sahyz",
+        "definitions": [{
+            "type": "VERB",
+            "definitionText": " be overturned in the water.",
+            "examples": ["A passenger ferry capsized in rough seas Sunday morning."],
+            "synonyms": ["turn turtle.", "turn upside down", "upset"],
+            "otherLanguages": {
+                "telugu": "బోర్లపడు, బోర్లగిల్లు, బోర్లపడవేయు,తలకిందులగు.",
+                "tamil": "",
+                "hindi": " उलटना , पलटना , उलट जाना",
+                "malayalam": ""
+            }
+        }],
+        "tags": ["WEEK2", "WEEK2-DAY1"],
+        "lastEdited": 1552654075356,
+        "id": "40126d80-4933-11e9-aa16-13eb7a6d613d",
+        "groupIds": ["WEEK2", "WEEK2-DAY1"]
+    }, {
+        "wordText": "cattle",
+        "phoneticScript": "/ˈkæt l/",
+        "syllable": "kat-l ",
+        "definitions": [{
+            "type": "NOUN",
+            "definitionText": "Large ruminant animals with horns and cloven hoofs, domesticated for meat or milk, or as beasts of burden; cows and oxen.",
+            "examples": ["The main form of agriculture was pastoral with cattle and sheep being grazed on unenclosed lands.’"],
+            "synonyms": ["bovines", "bulls", "cows"],
+            "otherLanguages": {
+                "telugu": "పశుగణం,పశువులు, గొడ్లు.",
+                "tamil": "",
+                "hindi": " गोधन,पशु, गाय-बैल",
+                "malayalam": ""
+            }
+        }],
+        "tags": ["WEEK2", "WEEK2-DAY1"],
+        "lastEdited": 1552654205308,
+        "id": "40126d81-4933-11e9-aa16-13eb7a6d613d",
+        "groupIds": ["WEEK2", "WEEK2-DAY1"]
+    }, {
+        "wordText": "choke",
+        "phoneticScript": "/tʃəʊk/",
+        "syllable": "chohk ",
+        "definitions": [{
+            "type": "VERB",
+            "definitionText": "unable to speak because you are upset.",
+            "examples": ["She tried to say a few words but found herself choked."],
+            "synonyms": ["fight for breath", "gag", "retch"],
+            "otherLanguages": {
+                "telugu": "నులిమివేయు, విఘాతం కలిగించు; ఉక్కిరిబిక్కిరి చేయు, ఆవేశంవల్ల మాట్లాడ లేకపోవు.",
+                "tamil": "",
+                "hindi": " दम घुटना, गला दबाना",
+                "malayalam": ""
+            }
+        }],
+        "tags": ["WEEK2", "WEEK2-DAY2"],
+        "lastEdited": 1552655851305,
+        "id": "40126d82-4933-11e9-aa16-13eb7a6d613d",
+        "groupIds": ["WEEK2", "WEEK2-DAY2"]
+    }, {
+        "wordText": "claim",
+        "phoneticScript": "/kleɪm/",
+        "syllable": "kleym",
+        "definitions": [{
+            "type": "VERB",
+            "definitionText": "To say that something is true or is a fact, although you cannot prove it and other people might not believe it.",
+            "examples": ["An unknown terrorist group has claimed responsibility for this morning's bomb attack.."],
+            "synonyms": ["allegation", "assertion", "petition"],
+            "otherLanguages": {
+                "telugu": "దావా వేయు, హక్కు, అర్హత",
+                "tamil": "",
+                "hindi": "",
+                "malayalam": "അവകാശവാദം പുറപ്പെടുവിക്കുക, അധികാരം"
+            }
+        }],
+        "tags": ["WEEK2", "WEEK2-DAY2"],
+        "lastEdited": 1552654415980,
+        "id": "40126d83-4933-11e9-aa16-13eb7a6d613d",
+        "groupIds": ["WEEK2", "WEEK2-DAY2"]
+    }, {
+        "wordText": "de-facto",
+        "phoneticScript": "/di ˈfæk toʊ/ ",
+        "syllable": "dee fak-toh",
+        "definitions": [{
+            "type": "ADJECTIVE",
+            "definitionText": "Existing or holding a specified position in fact but not necessarily by legal right.",
+            "examples": ["He has made the candidates for city council de facto school committee members."],
+            "synonyms": ["actual", "effective.", "existing"],
+            "otherLanguages": {
+                "telugu": "యథార్థమైన, నిజమైన.",
+                "tamil": "",
+                "hindi": " तथ्यत: , वस्तुत ,वास्तविक",
+                "malayalam": ""
+            }
+        }],
+        "tags": ["WEEK2", "WEEK2-DAY1"],
+        "lastEdited": 1552654175380,
+        "id": "40126d84-4933-11e9-aa16-13eb7a6d613d",
+        "groupIds": ["WEEK2", "WEEK2-DAY1"]
+    }, {
+        "wordText": "death sentence",
+        "phoneticScript": "/ˈdeθ ˌsen.təns/",
+        "syllable": "",
+        "definitions": [{
+            "type": "NOUN",
+            "definitionText": "a legal punishment of a crime by death.",
+            "examples": ["In some countries, drug-smuggling still carries the death sentence."],
+            "synonyms": ["death warrant", "executions", "judicial murder"],
+            "otherLanguages": {
+                "telugu": "మరణ శిక్ష/దండన",
+                "tamil": "",
+                "hindi": " मृत्युदण्ड",
+                "malayalam": ""
+            }
+        }],
+        "tags": ["WEEK2", "WEEK2-DAY3"],
+        "lastEdited": 1552656255650,
+        "id": "40126d85-4933-11e9-aa16-13eb7a6d613d",
+        "groupIds": ["WEEK2", "WEEK2-DAY3"]
+    }, {
+        "wordText": "debris",
+        "phoneticScript": "/dəˈbri/",
+        "syllable": "deb-ree",
+        "definitions": [{
+            "type": "NOUN",
+            "definitionText": "Scattered pieces of rubbish or remains.",
+            "examples": ["Debris from the aircraft was scattered over a large area."],
+            "synonyms": ["discarded matter", "lumber", "spoilage."],
+            "otherLanguages": {
+                "telugu": "చెత్త, శిథిలావశేషం, వ్యర్థ పదార్థాలు,",
+                "tamil": "",
+                "hindi": " अवशेष, कचरा ",
+                "malayalam": ""
+            }
+        }],
+        "tags": ["WEEK2", "WEEK2-DAY5"],
+        "lastEdited": 1552656802475,
+        "id": "40126d86-4933-11e9-aa16-13eb7a6d613d",
+        "groupIds": ["WEEK2", "WEEK2-DAY5"]
+    }, {
+        "wordText": "eccentricities",
+        "phoneticScript": "/ˌɛk sənˈtrɪs ɪ ti/",
+        "syllable": "ek-suh n-tris-i-tee",
+        "definitions": [{
+            "type": "NOUN",
+            "definitionText": "The quality of being eccentric.",
+            "examples": ["His eccentricity now extends to never washing or changing his clothes."],
+            "synonyms": ["extraordinariness.", "strangeness", "weirdness"],
+            "otherLanguages": {
+                "telugu": "వికారమైన గుణం, వింతైన గుణము,తలతిక్క, విపరీత మనస్తత్వం.",
+                "tamil": "",
+                "hindi": "अनियत , अनोखापन ,  असामान्यता",
+                "malayalam": ""
+            }
+        }],
+        "tags": ["WEEK2", "WEEK2-DAY2"],
+        "lastEdited": 1552655884482,
+        "id": "40126d87-4933-11e9-aa16-13eb7a6d613d",
+        "groupIds": ["WEEK2", "WEEK2-DAY2"]
+    }, {
+        "wordText": "effective",
+        "phoneticScript": "/ɪˈfɛk tɪv",
+        "syllable": "ih-fek-tiv",
+        "definitions": [{
+            "type": "ADJECTIVE",
+            "definitionText": "successful or achieving the results that you want.",
+            "examples": ["It's an extremely effective cure for a headache."],
+            "synonyms": ["potent", "productive", "successful"],
+            "otherLanguages": {
+                "telugu": "కట్టుదిట్టమైన, కార్యసాధకమైన, ఫలవంతమైన, సార్థక,",
+                "tamil": "",
+                "hindi": " उपयोगी, प्रभावकारी",
+                "malayalam": ""
+            }
+        }],
+        "tags": ["WEEK2", "WEEK2-DAY5"],
+        "lastEdited": 1552656765284,
+        "id": "40126d88-4933-11e9-aa16-13eb7a6d613d",
+        "groupIds": ["WEEK2", "WEEK2-DAY5"]
+    }, {
+        "wordText": "feasible",
+        "phoneticScript": "/ˈfi zə bəl/",
+        "syllable": "fee-zuh-buh l",
+        "definitions": [{
+            "type": "NOUN",
+            "definitionText": "Possible and practical to do easily or conveniently.",
+            "examples": ["With the extra resources, the project now seems feasible."],
+            "synonyms": ["achievable", "sensible", "within reason"],
+            "otherLanguages": {
+                "telugu": "ఆచరణ యోగ్యం, సాధ్యం,ఆచరణ,సంభావ్య.",
+                "tamil": "",
+                "hindi": " साध्य , सुकर , सुसंगत",
+                "malayalam": ""
+            }
+        }],
+        "tags": ["WEEK2", "WEEK2-DAY2"],
+        "lastEdited": 1552655819242,
+        "id": "40126d89-4933-11e9-aa16-13eb7a6d613d",
+        "groupIds": ["WEEK2", "WEEK2-DAY2"]
+    }, {
+        "wordText": "garbage",
+        "phoneticScript": "/ˈɡɑːr.bɪdʒ/",
+        "syllable": "gahr-bij",
+        "definitions": [{
+            "type": "NOUN",
+            "definitionText": "waste material, esp. unwanted food, or a container in which waste iskept",
+            "examples": ["She threw the cheese in the garbage."],
+            "synonyms": ["discarded matter.", "rubbish", "waste material"],
+            "otherLanguages": {
+                "telugu": "చెత్త, వ్యర్థ పదార్థం.",
+                "tamil": "",
+                "hindi": "कूडा, कूड़ा-कचरा, गंदगी",
+                "malayalam": ""
+            }
+        }],
+        "tags": ["WEEK2", "WEEK2-DAY3"],
+        "lastEdited": 1552656115026,
+        "id": "40126d8a-4933-11e9-aa16-13eb7a6d613d",
+        "groupIds": ["WEEK2", "WEEK2-DAY3"]
+    }, {
+        "wordText": "hesitate",
+        "phoneticScript": "ˈhɛz ɪˌteɪt",
+        "syllable": "hez-i-teyt",
+        "definitions": [{
+            "type": "VERB",
+            "definitionText": "Pause in indecision before saying or doing something.",
+            "examples": ["If you need anything, don’t hesitate to call me."],
+            "synonyms": ["delay", "doubt", "pause"],
+            "otherLanguages": {
+                "telugu": "సంకోచించు, వెనుకాడు, వెనుదీయు,సందేహింౘు",
+                "tamil": "",
+                "hindi": "हिचकिचाना, संकोच करना.",
+                "malayalam": ""
+            }
+        }],
+        "tags": ["WEEK2", "WEEK2-DAY3"],
+        "lastEdited": 1552656157482,
+        "id": "40126d8b-4933-11e9-aa16-13eb7a6d613d",
+        "groupIds": ["WEEK2", "WEEK2-DAY3"]
+    }, {
+        "wordText": "impeach",
+        "phoneticScript": "/ɪmˈpitʃ/",
+        "syllable": "[im-peech]",
+        "definitions": [{
+            "type": "VERB",
+            "definitionText": "Call into question the integrity or validity of ",
+            "examples": ["The governor was impeached for wrongful use of state money."],
+            "synonyms": ["cast doubt on", "challenge", "question"],
+            "otherLanguages": {
+                "telugu": "ఆక్షేపించుట,  కాదనుట,  దోషారోపణముచేయుట,  నేరముమోపుట.",
+                "tamil": "",
+                "hindi": "आरोप , अभियोग लगाना , दोष लगाना",
+                "malayalam": ""
+            }
+        }],
+        "tags": ["WEEK2", "WEEK2-DAY1"],
+        "lastEdited": 1552654139852,
+        "id": "40126d8c-4933-11e9-aa16-13eb7a6d613d",
+        "groupIds": ["WEEK2", "WEEK2-DAY1"]
+    }, {
+        "wordText": "implication",
+        "phoneticScript": "/ˌɪm plɪˈkeɪ ʃən/",
+        "syllable": "im-pli-key-shuh n",
+        "definitions": [{
+            "type": "NOUN",
+            "definitionText": "an occasion when you seem to suggest something without saying it directly:",
+            "examples": ["She accused the party and, by implication, its leader too."],
+            "synonyms": ["hint", "indication", "suggestion"],
+            "otherLanguages": {
+                "telugu": "గూఢార్థం, అన్యార్థం, చిక్కు",
+                "tamil": "",
+                "hindi": " अनुमान ,अर्थ,फंसाव",
+                "malayalam": ""
+            }
+        }],
+        "tags": ["WEEK2", "WEEK2-DAY3"],
+        "lastEdited": 1552656211227,
+        "id": "40126d8d-4933-11e9-aa16-13eb7a6d613d",
+        "groupIds": ["WEEK2", "WEEK2-DAY3"]
+    }, {
+        "wordText": "lacuna",
+        "phoneticScript": "/ləˈkyu nə/ ",
+        "syllable": "luh-kyoo-nuh",
+        "definitions": [{
+            "type": "NOUN",
+            "definitionText": "An unfilled space; a gap.",
+            "examples": ["There are many lacunae in the existing laws of the land, he said.’"],
+            "synonyms": ["deficiency", "gap", "space"],
+            "otherLanguages": {
+                "telugu": "లుప్తం, రంధ్రం, ఖాళీ, సందు, లోపం, జాగా, అంతరం",
+                "tamil": "",
+                "hindi": " अंतराल, कमी ,छूट",
+                "malayalam": ""
+            }
+        }],
+        "tags": ["WEEK2", "WEEK2-DAY2"],
+        "lastEdited": 1552654386412,
+        "id": "40126d8e-4933-11e9-aa16-13eb7a6d613d",
+        "groupIds": ["WEEK2", "WEEK2-DAY2"]
+    }, {
+        "wordText": "manhandle",
+        "phoneticScript": "ˈmænˌhæn dl",
+        "syllable": "man-han-dl",
+        "definitions": [{
+            "type": "VERB",
+            "definitionText": "to touch or hold someone roughly and with force, often when taking them somewhere.",
+            "examples": ["There were complaints that the police had manhandled some of the demonstrators."],
+            "synonyms": ["haul", "heave", "shove."],
+            "otherLanguages": {
+                "telugu": "చెయ్యి చేసుకొను, దౌర్జ న్యంగా కొట్టు.",
+                "tamil": "",
+                "hindi": " उठा कर ले जाना,हाथों से चलाना,मारना",
+                "malayalam": ""
+            }
+        }],
+        "tags": ["WEEK2", "WEEK2-DAY4"],
+        "lastEdited": 1552656302354,
+        "id": "40126d8f-4933-11e9-aa16-13eb7a6d613d",
+        "groupIds": ["WEEK2", "WEEK2-DAY4"]
+    }, {
+        "wordText": "molest",
+        "phoneticScript": "/məˈlest/ ",
+        "syllable": "muh-lest",
+        "definitions": [{
+            "type": "VERB",
+            "definitionText": "To touch or attack someone in a sexual way against their wishes.",
+            "examples": ["He was convicted of molesting his girlfriend."],
+            "synonyms": ["harass", "harm", "hurt"],
+            "otherLanguages": {
+                "telugu": "వేధించుట,హింసపెట్టుట, బాధించు.",
+                "tamil": "",
+                "hindi": "",
+                "malayalam": ""
+            }
+        }],
+        "tags": ["WEEK2", "WEEK2-DAY4"],
+        "lastEdited": 1552656336923,
+        "id": "40126d90-4933-11e9-aa16-13eb7a6d613d",
+        "groupIds": ["WEEK2", "WEEK2-DAY4"]
+    }, {
+        "wordText": "pioneer",
+        "phoneticScript": "ˌpaɪ əˈnɪər",
+        "syllable": "pahy-uh-neer",
+        "definitions": [{
+            "type": "NOUN",
+            "definitionText": "to be the first person or organization to start work in a new area,introduce a new idea, etc.",
+            "examples": ["They are like pioneers settling down to build a village,’ Kolter says.’"],
+            "synonyms": ["colonist", "discoverer.", "settler"],
+            "otherLanguages": {
+                "telugu": "వైతాళికుడు, అగ్రగామి, మార్గదర్శ కుడు, పథ నిర్దేశకుడు.",
+                "tamil": "",
+                "hindi": "खोज करनेवाला,अग्र-दूत, मार्ग-निर्माता",
+                "malayalam": ""
+            }
+        }],
+        "tags": ["WEEK2", "WEEK2-DAY5"],
+        "lastEdited": 1552656838331,
+        "id": "40126d91-4933-11e9-aa16-13eb7a6d613d",
+        "groupIds": ["WEEK2", "WEEK2-DAY5"]
+    }, {
+        "wordText": "popularise",
+        "phoneticScript": "ˈpɒp yə ləˌraɪz",
+        "syllable": "pop-yuh-luh-rahyz",
+        "definitions": [{
+            "type": "VERB",
+            "definitionText": "to cause something to become known, admired, or used by many people.",
+            "examples": ["his books have done much to popularize the sport’"],
+            "synonyms": ["create a fashion for.", "make fashionable", "make popular"],
+            "otherLanguages": {
+                "telugu": "వ్యాప్తి చేయు,వివరింపు జేయు.",
+                "tamil": "",
+                "hindi": " प्रचलित करना, लोकप्रिय बनाना, आसान बनाना",
+                "malayalam": ""
+            }
+        }],
+        "tags": ["WEEK2", "WEEK2-DAY4"],
+        "lastEdited": 1552656402274,
+        "id": "40126d92-4933-11e9-aa16-13eb7a6d613d",
+        "groupIds": ["WEEK2", "WEEK2-DAY4"]
+    }, {
+        "wordText": "prohibit",
+        "phoneticScript": "/proʊˈhɪb ɪt/",
+        "syllable": "proh-hib-it",
+        "definitions": [{
+            "type": "VERB",
+            "definitionText": "to officially refuse to allow something.",
+            "examples": ["Motor vehicles are prohibited from driving in the town centre."],
+            "synonyms": ["ban", "disallow", "forbid"],
+            "otherLanguages": {
+                "telugu": "నిషేధించు, ఆపు, కాదను, ఆటంకపఱౘు.",
+                "tamil": "",
+                "hindi": " रोकना , निषेध करना",
+                "malayalam": ""
+            }
+        }],
+        "tags": ["WEEK2", "WEEK2-DAY5"],
+        "lastEdited": 1552656578283,
+        "id": "40126d93-4933-11e9-aa16-13eb7a6d613d",
+        "groupIds": ["WEEK2", "WEEK2-DAY5"]
+    }, {
+        "wordText": "protest",
+        "phoneticScript": "/ˈprəʊtɛst/",
+        "syllable": "[proh-test]",
+        "definitions": [{
+            "type": "NOUN",
+            "definitionText": " A statement or action expressing disapproval of or objection to something.",
+            "examples": ["The British team lodged an official protest.", "All groups have united in protest against the planned new road."],
+            "synonyms": ["disagreement.", "disapproval", "objection"],
+            "otherLanguages": {
+                "telugu": "ప్రతిఘటన, అభ్యంతరం, దృఢముగా చెప్పడము.",
+                "tamil": "",
+                "hindi": "प्रतिवाद, विरोध",
+                "malayalam": ""
+            }
+        }],
+        "tags": ["WEEK2", "WEEK2-DAY1"],
+        "lastEdited": 1552653991204,
+        "id": "40126d94-4933-11e9-aa16-13eb7a6d613d",
+        "groupIds": ["WEEK2", "WEEK2-DAY1"]
+    }, {
+        "wordText": "rain",
+        "phoneticScript": "reɪn",
+        "syllable": "reyn",
+        "definitions": [{
+            "type": "NOUN",
+            "definitionText": "drops of water from clouds.",
+            "examples": ["the rain had not stopped for days"],
+            "synonyms": ["wet weather", "precipitation", "rainfall"],
+            "otherLanguages": {
+                "telugu": "వాన, వర్షము,వానకురియు",
+                "tamil": "",
+                "hindi": "वर्षा ,बारिश होना,बरसात",
+                "malayalam": ""
+            }
+        }],
+        "tags": ["WEEK2", "WEEK2-DAY5"],
+        "lastEdited": 1552656632794,
+        "id": "40126d95-4933-11e9-aa16-13eb7a6d613d",
+        "groupIds": ["WEEK2", "WEEK2-DAY5"]
+    }, {
+        "wordText": "rampage",
+        "phoneticScript": "ræmˈpeɪdʒ",
+        "syllable": "ram-peyj",
+        "definitions": [{
+            "type": "VERB",
+            "definitionText": "to go through an area making a lot of noise and causing damage.",
+            "examples": ["several thousand demonstrators rampaged through the city"],
+            "synonyms": ["rush wildly,", "riot", "rush madly,"],
+            "otherLanguages": {
+                "telugu": "తీవ్రంగా ప్రవర్తించు, ఆవేశ పడు, ఉద్రేకపడు",
+                "tamil": "",
+                "hindi": "क्रोध,गरजना.",
+                "malayalam": ""
+            }
+        }],
+        "tags": ["WEEK2", "WEEK2-DAY4"],
+        "lastEdited": 1552656530028,
+        "id": "40126d96-4933-11e9-aa16-13eb7a6d613d",
+        "groupIds": ["WEEK2", "WEEK2-DAY4"]
+    }, {
+        "wordText": "spawn",
+        "phoneticScript": "/spɔn/",
+        "syllable": "spawn",
+        "definitions": [{
+            "type": "VERB",
+            "definitionText": "to cause something new, or many new things, to grow or start suddenly.",
+            "examples": ["the fish spawn among fine-leaved plants"],
+            "synonyms": ["bring about", "generate", "originate"],
+            "otherLanguages": {
+                "telugu": "గుడ్లుపెట్టుట.",
+                "tamil": "",
+                "hindi": " कुलबुलाना  ,बोयाना  ,जन्म देना",
+                "malayalam": ""
+            }
+        }],
+        "tags": ["WEEK2", "WEEK2-DAY4"],
+        "lastEdited": 1552656494810,
+        "id": "40126d97-4933-11e9-aa16-13eb7a6d613d",
+        "groupIds": ["WEEK2", "WEEK2-DAY4"]
+    }, {
+        "wordText": "spicy",
+        "phoneticScript": "/ˈspʌɪsi/",
+        "syllable": "spahy-see",
+        "definitions": [{
+            "type": "ADJECTIVE",
+            "definitionText": "containing strong flavours from spices.",
+            "examples": ["pasta in a spicy tomato sauce."],
+            "synonyms": ["tangy, peppery, hot, picante."],
+            "otherLanguages": {
+                "telugu": "రుచిగల,వాసనగల, కారమైన,  మసాలా వాసన.",
+                "tamil": "",
+                "hindi": "मसालेदार,रोचक.",
+                "malayalam": ""
+            }
+        }],
+        "tags": ["WEEK2", "WEEK2-DAY5"],
+        "lastEdited": 1552656675019,
+        "id": "40126d98-4933-11e9-aa16-13eb7a6d613d",
+        "groupIds": ["WEEK2", "WEEK2-DAY5"]
+    }, {
+        "wordText": "strewn",
+        "phoneticScript": "stru",
+        "syllable": "stroo",
+        "definitions": [{
+            "type": "VERB",
+            "definitionText": "Scatter or spread (things) untidily over a surface or area.",
+            "examples": ["Wine bottles and dirty dishes were strewn across the lawn."],
+            "synonyms": ["broadcast", "distribute", "sprinkle"],
+            "otherLanguages": {
+                "telugu": "ౘల్లు, పఱౘు.",
+                "tamil": "",
+                "hindi": " बिखरा हुआ",
+                "malayalam": ""
+            }
+        }],
+        "tags": ["WEEK2", "WEEK2-DAY4"],
+        "lastEdited": 1552656445155,
+        "id": "40126d99-4933-11e9-aa16-13eb7a6d613d",
+        "groupIds": ["WEEK2", "WEEK2-DAY4"]
+    }, {
+        "wordText": "tamper",
+        "phoneticScript": "ˈtæm pər",
+        "syllable": "tam-per",
+        "definitions": [{
+            "type": "VERB",
+            "definitionText": "to touch or change something without permission or without enough knowledge of how it works.",
+            "examples": ["someone tampered with the brakes of my car"],
+            "synonyms": ["fiddle about", "interfere", "monkey around"],
+            "otherLanguages": {
+                "telugu": "క్రమంగా సవరించు, కలుగచేసుకొను, సాక్ష్యంమార్చు,చెడగొట్టు, ",
+                "tamil": "",
+                "hindi": "हस्तक्षेप करना,छेड़खानी करना",
+                "malayalam": ""
+            }
+        }],
+        "tags": ["WEEK2", "WEEK2-DAY3"],
+        "lastEdited": 1552655964554,
+        "id": "40126d9a-4933-11e9-aa16-13eb7a6d613d",
+        "groupIds": ["WEEK2", "WEEK2-DAY3"]
+    }, {
+        "wordText": "ubiquitous",
+        "phoneticScript": "/yuˈbɪk wɪ təs/",
+        "syllable": " yoo-bik-wi-tuh s",
+        "definitions": [{
+            "type": "ADJECTIVE",
+            "definitionText": "Present, appearing, or found everywhere.",
+            "examples": ["The eelgrass limpet used to be ubiquitous on the New England coast."],
+            "synonyms": ["all-over", "global.", "omnipresent", "universal"],
+            "otherLanguages": {
+                "telugu": "సర్వవ్యాపియైన, అంతట నున్న,సర్వాంతర్యామి.",
+                "tamil": "",
+                "hindi": "हर एक जगह का,  सब जगह का  ,हर जगह का  ,सर्वत्र का",
+                "malayalam": ""
+            }
+        }],
+        "tags": ["WEEK2", "WEEK2-DAY3"],
+        "lastEdited": 1552656005842,
+        "id": "40126d9b-4933-11e9-aa16-13eb7a6d613d",
+        "groupIds": ["WEEK2", "WEEK2-DAY3"]
+    }, {
+        "wordText": "undeniable",
+        "phoneticScript": "ˌʌn dɪˈnaɪ ə bəl",
+        "syllable": "uhn-di-nahy-uh-buh l",
+        "definitions": [{
+            "type": "ADJECTIVE",
+            "definitionText": "Unable to be denied or disputed.",
+            "examples": ["it is an undeniable fact that some dogs are easier to train than others"],
+            "synonyms": ["evident", "indubitable", "unquestionable"],
+            "otherLanguages": {
+                "telugu": "స్పష్టముగా, ప్రత్యక్షముగా, సాక్షాత్తుగా, నిశ్చయముగా.",
+                "tamil": "",
+                "hindi": "अखंडनीय,निर्विवाद",
+                "malayalam": ""
+            }
+        }],
+        "tags": ["WEEK2", "WEEK2-DAY5"],
+        "lastEdited": 1552656722779,
+        "id": "40126d9c-4933-11e9-aa16-13eb7a6d613d",
+        "groupIds": ["WEEK2", "WEEK2-DAY5"]
+    }, {
+        "wordText": "versed",
+        "phoneticScript": "vɜrst",
+        "syllable": "vurst",
+        "definitions": [{
+            "type": "ADJECTIVE",
+            "definitionText": "to know a lot about a particular subject or be experienced in a particular skill.",
+            "examples": ["I'm not sufficiently versed in XML to understand what you're saying."],
+            "synonyms": ["acquainted", "familiar.", "practised", "skilled"],
+            "otherLanguages": {
+                "telugu": "నిపుణతగల, సమర్థతగల",
+                "tamil": "",
+                "hindi": "अनुभवी , निपुण,प्रवीण.",
+                "malayalam": ""
+            }
+        }],
+        "tags": ["WEEK2", "WEEK2-DAY2"],
+        "lastEdited": 1552655915137,
+        "id": "40126d9d-4933-11e9-aa16-13eb7a6d613d",
+        "groupIds": ["WEEK2", "WEEK2-DAY2"]
+    }, {
+        "wordText": "victim",
+        "phoneticScript": "/ˈvɪktɪm/",
+        "syllable": "vik-tim",
+        "definitions": [{
+            "type": "NOUN",
+            "definitionText": "A person harmed, injured, or killed as a result of a crime, accident, or other event or action.",
+            "examples": ["The new drug might help save the lives of cancer victims.", "victims of domestic violence."],
+            "synonyms": [],
+            "otherLanguages": {
+                "telugu": "భాధితుడు,  భాధితురాలు,  దేనివలనఁగాని హతుఁడైనవాఁడు",
+                "tamil": "",
+                "hindi": "पीडित व्यक्ति, दोषित,घायल",
+                "malayalam": ""
+            }
+        }],
+        "tags": ["WEEK2", "WEEK2-DAY2"],
+        "lastEdited": 1552654482900,
+        "id": "40126d9e-4933-11e9-aa16-13eb7a6d613d",
+        "groupIds": ["WEEK2", "WEEK2-DAY2"]
+    }, {
+        "wordText": "abundant",
+        "phoneticScript": "/əˈbʌn dənt/ ",
+        "syllable": "uh-buhn-duh nt",
+        "definitions": [{
+            "type": "ADJECTIVE",
+            "definitionText": "more than enough.",
+            "examples": ["an abundant supply of food"],
+            "synonyms": ["overflowing", "plentiful", "teeming."],
+            "otherLanguages": {
+                "telugu": "అమితమైన, ధారాళంగా, అధికమైన, సంపూర్ణమైన, పుష్టియైన, సమృద్ధ.",
+                "tamil": "",
+                "hindi": " अतिशय , अधिक , घनेरा , ज़्यादा",
+                "malayalam": ""
+            }
+        }],
+        "tags": ["WEEK3", "WEEK3-DAY1"],
+        "lastEdited": 1552740339642,
+        "id": "40126d9f-4933-11e9-aa16-13eb7a6d613d",
+        "groupIds": ["WEEK3", "WEEK3-DAY1"]
+    }, {
+        "wordText": "amply",
+        "phoneticScript": "/ˈæm pli/",
+        "syllable": "am-plee",
+        "definitions": [{
+            "type": "ADVERB",
+            "definitionText": "Enough or more than enough; plentifully.",
+            "examples": ["the persistent reader is amply rewarded’"],
+            "synonyms": ["lavishly", "liberally", "munificently"],
+            "otherLanguages": {
+                "telugu": "విస్తారముగా, యథేష్టముగా, చాలా.",
+                "tamil": "",
+                "hindi": " बहुतायात से, पर्याप्त रूप से",
+                "malayalam": ""
+            }
+        }],
+        "tags": ["WEEK3", "WEEK3-DAY4"],
+        "lastEdited": 1552741608491,
+        "id": "40126da0-4933-11e9-aa16-13eb7a6d613d",
+        "groupIds": ["WEEK3", "WEEK3-DAY4"]
+    }, {
+        "wordText": "ancient",
+        "phoneticScript": "ˈeɪn ʃənt",
+        "syllable": "eyn-shuh nt ",
+        "definitions": [{
+            "type": "ADJECTIVE",
+            "definitionText": "Belonging to the very distant past and no longer in existence.",
+            "examples": ["People have lived in this valley since ancient times."],
+            "synonyms": ["earliest", "past.", "very old"],
+            "otherLanguages": {
+                "telugu": "పురాతనమైన, ప్రాచీనమైన, ముసిలి.",
+                "tamil": "",
+                "hindi": "बहुत पुराना,प्राचीन समय का,पुरातन.",
+                "malayalam": ""
+            }
+        }],
+        "tags": ["WEEK3", "WEEK3-DAY2"],
+        "lastEdited": 1552740795002,
+        "id": "40126da1-4933-11e9-aa16-13eb7a6d613d",
+        "groupIds": ["WEEK3", "WEEK3-DAY2"]
+    }, {
+        "wordText": "apathy",
+        "phoneticScript": "/ˈæp ə θi/",
+        "syllable": "ap-uh-thee",
+        "definitions": [{
+            "type": "NOUN",
+            "definitionText": "Lack of interest, enthusiasm, or concern.",
+            "examples": ["The issue of student apathy has been tossed around a lot this past couple weeks.’"],
+            "synonyms": ["lack of interest", "passiveness", "uninterestedness"],
+            "otherLanguages": {
+                "telugu": "ఉదాసీనత, నిర్లక్ష్యం, అలసత్వం, శ్రద్ధలేని, అనాసక్తి.",
+                "tamil": "",
+                "hindi": " अनुरागहीनता, उदासीनता",
+                "malayalam": ""
+            }
+        }],
+        "tags": ["WEEK3", "WEEK3-DAY5"],
+        "lastEdited": 1552742349334,
+        "id": "40126da2-4933-11e9-aa16-13eb7a6d613d",
+        "groupIds": ["WEEK3", "WEEK3-DAY5"]
+    }, {
+        "wordText": "assurance",
+        "phoneticScript": "əˈʃʊər əns, -ˈʃɜr-",
+        "syllable": "uh-shoo r-uh ns ",
+        "definitions": [{
+            "type": "NOUN",
+            "definitionText": "A positive declaration intended to give confidence; a promise.",
+            "examples": ["he gave an assurance that work would begin on Monday."],
+            "synonyms": ["affirmation", "oath", "vow"],
+            "otherLanguages": {
+                "telugu": "",
+                "tamil": "",
+                "hindi": "आश्वासन , बीमा .",
+                "malayalam": ""
+            }
+        }],
+        "tags": ["WEEK3", "WEEK3-DAY3"],
+        "lastEdited": 1552741339044,
+        "id": "40126da3-4933-11e9-aa16-13eb7a6d613d",
+        "groupIds": ["WEEK3", "WEEK3-DAY3"]
+    }, {
+        "wordText": "bag",
+        "phoneticScript": "/bæg/",
+        "syllable": "bag ",
+        "definitions": [{
+            "type": "NOUN",
+            "definitionText": "A flexible container with an opening at the top, used for carrying things.",
+            "examples": ["a grocery/shopping bag"],
+            "synonyms": ["container.", "receptacle"],
+            "otherLanguages": {
+                "telugu": "బ్యాగ్‌, సంచి, మూట.",
+                "tamil": "",
+                "hindi": " थैला, बटुआ,बैग",
+                "malayalam": ""
+            }
+        }],
+        "tags": ["WEEK3", "WEEK3-DAY1"],
+        "lastEdited": 1552740389498,
+        "id": "40126da4-4933-11e9-aa16-13eb7a6d613d",
+        "groupIds": ["WEEK3", "WEEK3-DAY1"]
+    }, {
+        "wordText": "boom",
+        "phoneticScript": "/buːm/ ",
+        "syllable": "boom",
+        "definitions": [{
+            "type": "NOUN",
+            "definitionText": "a period of sudden economic growth. (or) a deep, loud sound.",
+            "examples": ["This year has seen a boom in book sales.", "What you heard was the boom of a rocket."],
+            "synonyms": ["prosper", "resound"],
+            "otherLanguages": {
+                "telugu": "అనూహ్యమైన పెరుగుదల, గర్జన, ఉరమటం.",
+                "tamil": "",
+                "hindi": "तेजी से बढना, धूम मचाना",
+                "malayalam": "പെട്ടെന്നുളള വളര്‍ച്ച,  മുഴക്കമുളള ശബ്ദം"
+            }
+        }],
+        "tags": ["WEEK3", "WEEK3-DAY2"],
+        "lastEdited": 1552740770004,
+        "id": "40126da5-4933-11e9-aa16-13eb7a6d613d",
+        "groupIds": ["WEEK3", "WEEK3-DAY2"]
+    }, {
+        "wordText": "comical",
+        "phoneticScript": "ˈkɒm ɪ kəl",
+        "syllable": "kom-i-kuh l ",
+        "definitions": [{
+            "type": "ADJECTIVE",
+            "definitionText": "Amusing, especially in a ludicrous or absurd way.",
+            "examples": ["He looked so comical in that hat."],
+            "synonyms": ["comic", "funny", "hilarious", "jocular"],
+            "otherLanguages": {
+                "telugu": "హాస్యకరమైన, వికారమైన, నవ్వును పుట్టించెడు.",
+                "tamil": "",
+                "hindi": "हास्यकर,कौतुकी,अनोखा",
+                "malayalam": ""
+            }
+        }],
+        "tags": ["WEEK3", "WEEK3-DAY5"],
+        "lastEdited": 1552742085438,
+        "id": "40126da6-4933-11e9-aa16-13eb7a6d613d",
+        "groupIds": ["WEEK3", "WEEK3-DAY5"]
+    }, {
+        "wordText": "commence",
+        "phoneticScript": "kəˈmɛns",
+        "syllable": "kuh-mens",
+        "definitions": [{
+            "type": "VERB",
+            "definitionText": "to begin something.",
+            "examples": ["his design team commenced work."],
+            "synonyms": ["begin", "start", "start off."],
+            "otherLanguages": {
+                "telugu": "మొదలుపెట్టు, ప్రారంభించు",
+                "tamil": "",
+                "hindi": "आरंभ होना,शुरू करना,प्रारंभ होना",
+                "malayalam": ""
+            }
+        }],
+        "tags": ["WEEK3", "WEEK3-DAY3"],
+        "lastEdited": 1552741100867,
+        "id": "40126da7-4933-11e9-aa16-13eb7a6d613d",
+        "groupIds": ["WEEK3", "WEEK3-DAY3"]
+    }, {
+        "wordText": "commercial",
+        "phoneticScript": "/kəˈmɜr ʃəl/",
+        "syllable": "kuh-mur-shuh l ",
+        "definitions": [{
+            "type": "ADJECTIVE",
+            "definitionText": "Concerned with or engaged in commerce.",
+            "examples": ["The commercial future of the company looks very promising."],
+            "synonyms": ["business", "sales.", "trading"],
+            "otherLanguages": {
+                "telugu": "వాణిజ్య, వాణిజ్య సంబంధ మైన; లాభాపేక్షతో కూడిన.",
+                "tamil": "",
+                "hindi": " वाणिज्यिक, व्यापारिक",
+                "malayalam": ""
+            }
+        }],
+        "tags": ["WEEK3", "WEEK3-DAY4"],
+        "lastEdited": 1552741756773,
+        "id": "40126da8-4933-11e9-aa16-13eb7a6d613d",
+        "groupIds": ["WEEK3", "WEEK3-DAY4"]
+    }, {
+        "wordText": "copious",
+        "phoneticScript": "/ˈkoʊ pi əs/",
+        "syllable": "koh-pee-uh s",
+        "definitions": [{
+            "type": "ADJECTIVE",
+            "definitionText": "Abundant in supply or quantity.",
+            "examples": ["They drank copious amounts of wine."],
+            "synonyms": ["abundant", "bountiful", "overflowing"],
+            "otherLanguages": {
+                "telugu": "విస్తృత, విశాల, తగినంత.",
+                "tamil": "",
+                "hindi": " अधिक , प्रचुर , बहुत",
+                "malayalam": ""
+            }
+        }],
+        "tags": ["WEEK3", "WEEK3-DAY2"],
+        "lastEdited": 1552740919499,
+        "id": "40126da9-4933-11e9-aa16-13eb7a6d613d",
+        "groupIds": ["WEEK3", "WEEK3-DAY2"]
+    }, {
+        "wordText": "deck",
+        "phoneticScript": "dɛk",
+        "syllable": "dek",
+        "definitions": [{
+            "type": "VERB",
+            "definitionText": "Decorate or adorn brightly or festively.",
+            "examples": ["The room was decked with flowers."],
+            "synonyms": ["adorn", "decorate", "garland"],
+            "otherLanguages": {
+                "telugu": "అలంకరించబడిన",
+                "tamil": "",
+                "hindi": " संवारना, सजाना, ढकना",
+                "malayalam": ""
+            }
+        }],
+        "tags": ["WEEK3", "WEEK3-DAY1"],
+        "lastEdited": 1552740419401,
+        "id": "40126daa-4933-11e9-aa16-13eb7a6d613d",
+        "groupIds": ["WEEK3", "WEEK3-DAY1"]
+    }, {
+        "wordText": "decline",
+        "phoneticScript": "dɪˈklaɪn",
+        "syllable": "dih-klahyn",
+        "definitions": [{
+            "type": "VERB",
+            "definitionText": "when something becomes less in amount, importance, quality, or strength",
+            "examples": ["the birth rate continued to decline."],
+            "synonyms": ["decrease", "get smaller", "reduce"],
+            "otherLanguages": {
+                "telugu": "నిరాకరించడం, తిరస్కరించడం; తగ్గిపోవడం.",
+                "tamil": "",
+                "hindi": "कम होना,क्षीण होना, मानना",
+                "malayalam": ""
+            }
+        }],
+        "tags": ["WEEK3", "WEEK3-DAY2"],
+        "lastEdited": 1552740827357,
+        "id": "40126dab-4933-11e9-aa16-13eb7a6d613d",
+        "groupIds": ["WEEK3", "WEEK3-DAY2"]
+    }, {
+        "wordText": "deteriorate",
+        "phoneticScript": "/dɪˈtɪər i əˌreɪt/",
+        "syllable": "dih-teer-ee-uh-reyt",
+        "definitions": [{
+            "type": "VERB",
+            "definitionText": "Become progressively worse.",
+            "examples": ["She went into the hospital when her condition began to deteriorate."],
+            "synonyms": ["decay", "decompose", "spoil"],
+            "otherLanguages": {
+                "telugu": "తగ్గు, క్షీణించు, క్షీణింపచేయు, చెడగొట్టు, హీనస్థితి నొందు, గుణం చెడు, విలువతగ్గు.",
+                "tamil": "",
+                "hindi": "बिगाड़ना, क्षय होना , भ्रष्ट करना",
+                "malayalam": ""
+            }
+        }],
+        "tags": ["WEEK3", "WEEK3-DAY1"],
+        "lastEdited": 1552740476098,
+        "id": "40126dac-4933-11e9-aa16-13eb7a6d613d",
+        "groupIds": ["WEEK3", "WEEK3-DAY1"]
+    }, {
+        "wordText": "eloquent",
+        "phoneticScript": "/ˈɛl ə kwənt/",
+        "syllable": "el-uh-kwuh nt",
+        "definitions": [{
+            "type": "ADJECTIVE",
+            "definitionText": "giving a clear, strong message.",
+            "examples": ["The pictures were an eloquent reminder of the power of the volcano."],
+            "synonyms": ["expressive", "fluent", "persuasive"],
+            "otherLanguages": {
+                "telugu": "అనర్గళంగా,1. వాగ్ధాటిగల, శబ్దచాతుర్యముగల, వక్తయైన,పటుత్వముతోను చెప్పఁబడిన.",
+                "tamil": "",
+                "hindi": " वाक्पटु , वाग्मी , शब्दचतुर",
+                "malayalam": ""
+            }
+        }],
+        "tags": ["WEEK3", "WEEK3-DAY1"],
+        "lastEdited": 1552740529091,
+        "id": "40126dad-4933-11e9-aa16-13eb7a6d613d",
+        "groupIds": ["WEEK3", "WEEK3-DAY1"]
+    }, {
+        "wordText": "emanate",
+        "phoneticScript": "/ˈɛm əˌneɪt/ ",
+        "syllable": " em-uh-neyt",
+        "definitions": [{
+            "type": "VERB",
+            "definitionText": "To express a quality or feeling through the way that you look and behave.",
+            "examples": ["Her face emanated sadness.", "He emanates power and confidence."],
+            "synonyms": ["produce", "show sth"],
+            "otherLanguages": {
+                "telugu": "బయటపడు, నిర్గమించు",
+                "tamil": "",
+                "hindi": "",
+                "malayalam": ""
+            }
+        }],
+        "tags": ["WEEK3", "WEEK3-DAY3"],
+        "lastEdited": 1552741234772,
+        "id": "40126dae-4933-11e9-aa16-13eb7a6d613d",
+        "groupIds": ["WEEK3", "WEEK3-DAY3"]
+    }, {
+        "wordText": "feign",
+        "phoneticScript": "/feɪn/",
+        "syllable": "feyn",
+        "definitions": [{
+            "type": "VERB",
+            "definitionText": "to pretend to have a particular feeling, problem",
+            "examples": ["She responded to his remarks with feigned amusement."],
+            "synonyms": ["make a show of", "play at", "simulate"],
+            "otherLanguages": {
+                "telugu": "నటించు, కల్పించు, సృష్టించు, నేరంమోపు, కుంటిసాకు చెప్పు.",
+                "tamil": "",
+                "hindi": " बहाना करना,झूठा करना,छल करना",
+                "malayalam": ""
+            }
+        }],
+        "tags": ["WEEK3", "WEEK3-DAY2"],
+        "lastEdited": 1552740873931,
+        "id": "40126daf-4933-11e9-aa16-13eb7a6d613d",
+        "groupIds": ["WEEK3", "WEEK3-DAY2"]
+    }, {
+        "wordText": "garner",
+        "phoneticScript": "/ˈgɑr nər/",
+        "syllable": "gahr-ner",
+        "definitions": [{
+            "type": "VERB",
+            "definitionText": "to collect something, usually after much work or with difficulty.",
+            "examples": ["the police struggled to garner sufficient evidence’"],
+            "synonyms": ["assemble", "collect", "gather"],
+            "otherLanguages": {
+                "telugu": "సంపాదించు, పొందు,",
+                "tamil": "",
+                "hindi": " इकट्ठा करना,एकत्र करना, संग्रह करना",
+                "malayalam": ""
+            }
+        }],
+        "tags": ["WEEK3", "WEEK3-DAY3"],
+        "lastEdited": 1552741150003,
+        "id": "40126db0-4933-11e9-aa16-13eb7a6d613d",
+        "groupIds": ["WEEK3", "WEEK3-DAY3"]
+    }, {
+        "wordText": "hesitation",
+        "phoneticScript": "/hɛzɪˈteɪʃn/",
+        "syllable": "hez-i-tey-shuh n",
+        "definitions": [{
+            "type": "NOUN",
+            "definitionText": "the act of pausing before doing something, especially because you are nervous or not certain.",
+            "examples": ["she answered without hesitation.", "After a slight hesitation, she began to speak."],
+            "synonyms": ["doubt", "reluctance", "uncertainty"],
+            "otherLanguages": {
+                "telugu": "అనుమానము, సందేహము",
+                "tamil": "",
+                "hindi": "",
+                "malayalam": ""
+            }
+        }],
+        "tags": ["WEEK3", "WEEK3-DAY3"],
+        "lastEdited": 1552741064571,
+        "id": "40126db1-4933-11e9-aa16-13eb7a6d613d",
+        "groupIds": ["WEEK3", "WEEK3-DAY3"]
+    }, {
+        "wordText": "inaugurate",
+        "phoneticScript": "ɪnˈɔ gyəˌreɪt, -gə-",
+        "syllable": "in-aw-gyuh-reyt",
+        "definitions": [{
+            "type": "VERB",
+            "definitionText": "Begin or introduce (a system, policy, or period).",
+            "examples": ["He wants to inaugurate his museum with elaborate opening ceremonies."],
+            "synonyms": ["establish", "initiate", "launch"],
+            "otherLanguages": {
+                "telugu": "పట్టముగట్టబడ్డ,పట్టాభిషిక్తుడైన.",
+                "tamil": "",
+                "hindi": " अभिषेक करना, प्रथम परिचय करवाना",
+                "malayalam": ""
+            }
+        }],
+        "tags": ["WEEK3", "WEEK3-DAY1"],
+        "lastEdited": 1552740677098,
+        "id": "40126db2-4933-11e9-aa16-13eb7a6d613d",
+        "groupIds": ["WEEK3", "WEEK3-DAY1"]
+    }, {
+        "wordText": "inception",
+        "phoneticScript": "ɪnˈsɛp ʃən",
+        "syllable": "in-sep-shuh n",
+        "definitions": [{
+            "type": "NOUN",
+            "definitionText": "The establishment or starting point of an    institution or activity.",
+            "examples": ["she has been on the board since its inception two years ago"],
+            "synonyms": ["establishment", "formation", "founding"],
+            "otherLanguages": {
+                "telugu": "ప్రారంభం,మొదలు, ఉపక్రమణ,తొలిదశ",
+                "tamil": "",
+                "hindi": "आरम्भ.",
+                "malayalam": ""
+            }
+        }],
+        "tags": ["WEEK3", "WEEK3-DAY3"],
+        "lastEdited": 1552741463412,
+        "id": "40126db3-4933-11e9-aa16-13eb7a6d613d",
+        "groupIds": ["WEEK3", "WEEK3-DAY3"]
+    }, {
+        "wordText": "lambaste",
+        "phoneticScript": "læmˈbeɪst",
+        "syllable": "lam-beyst",
+        "definitions": [{
+            "type": "VERB",
+            "definitionText": "to criticize someone or something severely",
+            "examples": ["His first novel was lambasted by the critics."],
+            "synonyms": ["attack", "condemn", "take to task"],
+            "otherLanguages": {
+                "telugu": "ఖండిస్తూ.",
+                "tamil": "",
+                "hindi": "चाबुक से मारना,बुरी तरह से फटकारना",
+                "malayalam": ""
+            }
+        }],
+        "tags": ["WEEK3", "WEEK3-DAY4"],
+        "lastEdited": 1552741822180,
+        "id": "40126db4-4933-11e9-aa16-13eb7a6d613d",
+        "groupIds": ["WEEK3", "WEEK3-DAY4"]
+    }, {
+        "wordText": "maritime",
+        "phoneticScript": "ˈmær ɪˌtaɪm",
+        "syllable": "mar-i-tahym",
+        "definitions": [{
+            "type": "ADJECTIVE",
+            "definitionText": "Connected with the sea, especially in relation to seaborne trade or naval matters.",
+            "examples": ["Amalfi and Venice were important maritime powers."],
+            "synonyms": ["marine", "naval", "ocean-going"],
+            "otherLanguages": {
+                "telugu": "సముద్రసంబంధమైన, సముద్రపు,నౌకా సంబంధి, నావిక.",
+                "tamil": "",
+                "hindi": " समुद्रीय,समुद्र के निकट स्थित, समुंदर का",
+                "malayalam": ""
+            }
+        }],
+        "tags": ["WEEK3", "WEEK3-DAY4"],
+        "lastEdited": 1552741678828,
+        "id": "40126db5-4933-11e9-aa16-13eb7a6d613d",
+        "groupIds": ["WEEK3", "WEEK3-DAY4"]
+    }, {
+        "wordText": "monstrous",
+        "phoneticScript": "/ˈmɒn strəs/",
+        "syllable": "mon-struh s",
+        "definitions": [{
+            "type": "ADJECTIVE",
+            "definitionText": "very cruel.",
+            "examples": ["a monstrous crime"],
+            "synonyms": ["disgusting", "dread", "repellent"],
+            "otherLanguages": {
+                "telugu": "విపరీతం, భయానక, రాక్షస, అసహజ.",
+                "tamil": "",
+                "hindi": " करालरूप, भयानक, राक्षसी",
+                "malayalam": ""
+            }
+        }],
+        "tags": ["WEEK3", "WEEK3-DAY5"],
+        "lastEdited": 1552742127853,
+        "id": "40126db6-4933-11e9-aa16-13eb7a6d613d",
+        "groupIds": ["WEEK3", "WEEK3-DAY5"]
+    }, {
+        "wordText": "owe",
+        "phoneticScript": "/oʊ/",
+        "syllable": "oh",
+        "definitions": [{
+            "type": "VERB",
+            "definitionText": ".to have the responsibility to pay or give back something you have received from someone:",
+            "examples": ["you owe me ten dollars"],
+            "synonyms": ["be in arrears", "be indebted", "be under an obligation to."],
+            "otherLanguages": {
+                "telugu": "బాకీపడు, రుణపడి ఉండు; బాధ్యత కలిగి ఉండు.",
+                "tamil": "",
+                "hindi": " ऋणी होना, चाहना",
+                "malayalam": ""
+            }
+        }],
+        "tags": ["WEEK3", "WEEK3-DAY4"],
+        "lastEdited": 1552741731213,
+        "id": "40126db7-4933-11e9-aa16-13eb7a6d613d",
+        "groupIds": ["WEEK3", "WEEK3-DAY4"]
+    }, {
+        "wordText": "pity",
+        "phoneticScript": "ˈpɪt i",
+        "syllable": "pit-ee",
+        "definitions": [{
+            "type": "NOUN",
+            "definitionText": "The feeling of sorrow and compassion caused by the sufferings and misfortunes of others.",
+            "examples": ["her voice was full of pity’"],
+            "synonyms": ["emotion.", "sorrow", "sympathy"],
+            "otherLanguages": {
+                "telugu": "జాలి,దయ; జాలిపడు, దయచూపు,కనికరం.",
+                "tamil": "",
+                "hindi": " करुणा , दया ,तरस",
+                "malayalam": ""
+            }
+        }],
+        "tags": ["WEEK3", "WEEK3-DAY5"],
+        "lastEdited": 1552742232197,
+        "id": "40126db8-4933-11e9-aa16-13eb7a6d613d",
+        "groupIds": ["WEEK3", "WEEK3-DAY5"]
+    }, {
+        "wordText": "raid",
+        "phoneticScript": "reɪd",
+        "syllable": " reyd",
+        "definitions": [{
+            "type": "NOUN",
+            "definitionText": "a short sudden attack, usually by a small group of people",
+            "examples": ["The drugs were found during a police raid on the house."],
+            "synonyms": ["hit-and-run raid", "assault", "surprise attack"],
+            "otherLanguages": {
+                "telugu": "ఆక్రమించు, ముట్టడించు, సోదా చేయు",
+                "tamil": "",
+                "hindi": "हमला,आक्रमण,चढाई करना.",
+                "malayalam": ""
+            }
+        }],
+        "tags": ["WEEK3", "WEEK3-DAY4"],
+        "lastEdited": 1552741971613,
+        "id": "40126db9-4933-11e9-aa16-13eb7a6d613d",
+        "groupIds": ["WEEK3", "WEEK3-DAY4"]
+    }, {
+        "wordText": "refugee",
+        "phoneticScript": "/ˌrɛf yʊˈdʒi/",
+        "syllable": "ref-yoo-jee",
+        "definitions": [{
+            "type": "NOUN",
+            "definitionText": "A person who has been forced to leave their country in order to escape war, persecution, or natural disaster.",
+            "examples": ["Thousands of refugees fled across the border."],
+            "synonyms": ["displaced person", "escapee", "returnee"],
+            "otherLanguages": {
+                "telugu": "శరణార్థి, శరణాగతుడు, కాందిశీకుడు.",
+                "tamil": "",
+                "hindi": "आश्रित , पनाहगीर , शरणागत",
+                "malayalam": ""
+            }
+        }],
+        "tags": ["WEEK3", "WEEK3-DAY1"],
+        "lastEdited": 1552740709074,
+        "id": "40126dba-4933-11e9-aa16-13eb7a6d613d",
+        "groupIds": ["WEEK3", "WEEK3-DAY1"]
+    }, {
+        "wordText": "sovereignty",
+        "phoneticScript": "/ˈsɒv rɪn ti/",
+        "syllable": "sov-rin-tee",
+        "definitions": [{
+            "type": "NOUN",
+            "definitionText": "Supreme power or authority.",
+            "examples": ["Talks are being held about who should have sovereignty over the island."],
+            "synonyms": ["authority", "influence", "jurisdiction"],
+            "otherLanguages": {
+                "telugu": "ప్రభుత్వము, ఏలుబడి, రాజ్యము, అధికారము, ",
+                "tamil": "",
+                "hindi": " प्रभुता , प्रभुत्व ,  प्रभुसत्ता",
+                "malayalam": ""
+            }
+        }],
+        "tags": ["WEEK3", "WEEK3-DAY5"],
+        "lastEdited": 1552742188365,
+        "id": "40126dbb-4933-11e9-aa16-13eb7a6d613d",
+        "groupIds": ["WEEK3", "WEEK3-DAY5"]
+    }, {
+        "wordText": "span",
+        "phoneticScript": "/spæn/",
+        "syllable": "span",
+        "definitions": [{
+            "type": "NOUN",
+            "definitionText": "the period of time that sometimes exists or happens.",
+            "examples": ["an average life span of 70 years"],
+            "synonyms": ["distance", "extent", "range"],
+            "otherLanguages": {
+                "telugu": " జంట,జేన  ప్రాదేశము,స్వల్పకాలము",
+                "tamil": "",
+                "hindi": " अवधि ,  पाट ,  फैलाव",
+                "malayalam": ""
+            }
+        }],
+        "tags": ["WEEK3", "WEEK3-DAY4"],
+        "lastEdited": 1552741576099,
+        "id": "40126dbc-4933-11e9-aa16-13eb7a6d613d",
+        "groupIds": ["WEEK3", "WEEK3-DAY4"]
+    }, {
+        "wordText": "stuffing",
+        "phoneticScript": "ˈstʌfɪŋ",
+        "syllable": "stuhf-ing",
+        "definitions": [{
+            "type": "NOUN",
+            "definitionText": "material that is pushed inside something to make it firm.",
+            "examples": ["sage and onion stuffing."],
+            "synonyms": ["filling, forcemeat, farce, salpicon."],
+            "otherLanguages": {
+                "telugu": "కూరేటిది, నించబడేటిది",
+                "tamil": "",
+                "hindi": "भराई,भरी जाने वाली सामग्री.",
+                "malayalam": ""
+            }
+        }],
+        "tags": ["WEEK3", "WEEK3-DAY5"],
+        "lastEdited": 1552742405573,
+        "id": "40126dbd-4933-11e9-aa16-13eb7a6d613d",
+        "groupIds": ["WEEK3", "WEEK3-DAY5"]
+    }, {
+        "wordText": "tenure",
+        "phoneticScript": "/ˈtɛn yər/",
+        "syllable": "ten-yer",
+        "definitions": [{
+            "type": "NOUN",
+            "definitionText": "The conditions under which land or buildings are held or occupied.",
+            "examples": ["During his tenure as dean, he had a real influence on the students."],
+            "synonyms": ["holding", "occupancy", "residence"],
+            "otherLanguages": {
+                "telugu": "అవధి, పరిమితి, గడువు,అవధి, పరిమితి, గడువు.",
+                "tamil": "",
+                "hindi": " अधिकार, पदावधि,कार्यकाल",
+                "malayalam": ""
+            }
+        }],
+        "tags": ["WEEK3", "WEEK3-DAY3"],
+        "lastEdited": 1552741516188,
+        "id": "40126dbe-4933-11e9-aa16-13eb7a6d613d",
+        "groupIds": ["WEEK3", "WEEK3-DAY3"]
+    }, {
+        "wordText": "unbridle",
+        "phoneticScript": "/ʌnˈbraɪd l/",
+        "syllable": "uhn-brahyd-l",
+        "definitions": [{
+            "type": "VERB",
+            "definitionText": "Free (someone or something) from control or restraint.",
+            "examples": ["he unbridled his mare and let her roam’"],
+            "synonyms": ["discharge", "release", "set free"],
+            "otherLanguages": {
+                "telugu": "కళ్లెము తీసివేయు.",
+                "tamil": "",
+                "hindi": "बेलगाम होना, स्वच्छंद होना",
+                "malayalam": ""
+            }
+        }],
+        "tags": ["WEEK3", "WEEK3-DAY5"],
+        "lastEdited": 1552742305861,
+        "id": "40126dbf-4933-11e9-aa16-13eb7a6d613d",
+        "groupIds": ["WEEK3", "WEEK3-DAY5"]
+    }, {
+        "wordText": "verdict",
+        "phoneticScript": "ˈvɜr dɪkt",
+        "syllable": "vur-dikt",
+        "definitions": [{
+            "type": "NOUN",
+            "definitionText": "A decision on an issue of fact in a civil or criminal case or an inquest.",
+            "examples": ["the jury returned a verdict of not guilty."],
+            "synonyms": ["udgement, adjudication, adjudgement, decision, finding, ruling."],
+            "otherLanguages": {
+                "telugu": "తీర్పు, నిర్ణయం,ఉత్తరువు,ఇచ్చిన అభిప్రాయము.",
+                "tamil": "",
+                "hindi": "जूरी का निर्णय,पंचायत का विचार.",
+                "malayalam": ""
+            }
+        }],
+        "tags": ["WEEK3", "WEEK3-DAY1"],
+        "lastEdited": 1552740561714,
+        "id": "40126dc0-4933-11e9-aa16-13eb7a6d613d",
+        "groupIds": ["WEEK3", "WEEK3-DAY1"]
+    }, {
+        "wordText": "victory",
+        "phoneticScript": "",
+        "syllable": "",
+        "definitions": [{
+            "type": "NOUN",
+            "definitionText": "An act of defeating an enemy or opponent in a battle, game, or other competition.",
+            "examples": ["A goal in the last half minute assured victory and the World Cup for the Mexicans."],
+            "synonyms": ["achievement", "favourable result", "successful"],
+            "otherLanguages": {
+                "telugu": "విజయం, గెలుపు, సఫలత.",
+                "tamil": "",
+                "hindi": "अभिभावकता, जीत, विजय",
+                "malayalam": ""
+            }
+        }],
+        "tags": ["WEEK3", "WEEK3-DAY2"],
+        "lastEdited": 1552740734835,
+        "id": "40126dc1-4933-11e9-aa16-13eb7a6d613d",
+        "groupIds": ["WEEK3", "WEEK3-DAY2"]
+    }]
+}
