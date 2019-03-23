@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../theme/constants.dart';
 
 class AppDrawer extends StatelessWidget {
   @override
@@ -32,11 +33,8 @@ class AppDrawer extends StatelessWidget {
                 ],
               ),
             ),
-            decoration: BoxDecoration(
-                gradient: LinearGradient(colors: <Color>[
-              Colors.blue[600],
-              Colors.blue[200],
-            ])),
+            decoration:
+                BoxDecoration(gradient: ThemeConstants.backgroundGradient),
           ),
           DrawerTile(
             icon: Icons.person,

@@ -20,6 +20,7 @@ dependencies:
   flutter:
     sdk: flutter
   scoped_model: ^1.0.1
+  flutter_cache_manager: ^0.3.2
   shared_preferences: ^0.5.1+2
   charts_flutter: ^0.6.0
 

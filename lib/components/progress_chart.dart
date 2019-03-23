@@ -24,9 +24,7 @@ class ProgressChart extends StatelessWidget {
     double height,
     double width,
     bool disableDiscriptions,
-    @required reviewMap,
     @required group,
-    @required getReviewId,
     animate,
   }) {
     final data = [

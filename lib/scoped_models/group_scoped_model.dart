@@ -5,6 +5,7 @@ import '../models/review.dart';
 import 'dart:convert';
 import 'package:flutter/services.dart' show rootBundle;
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:flutter_cache_manager/flutter_cache_manager.dart';
 
 Future<Map<String, dynamic>> parseJsonFromAssets(String assetsPath) async {
   return rootBundle
@@ -14,12 +15,15 @@ Future<Map<String, dynamic>> parseJsonFromAssets(String assetsPath) async {
 
 class GroupScoppedModel extends Model {
   SharedPreferences _prefs;
+  String dataVersion;
   List<Group> _groups = [];
   Group _activeGroup;
   Word _activeWord;
   bool _isShowingWordDefinition = false;
   String _preferredLanguage = 'telugu'; // TODO: derive it from local storage
   Map<String, String> reviewMap = {};
+  final dataUrl = 'https://srekan.github.io/vocab/vocab-data.json';
+  final cacheManager = DefaultCacheManager();
 
   SharedPreferences get prefs => _prefs;
   List<Group> get groups => _groups;
@@ -35,11 +39,31 @@ class GroupScoppedModel extends Model {
   getData() async {
     _prefs = await SharedPreferences.getInstance();
 
-    Map<String, dynamic> dmap =
-        await parseJsonFromAssets('assets/vocab-data.json');
+    var file = await cacheManager.getFileFromCache(dataUrl);
+    if (file != null) {
+      final contents = file.file.readAsStringSync();
+      Map<String, dynamic> dmap = jsonDecode(contents);
+      _prepareData(dmap);
+    }
+
+    _getDataFromNetwork();
+  }
+
+  _getDataFromNetwork() async {
+    var file = await cacheManager.downloadFile(dataUrl);
+    final contents = file.file.readAsStringSync();
+    Map<String, dynamic> dmap = jsonDecode(contents);
+    if (dmap['version'] != dataVersion) {
+      _prepareData(dmap);
+    } else {
+      // print('No change in the version.' + dmap['version'] + dataVersion);
+    }
+  }
+
+  _prepareData(Map<String, dynamic> dmap) {
     List<Group> __groups = [];
     List<Word> _words = [];
-
+    dataVersion = dmap['version'];
     for (var item in dmap['words']) {
       var word = Word.fromJson(item);
       _words.add(word);

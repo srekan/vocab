@@ -136,12 +136,23 @@ class _WordBrowser extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    var color;
+    final reviewId = getReviewId(activeGroup, activeWord);
+    final reviewName = activeGroup.reviewMap[reviewId];
+    if (reviewName == ReviewName.MASTERED) {
+      color = ReviewColors.mastered;
+    } else {
+      color = Theme.of(context).textTheme.display2.color;
+    }
     return Column(
       children: <Widget>[
         SizedBox(height: 8.0),
         Text(
           activeWord.wordText,
-          style: Theme.of(context).textTheme.display2,
+          style: Theme.of(context)
+              .textTheme
+              .display2
+              .merge(TextStyle(color: color)),
         ),
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
