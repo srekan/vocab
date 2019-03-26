@@ -39,22 +39,17 @@ class AppDrawer extends StatelessWidget {
           DrawerTile(
             icon: Icons.person,
             text: 'Profile',
-            onTap: () => Navigator.of(context).pushNamed('profile'),
           ),
           DrawerTile(
-            icon: Icons.notifications,
-            text: 'Notifications',
-            onTap: () => Navigator.of(context).pushNamed('notifications'),
+            icon: Icons.person,
+            text: '[D]Dashboard List View',
+            onTap: () =>
+                Navigator.of(context).pushNamed('dash_board_list_view'),
           ),
           DrawerTile(
-            icon: Icons.settings,
-            text: 'Settings',
-            onTap: () => Navigator.of(context).pushNamed('settings'),
-          ),
-          DrawerTile(
-            icon: Icons.info_outline,
-            text: 'About',
-            onTap: () => Navigator.of(context).pushNamed('about'),
+            icon: Icons.person,
+            text: '[D]Dashboard Column View',
+            onTap: () => Navigator.of(context).pushNamed('dash_board'),
           ),
           DrawerTile(
               icon: Icons.power_settings_new, text: 'Logout', onTap: () {}),

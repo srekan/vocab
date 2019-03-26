@@ -8,7 +8,7 @@ import '../components/progress_chart.dart';
 import '../components/app_drawer.dart';
 import '../root_data.dart';
 
-class DashBoardScreen extends StatelessWidget {
+class DashBoardListViewScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ScopedModel<GroupScoppedModel>(
@@ -107,8 +107,8 @@ class _GroupsListContents extends StatelessWidget {
       appBar: AppBar(
         title: Text('Groups'),
       ),
-      body: SingleChildScrollView(
-          child: Column(
+      body: Center(
+          child: ListView(
         children: groups
             .map(
               (group) => Card(
