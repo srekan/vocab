@@ -1,0 +1,16 @@
+{
+  "name": "vocab-data",
+  "version": "1.0.0",
+  "description": "",
+  "main": "parse.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "http-server": "^0.11.1",
+    "lodash": "^4.17.11",
+    "uuid": "^3.3.2"
+  }
+}

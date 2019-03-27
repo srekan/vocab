@@ -1,0 +1,1016 @@
+[{
+    "wordText": "adorn",
+    "phoneticScript": "/əˈdɔrn/",
+    "syllable": "uh-dawrn",
+    "definitions": [{
+        "type": "VERB",
+        "definitionText": "Make more beautiful or attractive.",
+        "examples": ["pictures and prints adorned his walls", ""],
+        "synonyms": ["add ornament to", "decorate", "embellish"],
+        "otherLanguages": {
+            "telugu": "అలంకరించు,సజ్జీకరించు.",
+            "tamil": "",
+            "hindi": " सजाना, की शोभा बढ़ाना",
+            "malayalam": ""
+        }
+    }, {
+        "type": "VERB",
+        "definitionText": "",
+        "examples": ["", ""],
+        "synonyms": [],
+        "otherLanguages": {
+            "telugu": "",
+            "tamil": "",
+            "hindi": "",
+            "malayalam": ""
+        }
+    }],
+    "tags": ["week 1", "day 1"],
+    "lastEdited": 1552630893220
+}, {
+    "wordText": "alleged",
+    "phoneticScript": "/əˈledʒd/",
+    "syllable": "uh-lej-id",
+    "definitions": [{
+        "type": "ADJECTIVE",
+        "definitionText": "said or thought by some people to be the stated bad or illegal thing, although you have no proof.",
+        "examples": ["It took 15 years for the alleged criminals to prove their innocence.", "The British Museum, too, says it knows nothing about any alleged fakes in its displays."],
+        "synonyms": ["declared but not proved", "claimed", "rumoured", "supposed"],
+        "otherLanguages": {
+            "telugu": "ఆరోపించిన, ఆరోపిత, చెప్పబడిన.",
+            "tamil": "",
+            "hindi": "आरोपित कथित ,अफ़वाही",
+            "malayalam": "ആരോപിതമായ,     ആരോപിക്കപ്പെട്ട"
+        }
+    }, {
+        "type": "VERB",
+        "definitionText": "",
+        "examples": ["", ""],
+        "synonyms": [],
+        "otherLanguages": {
+            "telugu": "",
+            "tamil": "",
+            "hindi": "",
+            "malayalam": ""
+        }
+    }],
+    "tags": ["week 1", "day5"],
+    "lastEdited": 1552632810099
+}, {
+    "wordText": "appear",
+    "phoneticScript": "əˈpɪər",
+    "syllable": "uh-peer ",
+    "definitions": [{
+        "type": "VERB",
+        "definitionText": "Come into sight; become visible or noticeable, especially without apparent cause.",
+        "examples": ["He suddenly appeared in the doorway.", ""],
+        "synonyms": ["become visible", "come into sight", "come into view."],
+        "otherLanguages": {
+            "telugu": "కనబడు, హాజరగు; స్ఫురించు, ప్రత్యక్షమౌట",
+            "tamil": "",
+            "hindi": " दिखाई पड़ना, रूप लेना, आकृति करना",
+            "malayalam": ""
+        }
+    }, {
+        "type": "VERB",
+        "definitionText": "",
+        "examples": ["", ""],
+        "synonyms": [],
+        "otherLanguages": {
+            "telugu": "",
+            "tamil": "",
+            "hindi": "",
+            "malayalam": ""
+        }
+    }],
+    "tags": ["week 1", "day 1"],
+    "lastEdited": 1552631009906
+}, {
+    "wordText": "asset",
+    "phoneticScript": "/ˈæs.et/",
+    "syllable": "as-et ",
+    "definitions": [{
+        "type": "NOUN",
+        "definitionText": "a useful or valuable quality, skill, or person",
+        "examples": ["Knowledge of languages is a real asset in this sort of work.", ""],
+        "synonyms": ["benefit", "recommendation.", "strength"],
+        "otherLanguages": {
+            "telugu": " ఆస్తి; ధనము; ధనసర్వస్వము; ఒక వ్యక్తియొక్కగాని కంపెనీయొక్కగాని ఆస్తి.",
+            "tamil": "",
+            "hindi": " सम्पत्ति,परिसंपत्ति",
+            "malayalam": ""
+        }
+    }, {
+        "type": "VERB",
+        "definitionText": "",
+        "examples": ["", ""],
+        "synonyms": [],
+        "otherLanguages": {
+            "telugu": "",
+            "tamil": "",
+            "hindi": "",
+            "malayalam": ""
+        }
+    }],
+    "tags": ["week 1", "day3"],
+    "lastEdited": 1552631908734
+}, {
+    "wordText": "bring",
+    "phoneticScript": "/brɪŋ/",
+    "syllable": "bring ",
+    "definitions": [{
+        "type": "NOUN",
+        "definitionText": "to cause to come into a particular position, state, or effect",
+        "examples": ["These lamps will bring a good price.", ""],
+        "synonyms": ["bring", "fetch", "take"],
+        "otherLanguages": {
+            "telugu": "తెచ్చు,పిలిౘుకొని వచ్చు, తీసికొనివచ్చు",
+            "tamil": "",
+            "hindi": " खींचना,पहुँचाना  ,लगाना",
+            "malayalam": ""
+        }
+    }, {
+        "type": "VERB",
+        "definitionText": "",
+        "examples": ["", ""],
+        "synonyms": [],
+        "otherLanguages": {
+            "telugu": "",
+            "tamil": "",
+            "hindi": "",
+            "malayalam": ""
+        }
+    }],
+    "tags": ["week 1", "day 1"],
+    "lastEdited": 1552630977409
+}, {
+    "wordText": "campaign",
+    "phoneticScript": "kamˈpeɪn",
+    "syllable": " kam-peyn",
+    "definitions": [{
+        "type": "NOUN",
+        "definitionText": "a planned group of especially political, business, that are intended to achieve a particular aim.",
+        "examples": ["They're busy campaigning against the building of a new motorway near here.", ""],
+        "synonyms": ["military operation,crusade,   struggle,manoeuvres."],
+        "otherLanguages": {
+            "telugu": "ప్రచారం,దండయాత్ర, ఉద్యమం",
+            "tamil": "",
+            "hindi": "मुहीम,अभियान चलाना",
+            "malayalam": ""
+        }
+    }, {
+        "type": "VERB",
+        "definitionText": "",
+        "examples": ["", ""],
+        "synonyms": [],
+        "otherLanguages": {
+            "telugu": "",
+            "tamil": "",
+            "hindi": "",
+            "malayalam": ""
+        }
+    }],
+    "tags": ["week 1", "day 1"],
+    "lastEdited": 1552631118103
+}, {
+    "wordText": "captive",
+    "phoneticScript": "/ˈkæp tɪv/ ",
+    "syllable": "kap-tiv",
+    "definitions": [{
+        "type": "NOUN",
+        "definitionText": "A person who has been taken prisoner or an animal that has been confined.",
+        "examples": ["The policeman put a pair of handcuffs on the captive.", "The terrorists were holding several diplomats captive."],
+        "synonyms": ["convict", "prisoner", "slave"],
+        "otherLanguages": {
+            "telugu": "బంధిలు, కైదీలు.",
+            "tamil": "",
+            "hindi": "कैदी , बंदी, दास",
+            "malayalam": "കൂട്ടിലടയ്‌ക്കപ്പെട്ട, തടവുകാരന്‍, ജയില്‍പ്പുള്ളി"
+        }
+    }, {
+        "type": "VERB",
+        "definitionText": "",
+        "examples": ["", ""],
+        "synonyms": [],
+        "otherLanguages": {
+            "telugu": "",
+            "tamil": "",
+            "hindi": "",
+            "malayalam": ""
+        }
+    }],
+    "tags": ["week 1", "day2"],
+    "lastEdited": 1552631520268
+}, {
+    "wordText": "coalition",
+    "phoneticScript": "ˌkoʊ əˈlɪʃ ən",
+    "syllable": "koh-uh-lish-uh n",
+    "definitions": [{
+        "type": "NOUN",
+        "definitionText": "a group of people or organizations working together to achieve something:",
+        "examples": ["A coalition of environmental groups is working on a plan to reduce pollution in the city.", ""],
+        "synonyms": ["affiliation", "bloc", "union"],
+        "otherLanguages": {
+            "telugu": " మిశ్రమం, సంకీర్ణం; తాత్కాలిక ఒప్పందం/ కూటమి",
+            "tamil": "",
+            "hindi": "सहमिलन, संयुक्त सरकार, मेल ",
+            "malayalam": ""
+        }
+    }, {
+        "type": "VERB",
+        "definitionText": "",
+        "examples": ["", ""],
+        "synonyms": [],
+        "otherLanguages": {
+            "telugu": "",
+            "tamil": "",
+            "hindi": "",
+            "malayalam": ""
+        }
+    }],
+    "tags": ["week 1", "day3"],
+    "lastEdited": 1552631744550
+}, {
+    "wordText": "come",
+    "phoneticScript": "/kʌm/",
+    "syllable": "kuhm",
+    "definitions": [{
+        "type": "VERB",
+        "definitionText": "to approach or move toward a particular person or place:",
+        "examples": ["Success comes to those who strive.", ""],
+        "synonyms": ["approach", "draw near", "move closer"],
+        "otherLanguages": {
+            "telugu": "వచ్చు, చేరు, ఆగు, సంభవించు",
+            "tamil": "",
+            "hindi": " आना,उगना, पहुंचना",
+            "malayalam": ""
+        }
+    }, {
+        "type": "VERB",
+        "definitionText": "",
+        "examples": ["", ""],
+        "synonyms": [],
+        "otherLanguages": {
+            "telugu": "",
+            "tamil": "",
+            "hindi": "",
+            "malayalam": ""
+        }
+    }],
+    "tags": ["week 1", "day 1"],
+    "lastEdited": 1552630943582
+}, {
+    "wordText": "dawn",
+    "phoneticScript": "/dɔn/",
+    "syllable": "[dawn]",
+    "definitions": [{
+        "type": "NOUN",
+        "definitionText": "The first appearance of light in the sky before sunrise.",
+        "examples": ["We woke at dawn.", ""],
+        "synonyms": ["aurora", "morning"],
+        "otherLanguages": {
+            "telugu": "అరుణోదయకాలము, వేకువ",
+            "tamil": "",
+            "hindi": "",
+            "malayalam": "പ്രാരംഭം, ഉദയം, അരുണോദയം"
+        }
+    }, {
+        "type": "VERB",
+        "definitionText": "",
+        "examples": ["", ""],
+        "synonyms": [],
+        "otherLanguages": {
+            "telugu": "",
+            "tamil": "",
+            "hindi": "",
+            "malayalam": ""
+        }
+    }],
+    "tags": ["week 1", "day 1"],
+    "lastEdited": 1552631057289
+}, {
+    "wordText": "debut",
+    "phoneticScript": "ˈdeɪbjuː",
+    "syllable": "[dey-byoo, di-, dey-byoo, deb-yoo]",
+    "definitions": [{
+        "type": "NOUN",
+        "definitionText": "to perform or be introduced to the public for the first time.",
+        "examples": ["a debut album.", ""],
+        "synonyms": ["entry, first appearance, introduction, launching, unveiling"],
+        "otherLanguages": {
+            "telugu": "ప్రారంభము, ప్రవేశము; క్రొత్తగా సభలో ప్రసంగింౘుట",
+            "tamil": "",
+            "hindi": "प्रारंभ,प्रथम प्रदर्शन होना,प्रथम अभिनय.",
+            "malayalam": ""
+        }
+    }, {
+        "type": "VERB",
+        "definitionText": "",
+        "examples": ["", ""],
+        "synonyms": [],
+        "otherLanguages": {
+            "telugu": "",
+            "tamil": "",
+            "hindi": "",
+            "malayalam": ""
+        }
+    }],
+    "tags": ["week 1", "day 1"],
+    "lastEdited": 1552631089954
+}, {
+    "wordText": "denounce",
+    "phoneticScript": "/dɪˈnaʊns/",
+    "syllable": "dih-nouns",
+    "definitions": [{
+        "type": "VERB",
+        "definitionText": "to criticize something or someone strongly and publicly.",
+        "examples": ["We must denounce injustice and oppression.", ""],
+        "synonyms": ["condemn", "criticize", "discredit"],
+        "otherLanguages": {
+            "telugu": "నిరసించు, తప్పులెన్ను, నిందించు, దూషించు, విమర్శించు.",
+            "tamil": "",
+            "hindi": "निंदा करना, धमकाना, आरोप लगाना",
+            "malayalam": ""
+        }
+    }, {
+        "type": "VERB",
+        "definitionText": "",
+        "examples": ["", ""],
+        "synonyms": [],
+        "otherLanguages": {
+            "telugu": "",
+            "tamil": "",
+            "hindi": "",
+            "malayalam": ""
+        }
+    }],
+    "tags": ["week 1", "day3"],
+    "lastEdited": 1552631782240
+}, {
+    "wordText": "earthling",
+    "phoneticScript": "/ˈɜrθ lɪŋ/",
+    "syllable": "urth-ling",
+    "definitions": [{
+        "type": "NOUN",
+        "definitionText": "a word used by aliens to refer to an inhabitant of the earth.",
+        "examples": ["How can we know the actual number of earthlings that are sceptics?", ""],
+        "synonyms": ["human being", "member of the human race", "personage"],
+        "otherLanguages": {
+            "telugu": "భూజంతువు, మర్త్యుఁడు.",
+            "tamil": "",
+            "hindi": " पृथ्वीवासी",
+            "malayalam": ""
+        }
+    }, {
+        "type": "VERB",
+        "definitionText": "",
+        "examples": ["", ""],
+        "synonyms": [],
+        "otherLanguages": {
+            "telugu": "",
+            "tamil": "",
+            "hindi": "",
+            "malayalam": ""
+        }
+    }],
+    "tags": ["week 1", "day2"],
+    "lastEdited": 1552631290136
+}, {
+    "wordText": "enhance",
+    "phoneticScript": "/ɪnˈhɑːns/",
+    "syllable": "en-hans",
+    "definitions": [{
+        "type": "VERB",
+        "definitionText": "To improve the quality, amount, or strength of something.",
+        "examples": ["His refusal does nothing to enhance his reputation.", "The presence of this extra quality will enhance your mark."],
+        "synonyms": ["enrich", "improve", "raise"],
+        "otherLanguages": {
+            "telugu": "వృద్ధిచేయు, అధికంచేయు,   మెరుగుపరుచు.",
+            "tamil": "",
+            "hindi": "बढ़ाना,वृद्धि करना,विस्तार करना",
+            "malayalam": ""
+        }
+    }, {
+        "type": "VERB",
+        "definitionText": "",
+        "examples": ["", ""],
+        "synonyms": [],
+        "otherLanguages": {
+            "telugu": "",
+            "tamil": "",
+            "hindi": "",
+            "malayalam": ""
+        }
+    }],
+    "tags": ["week 1", "day2"],
+    "lastEdited": 1552631692298
+}, {
+    "wordText": "fantasy",
+    "phoneticScript": "ˈfæn tə si, -zi",
+    "syllable": "fan-tuh-see, -zee",
+    "definitions": [{
+        "type": "NOUN",
+        "definitionText": "The faculty or activity of imagining impossible or improbable things.",
+        "examples": ["his researches had moved into the realms of fantasy’.", ""],
+        "synonyms": ["creativity", "fancy", "imagination"],
+        "otherLanguages": {
+            "telugu": "కల్పనాశక్తి, స్వప్నం, భ్రమ, విపరీత భావన, వాస్తవాతీత గాథ.",
+            "tamil": "",
+            "hindi": "भ्रम,कल्पना,अनुमान",
+            "malayalam": ""
+        }
+    }, {
+        "type": "VERB",
+        "definitionText": "",
+        "examples": ["", ""],
+        "synonyms": [],
+        "otherLanguages": {
+            "telugu": "",
+            "tamil": "",
+            "hindi": "",
+            "malayalam": ""
+        }
+    }],
+    "tags": ["week 1", "day2"],
+    "lastEdited": 1552631332924
+}, {
+    "wordText": "gadget",
+    "phoneticScript": "/ˈgædʒ ɪt/",
+    "syllable": "gaj-it",
+    "definitions": [{
+        "type": "NOUN",
+        "definitionText": "a small device or machine with a particular purpose.",
+        "examples": ["a variety of kitchen gadgets’", ""],
+        "synonyms": ["appliance", "device", "instrument", "machine"],
+        "otherLanguages": {
+            "telugu": "యంత్రసాధనం,ఉపాయం, యుక్తి (యంత్రంలో) చిన్న అమరిక/ కీలకం, యంత్రపరికరం.",
+            "tamil": "",
+            "hindi": " यंत्र, टूम",
+            "malayalam": ""
+        }
+    }, {
+        "type": "VERB",
+        "definitionText": "",
+        "examples": ["", ""],
+        "synonyms": [],
+        "otherLanguages": {
+            "telugu": "",
+            "tamil": "",
+            "hindi": "",
+            "malayalam": ""
+        }
+    }],
+    "tags": ["week 1", "day3"],
+    "lastEdited": 1552631882981
+}, {
+    "wordText": "heed",
+    "phoneticScript": "/hid/",
+    "syllable": "heed",
+    "definitions": [{
+        "type": "VERB",
+        "definitionText": ".to pay attention to something, especially advice or a warning.",
+        "examples": ["he should have heeded the warnings", ""],
+        "synonyms": ["consider", "pay attention to", "take into account"],
+        "otherLanguages": {
+            "telugu": "లక్ష్యపెట్టు, ఆదరంగా విను, మెలఁకువ, జాగ్రత్త.",
+            "tamil": "",
+            "hindi": " मन लगाना, ध्यान देना",
+            "malayalam": ""
+        }
+    }, {
+        "type": "VERB",
+        "definitionText": "",
+        "examples": ["", ""],
+        "synonyms": [],
+        "otherLanguages": {
+            "telugu": "",
+            "tamil": "",
+            "hindi": "",
+            "malayalam": ""
+        }
+    }],
+    "tags": ["week 1", "day3"],
+    "lastEdited": 1552631948757
+}, {
+    "wordText": "impact",
+    "phoneticScript": "ˈɪm pækt",
+    "syllable": "im-pakt",
+    "definitions": [{
+        "type": "NOUN",
+        "definitionText": "The action of one object coming forcibly into contact with another.",
+        "examples": ["The new proposals were intended to soften the impact of the reformed tax system.", ""],
+        "synonyms": ["collision", "effect", "percussion"],
+        "otherLanguages": {
+            "telugu": "ప్రభావం, సంఘటన, తాకిడి.",
+            "tamil": "",
+            "hindi": "प्रभाव,गहरा असर डालना,धक्का",
+            "malayalam": ""
+        }
+    }, {
+        "type": "VERB",
+        "definitionText": "",
+        "examples": ["", ""],
+        "synonyms": [],
+        "otherLanguages": {
+            "telugu": "",
+            "tamil": "",
+            "hindi": "",
+            "malayalam": ""
+        }
+    }],
+    "tags": ["week 1", "day2"],
+    "lastEdited": 1552631364620
+}, {
+    "wordText": "imposing",
+    "phoneticScript": "/ɪmˈpoʊ zɪŋ/",
+    "syllable": "im-poh-zing",
+    "definitions": [{
+        "type": "ADJECTIVE",
+        "definitionText": "Grand and impressive in appearance.",
+        "examples": ["He was an imposing figure on stage.", ""],
+        "synonyms": ["awesome", "impressive", "stunning"],
+        "otherLanguages": {
+            "telugu": "గంభీరమైన,ఆశ్చర్యకరమైన, అద్భుతావహమైన",
+            "tamil": "",
+            "hindi": " प्रभावशाली, प्रभाव डालने वाला.",
+            "malayalam": ""
+        }
+    }, {
+        "type": "VERB",
+        "definitionText": "",
+        "examples": ["", ""],
+        "synonyms": [],
+        "otherLanguages": {
+            "telugu": "",
+            "tamil": "",
+            "hindi": "",
+            "malayalam": ""
+        }
+    }],
+    "tags": ["week 1", "day3"],
+    "lastEdited": 1552631847086
+}, {
+    "wordText": "jowl",
+    "phoneticScript": "/dʒaʊl, dʒoʊl/",
+    "syllable": "joul, johl",
+    "definitions": [{
+        "type": "NOUN",
+        "definitionText": "the loose skin and flesh under the jaw:",
+        "examples": ["she had a large nose and heavy jowls’", ""],
+        "synonyms": ["the cheek", "the jaw."],
+        "otherLanguages": {
+            "telugu": "చెంప దవుడ.",
+            "tamil": "",
+            "hindi": " कपोल, गाल",
+            "malayalam": ""
+        }
+    }, {
+        "type": "VERB",
+        "definitionText": "",
+        "examples": ["", ""],
+        "synonyms": [],
+        "otherLanguages": {
+            "telugu": "",
+            "tamil": "",
+            "hindi": "",
+            "malayalam": ""
+        }
+    }],
+    "tags": ["week 1", "day2"],
+    "lastEdited": 1552631556519
+}, {
+    "wordText": "kick-start",
+    "phoneticScript": "/ˈkɪkˌstɑrt/",
+    "syllable": "kik-stahrt",
+    "definitions": [{
+        "type": "VERB",
+        "definitionText": "to make something start to happen, happen more quickly, or improve.",
+        "examples": ["Taxes were drastically cut in an attempt to kick-start the economy.", ""],
+        "synonyms": ["regenerate", "restore", "revive"],
+        "otherLanguages": {
+            "telugu": "తొలి అడుగు",
+            "tamil": "",
+            "hindi": " झटके से बल लगाकर शुरु करना,  तेज़ी लाना",
+            "malayalam": ""
+        }
+    }, {
+        "type": "VERB",
+        "definitionText": "",
+        "examples": ["", ""],
+        "synonyms": [],
+        "otherLanguages": {
+            "telugu": "",
+            "tamil": "",
+            "hindi": "",
+            "malayalam": ""
+        }
+    }],
+    "tags": ["week 1", "day2"],
+    "lastEdited": 1552631654451
+}, {
+    "wordText": "label",
+    "phoneticScript": "ˈleɪ bəl",
+    "syllable": "ley-buh l",
+    "definitions": [{
+        "type": "NOUN",
+        "definitionText": ".a word or a phrase that is used to describe the characteristics or qualities of people, activities, or things, often in a way that is unfair.",
+        "examples": ["the alcohol content is clearly stated on the label", ""],
+        "synonyms": ["marker", "sticker", "tag"],
+        "otherLanguages": {
+            "telugu": "గుర్తు, చీటీ,ముద్ర.",
+            "tamil": "",
+            "hindi": "लेबुल,सूचक पत्र,नाम-पत्र",
+            "malayalam": ""
+        }
+    }, {
+        "type": "VERB",
+        "definitionText": "",
+        "examples": ["", ""],
+        "synonyms": [],
+        "otherLanguages": {
+            "telugu": "",
+            "tamil": "",
+            "hindi": "",
+            "malayalam": ""
+        }
+    }],
+    "tags": ["week 1", "day3"],
+    "lastEdited": 1552631812398
+}, {
+    "wordText": "lucrative",
+    "phoneticScript": "ˈlu krə tɪv",
+    "syllable": "loo-kruh-tiv",
+    "definitions": [{
+        "type": "ADJECTIVE",
+        "definitionText": "Producing a great deal of profit.",
+        "examples": ["The merger proved to be very lucrative for both companies.", ""],
+        "synonyms": ["gainful", "profitable", "remunerative."],
+        "otherLanguages": {
+            "telugu": "లాభదాయక, లాభసాటి.",
+            "tamil": "",
+            "hindi": "लाभदायक, फल देनेवाला,फायदे का",
+            "malayalam": ""
+        }
+    }, {
+        "type": "VERB",
+        "definitionText": "",
+        "examples": ["", ""],
+        "synonyms": [],
+        "otherLanguages": {
+            "telugu": "",
+            "tamil": "",
+            "hindi": "",
+            "malayalam": ""
+        }
+    }],
+    "tags": ["week 1", "day5"],
+    "lastEdited": 1552632778048
+}, {
+    "wordText": "mandatory",
+    "phoneticScript": "",
+    "syllable": "",
+    "definitions": [{
+        "type": "ADJECTIVE",
+        "definitionText": "made necessary, usually by law or by some other rule.",
+        "examples": ["The test includes a mandatory essay question.", ""],
+        "synonyms": ["compulsory", "obligatory", "required"],
+        "otherLanguages": {
+            "telugu": "ఆదేశక, ప్రవర్తక, విధ్యాత్మక,  ఖచ్చితంగా.",
+            "tamil": "",
+            "hindi": "अनिवार्य,अनिवार्य,बलपूर्वक",
+            "malayalam": ""
+        }
+    }, {
+        "type": "VERB",
+        "definitionText": "",
+        "examples": ["", ""],
+        "synonyms": [],
+        "otherLanguages": {
+            "telugu": "",
+            "tamil": "",
+            "hindi": "",
+            "malayalam": ""
+        }
+    }],
+    "tags": ["week 1", "day4"],
+    "lastEdited": 1552632555261
+}, {
+    "wordText": "mishap",
+    "phoneticScript": "/ˈmɪs.hæp/ ",
+    "syllable": "mis-hap",
+    "definitions": [{
+        "type": "NOUN",
+        "definitionText": " bad luck, or an unlucky event or accident.",
+        "examples": ["The parade was very well organized and passed without mishap.", "A series of mishaps led to the nuclear power     plant blowing up."],
+        "synonyms": ["disaster", "tragedy", "unfortunate."],
+        "otherLanguages": {
+            "telugu": "దురదృష్టము, దుర్ఘటన, విపత్తు.",
+            "tamil": "",
+            "hindi": "दुर्घटना, दुर्भाग्यपूर्ण, आपदा",
+            "malayalam": ""
+        }
+    }, {
+        "type": "VERB",
+        "definitionText": "",
+        "examples": ["", ""],
+        "synonyms": [],
+        "otherLanguages": {
+            "telugu": "",
+            "tamil": "",
+            "hindi": "",
+            "malayalam": ""
+        }
+    }],
+    "tags": ["week 1", "day5"],
+    "lastEdited": 1552632672826
+}, {
+    "wordText": "out burst",
+    "phoneticScript": "ˈaʊtˌbɜrst",
+    "syllable": "out-burst",
+    "definitions": [{
+        "type": "NOUN",
+        "definitionText": "a sudden release of strong emotion.",
+        "examples": ["an angry outburst from the prime minister\"", ""],
+        "synonyms": ["blow-up", "burst", "explosion"],
+        "otherLanguages": {
+            "telugu": "వెల్లడిలో, సంగమం, అభివ్యక్తి, ద్యోతకం, వైభవం గా, వ్యక్తీకరణ, బహిర్గతం",
+            "tamil": "",
+            "hindi": "आवेग,प्रकोप,विस्फोट",
+            "malayalam": ""
+        }
+    }, {
+        "type": "VERB",
+        "definitionText": "",
+        "examples": ["", ""],
+        "synonyms": [],
+        "otherLanguages": {
+            "telugu": "",
+            "tamil": "",
+            "hindi": "",
+            "malayalam": ""
+        }
+    }],
+    "tags": ["week 1", "day5"],
+    "lastEdited": 1552632638179
+}, {
+    "wordText": "pétition",
+    "phoneticScript": "pəˈtɪʃ ən",
+    "syllable": "puh-tish-uh n",
+    "definitions": [{
+        "type": "NOUN",
+        "definitionText": "a formal letter to a court of law asking for a particular decision.",
+        "examples": ["They had filed a petition in federal court on behalf of the detainees.", ""],
+        "synonyms": ["appeal", "list of protesters", "list of signatures."],
+        "otherLanguages": {
+            "telugu": "అర్జీ, మనవి, దరఖాస్తు, విజ్ఞాపన.",
+            "tamil": "",
+            "hindi": "अर्जी,विनती,दरख़ास्त",
+            "malayalam": ""
+        }
+    }, {
+        "type": "VERB",
+        "definitionText": "",
+        "examples": ["", ""],
+        "synonyms": [],
+        "otherLanguages": {
+            "telugu": "",
+            "tamil": "",
+            "hindi": "",
+            "malayalam": ""
+        }
+    }],
+    "tags": ["week 1", "day4"],
+    "lastEdited": 1552632597319
+}, {
+    "wordText": "reveal",
+    "phoneticScript": "/rɪˈvil/",
+    "syllable": "ri-veel",
+    "definitions": [{
+        "type": "VERB",
+        "definitionText": "to make known or show something that is surprising or that was previously secret.",
+        "examples": ["He was jailed for revealing secrets to the Russians.", ""],
+        "synonyms": ["give the show away", "release.", "tell"],
+        "otherLanguages": {
+            "telugu": "వెల్లడిచేయు, బయటపెట్టు, వెలువ రించు.",
+            "tamil": "",
+            "hindi": " दिखाना, बताना,प्रकट करना",
+            "malayalam": ""
+        }
+    }, {
+        "type": "VERB",
+        "definitionText": "",
+        "examples": ["", ""],
+        "synonyms": [],
+        "otherLanguages": {
+            "telugu": "",
+            "tamil": "",
+            "hindi": "",
+            "malayalam": ""
+        }
+    }],
+    "tags": ["week 1", "day5"],
+    "lastEdited": 1552632855309
+}, {
+    "wordText": "sanitise",
+    "phoneticScript": "/ˈsæn ɪˌtaɪz/",
+    "syllable": "san-i-tahyz",
+    "definitions": [{
+        "type": "VERB",
+        "definitionText": "to make something completely clean and free from bacteria.",
+        "examples": ["The majority of public swimming pools are sanitized with chlorine.", ""],
+        "synonyms": ["decontaminate", "purify", "sterilize"],
+        "otherLanguages": {
+            "telugu": "పరిసరాల పరిశుభ్రత.",
+            "tamil": "",
+            "hindi": " अच्छी तरह से सफ़ाई करना",
+            "malayalam": ""
+        }
+    }, {
+        "type": "VERB",
+        "definitionText": "",
+        "examples": ["", ""],
+        "synonyms": [],
+        "otherLanguages": {
+            "telugu": "",
+            "tamil": "",
+            "hindi": "",
+            "malayalam": ""
+        }
+    }],
+    "tags": ["week 1", "day4"],
+    "lastEdited": 1552632442124
+}, {
+    "wordText": "stir",
+    "phoneticScript": "/stɜr/ ",
+    "syllable": "stur",
+    "definitions": [{
+        "type": "VERB",
+        "definitionText": "To move or to cause something to move slightly.",
+        "examples": ["She paused to stir some milk into her coffee.", ""],
+        "synonyms": ["disturbance", "movement"],
+        "otherLanguages": {
+            "telugu": "కదిలించు, కదుపు",
+            "tamil": "",
+            "hindi": "हलचल , मिलाना,उमड़ना",
+            "malayalam": ""
+        }
+    }, {
+        "type": "VERB",
+        "definitionText": "",
+        "examples": ["", ""],
+        "synonyms": [],
+        "otherLanguages": {
+            "telugu": "",
+            "tamil": "",
+            "hindi": "",
+            "malayalam": ""
+        }
+    }],
+    "tags": ["week 1", "day4"],
+    "lastEdited": 1552632516589
+}, {
+    "wordText": "suffer",
+    "phoneticScript": "ˈsʌf ər",
+    "syllable": "suhf-er",
+    "definitions": [{
+        "type": "VERB",
+        "definitionText": "to experience physical or mental pain.",
+        "examples": ["She suffers in the winter when it's cold and her joints get stiff.", ""],
+        "synonyms": ["be in pain", "distress", "hurt"],
+        "otherLanguages": {
+            "telugu": "సహించు, భరించు, అనుభవించు, కష్టపడు",
+            "tamil": "",
+            "hindi": "सहन करना,सहना",
+            "malayalam": ""
+        }
+    }, {
+        "type": "VERB",
+        "definitionText": "",
+        "examples": ["", ""],
+        "synonyms": [],
+        "otherLanguages": {
+            "telugu": "",
+            "tamil": "",
+            "hindi": "",
+            "malayalam": ""
+        }
+    }],
+    "tags": ["week 1", "day5"],
+    "lastEdited": 1552632714153
+}, {
+    "wordText": "take",
+    "phoneticScript": "/teɪk/",
+    "syllable": "teyk",
+    "definitions": [{
+        "type": "VERB",
+        "definitionText": "to get into one's hold or possession by voluntary action",
+        "examples": ["take a pen and begin to write.", ""],
+        "synonyms": ["get hold of", "get into one's hands", "lay hold of"],
+        "otherLanguages": {
+            "telugu": "తీసుకొను, పట్టుకొను, తెలుసుకొను.",
+            "tamil": "",
+            "hindi": "पकड़ना, खा लेना,जान लेना",
+            "malayalam": ""
+        }
+    }, {
+        "type": "VERB",
+        "definitionText": "",
+        "examples": ["", ""],
+        "synonyms": [],
+        "otherLanguages": {
+            "telugu": "",
+            "tamil": "",
+            "hindi": "",
+            "malayalam": ""
+        }
+    }],
+    "tags": ["week 1", "day4"],
+    "lastEdited": 1552632920830
+}, {
+    "wordText": "unconditional",
+    "phoneticScript": "ˌʌn kənˈdɪʃ ə nl",
+    "syllable": "uhn-kuh n-dish-uh-nl",
+    "definitions": [{
+        "type": "ADJECTIVE",
+        "definitionText": "complete and not limited in any way.",
+        "examples": ["they have my unconditional support..", ""],
+        "synonyms": ["imited by no condition, absolute,categoric."],
+        "otherLanguages": {
+            "telugu": "నియమము లేని,నిబంధన లేని,షరతులేని.",
+            "tamil": "",
+            "hindi": "अनियमित,असम्बन्ध,बेशर्त.",
+            "malayalam": ""
+        }
+    }, {
+        "type": "VERB",
+        "definitionText": "",
+        "examples": ["", ""],
+        "synonyms": [],
+        "otherLanguages": {
+            "telugu": "",
+            "tamil": "",
+            "hindi": "",
+            "malayalam": ""
+        }
+    }],
+    "tags": ["week 1", "day4"],
+    "lastEdited": 1552632046603
+}, {
+    "wordText": "vibrant",
+    "phoneticScript": "/ˈvaɪ brənt/",
+    "syllable": "vahy-bruh nt",
+    "definitions": [{
+        "type": "ADJECTIVE",
+        "definitionText": "Full of energy and life.",
+        "examples": ["The hope is that this area will develop into a vibrant commercial centre.", ""],
+        "synonyms": ["energetic", "sparkling", "spirited"],
+        "otherLanguages": {
+            "telugu": "సచేతన, డోలాయమాన, కంప మాన, ప్రతిస్పందించే.",
+            "tamil": "",
+            "hindi": "जोशपूर्ण, चमकीले और आकर्षक",
+            "malayalam": ""
+        }
+    }, {
+        "type": "VERB",
+        "definitionText": "",
+        "examples": ["", ""],
+        "synonyms": [],
+        "otherLanguages": {
+            "telugu": "",
+            "tamil": "",
+            "hindi": "",
+            "malayalam": ""
+        }
+    }],
+    "tags": ["week 1", "day4"],
+    "lastEdited": 1552632007396
+}, {
+    "wordText": "wrecked",
+    "phoneticScript": "/rɛkt/ ",
+    "syllable": "rekt",
+    "definitions": [{
+        "type": "ADJECTIVE",
+        "definitionText": "very badly damaged.",
+        "examples": ["Just look at what you've done to my coat - it's wrecked.", ""],
+        "synonyms": ["demolish", "destroy", "smash up"],
+        "otherLanguages": {
+            "telugu": "ధ్వంసమయిన,శిథిలమైన, పాడైన.",
+            "tamil": "",
+            "hindi": " ध्वस्त, नष्ट,बरबाद",
+            "malayalam": ""
+        }
+    }, {
+        "type": "VERB",
+        "definitionText": "",
+        "examples": ["", ""],
+        "synonyms": [],
+        "otherLanguages": {
+            "telugu": "",
+            "tamil": "",
+            "hindi": "",
+            "malayalam": ""
+        }
+    }],
+    "tags": ["week 1", "day5"],
+    "lastEdited": 1552632744503
+}]
