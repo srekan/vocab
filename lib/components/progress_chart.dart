@@ -20,19 +20,31 @@ class ProgressChart extends StatelessWidget {
     @required this.group,
   });
 
-  factory ProgressChart.withWordsData({
+  factory ProgressChart.fromGroup({
     double height,
     double width,
     bool disableDiscriptions,
-    @required group,
+    @required Group group,
     animate,
   }) {
-    final data = [
-      LinearProgress(0, group.progress[ReviewName.NEW]),
-      LinearProgress(1, group.progress[ReviewName.LEARNING]),
-      LinearProgress(2, group.progress[ReviewName.MASTERED]),
+    var data = [
+      LinearProgress(0, group.progress[ReviewName.NEW], ReviewName.NEW),
+      LinearProgress(
+          1, group.progress[ReviewName.LEARNING], ReviewName.LEARNING),
+      LinearProgress(
+          2, group.progress[ReviewName.MASTERED], ReviewName.MASTERED),
     ];
-
+    if (group.globalGroupId == '') {
+      data = [
+        LinearProgress(0, group.progress[ReviewName.NEW], ReviewName.NEW),
+        LinearProgress(
+          1,
+          group.progress[ReviewName.LEARNING] +
+              group.progress[ReviewName.MASTERED],
+          ReviewName.MASTERED,
+        ),
+      ];
+    }
     var _labelAccessorFn = (LinearProgress row, _) =>
         '${LinearProgress.reviewDisplayNames[row.index]}: ${row.score}';
     if (disableDiscriptions == true) {
@@ -44,7 +56,7 @@ class ProgressChart extends StatelessWidget {
         domainFn: (LinearProgress score, _) => score.index,
         measureFn: (LinearProgress score, _) => score.score,
         colorFn: (LinearProgress score, _) =>
-            LinearProgress.colors[score.index],
+            LinearProgress.colors[score.reviewName],
         data: data,
         // Set a label accessor to control the text of the arc label.
         labelAccessorFn: _labelAccessorFn,
@@ -101,16 +113,17 @@ class ProgressChart extends StatelessWidget {
 class LinearProgress {
   final int index;
   final int score;
+  final String reviewName;
   static final reviewDisplayNames = [
     'New',
     'Learning',
     'Mastered',
   ];
 
-  static final colors = [
-    charts.ColorUtil.fromDartColor(ReviewColors.newWord),
-    charts.ColorUtil.fromDartColor(ReviewColors.learning),
-    charts.ColorUtil.fromDartColor(ReviewColors.mastered),
-  ];
-  LinearProgress(this.index, this.score);
+  static final Map<String, charts.Color> colors = {
+    ReviewName.NEW: charts.ColorUtil.fromDartColor(ReviewColors.newWord),
+    ReviewName.LEARNING: charts.ColorUtil.fromDartColor(ReviewColors.learning),
+    ReviewName.MASTERED: charts.ColorUtil.fromDartColor(ReviewColors.mastered),
+  };
+  LinearProgress(this.index, this.score, this.reviewName);
 }

@@ -1,3 +1,4 @@
+import 'package:flutter/material.dart';
 import 'package:scoped_model/scoped_model.dart';
 import '../models/group.dart';
 import '../models/word.dart';
@@ -17,6 +18,8 @@ class GroupScoppedModel extends Model {
   SharedPreferences _prefs;
   String dataVersion;
   List<Group> _groups = [];
+  Map<String, Group> groupsMap = {};
+  List<Group> _globalGroups = [];
   Group _activeGroup;
   Word _activeWord;
   bool _isShowingWordDefinition = false;
@@ -26,6 +29,7 @@ class GroupScoppedModel extends Model {
   final cacheManager = DefaultCacheManager();
 
   SharedPreferences get prefs => _prefs;
+  List<Group> get globalGroups => _globalGroups;
   List<Group> get groups => _groups;
   Group get activeGroup => _activeGroup;
   Word get activeWord => _activeWord;
@@ -46,7 +50,8 @@ class GroupScoppedModel extends Model {
       _prepareData(dmap);
     }
 
-    _getDataFromNetwork();
+    // _getDataFromNetwork();
+    _getDataFromDocs(); // For development only
   }
 
   _getDataFromNetwork() async {
@@ -60,15 +65,29 @@ class GroupScoppedModel extends Model {
     }
   }
 
+  _getDataFromDocs() async {
+    // Products
+    Map<String, dynamic> dmap =
+        await parseJsonFromAssets('docs/vocab-data.json');
+    if (dmap['version'] != dataVersion) {
+      _prepareData(dmap);
+    } else {
+      // print('No change in the version.' + dmap['version'] + dataVersion);
+    }
+  }
+
   _prepareData(Map<String, dynamic> dmap) {
     List<Group> __groups = [];
     List<Word> _words = [];
     dataVersion = dmap['version'];
+
+    // Create words
     for (var item in dmap['words']) {
       var word = Word.fromJson(item);
       _words.add(word);
     }
 
+    // Create groups
     for (var item in dmap['groups']) {
       var group = Group.fromJson(item);
       List<Word> _wordsInGroup = [];
@@ -81,15 +100,31 @@ class GroupScoppedModel extends Model {
       }
       group.words = _wordsInGroup;
       group.updateProgress();
+      groupsMap[group.id] = group;
       __groups.add(group);
     }
     _groups = __groups;
+
+    // Create global groups
+    List<Group> __globalGroups = [];
+    for (var item in dmap['globalGroups']) {
+      var group = Group.fromJson(item);
+      group.reviewMap = {};
+      for (var id in group.subGroupIds) {
+        group.reviewMap.addAll(groupsMap[id].reviewMap);
+      }
+      group.updateProgress();
+      groupsMap[group.id] = group;
+      __globalGroups.add(group);
+    }
+    _globalGroups = __globalGroups;
     notifyListeners();
   }
 
-  setActiveGroup(group) {
+  setActiveGroup(group, context) {
     _activeGroup = group;
     setActiveWord(_activeGroup.words[0]);
+    Navigator.of(context).pushNamed('group_detail');
   }
 
   setActiveWord(Word word) {
@@ -99,21 +134,33 @@ class GroupScoppedModel extends Model {
   }
 
   resetGroup(Group group) {
-    for (var word in group.words) {
-      String mapId = getReviewId(group, word);
-      reviewMap[mapId] = Review.reviewNames[0];
-      group.reviewMap[mapId] = reviewMap[mapId];
-      _prefs.setString(mapId, reviewMap[mapId]);
-    }
+    group.reviewMap.forEach((k, v) {
+      final newVal = Review.reviewNames[0];
+      reviewMap[k] = newVal;
+      group.reviewMap[k] = newVal;
+      _prefs.setString(k, newVal);
+    });
+
     group.updateProgress();
+    if (group.globalGroupId == '') {
+      for (var gId in group.subGroupIds) {
+        resetGroup(groupsMap[gId]);
+      }
+    }
     notifyListeners();
   }
 
   markWordAs(ReviewMark markAs) {
     String mapId = getReviewId(_activeGroup, _activeWord);
-    reviewMap[mapId] = _getNextReview(markAs, reviewMap[mapId]);
-    _activeGroup.reviewMap[mapId] = reviewMap[mapId];
+    final nextReview = _getNextReview(markAs, reviewMap[mapId]);
+    reviewMap[mapId] = nextReview;
+    _activeGroup.reviewMap[mapId] = nextReview;
+    _activeGroup.reviewMap[mapId] = nextReview;
+    groupsMap[_activeGroup.globalGroupId].reviewMap[mapId] = nextReview;
+
     _activeGroup.updateProgress();
+    groupsMap[_activeGroup.globalGroupId].updateProgress();
+
     _isShowingWordDefinition = true;
     _prefs.setString(mapId, reviewMap[mapId]);
     notifyListeners();
@@ -185,6 +232,6 @@ class GroupScoppedModel extends Model {
   }
 
   String getReviewId(Group group, Word word) {
-    return group.name + '-' + word.wordText;
+    return group.globalGroupId + group.id + word.wordText;
   }
 }

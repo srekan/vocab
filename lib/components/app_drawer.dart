@@ -36,23 +36,22 @@ class AppDrawer extends StatelessWidget {
             decoration:
                 BoxDecoration(gradient: ThemeConstants.backgroundGradient),
           ),
+          /*
           DrawerTile(
             icon: Icons.person,
             text: 'Profile',
           ),
           DrawerTile(
             icon: Icons.person,
-            text: '[D]Dashboard List View',
-            onTap: () =>
-                Navigator.of(context).pushNamed('dash_board_list_view'),
+            text: 'About App',
           ),
+          
           DrawerTile(
-            icon: Icons.person,
-            text: '[D]Dashboard Column View',
-            onTap: () => Navigator.of(context).pushNamed('dash_board'),
+            icon: Icons.power_settings_new,
+            text: 'Logout',
+            onTap: () {},
           ),
-          DrawerTile(
-              icon: Icons.power_settings_new, text: 'Logout', onTap: () {}),
+          */
         ],
       ),
     );

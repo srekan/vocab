@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import './screens/splash.dart';
 import './screens/dashboard.dart';
-import './screens/dashboard_list_view.dart';
 import './screens/group_detail.dart';
 
 void main() => runApp(MyApp());
@@ -16,7 +15,6 @@ class MyApp extends StatelessWidget {
       home: SplashScreen(),
       routes: {
         'dash_board': (context) => DashBoardScreen(),
-        'dash_board_list_view': (context) => DashBoardListViewScreen(),
         'group_detail': (context) => GroupDetailScreen(),
       },
     );

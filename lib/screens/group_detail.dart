@@ -33,7 +33,7 @@ class GroupDetailScreen extends StatelessWidget {
                   getReviewId: model.getReviewId,
                 ),
                 Align(
-                  child: ProgressChart.withWordsData(
+                  child: ProgressChart.fromGroup(
                     // height: model.isShowingWordDefinition ? 150 : 200,
                     height: 200,
                     group: model.activeGroup,

@@ -1,44 +1,22 @@
 import 'package:flutter/material.dart';
-import 'package:scoped_model/scoped_model.dart';
-import '../scoped_models/group_scoped_model.dart';
 import '../models/group.dart';
 import '../models/word.dart';
 import '../models/review.dart';
 import '../components/progress_chart.dart';
 import '../components/app_drawer.dart';
-import '../root_data.dart';
 
-class DashBoardListViewScreen extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return ScopedModel<GroupScoppedModel>(
-      model: rootdata.groups,
-      child: ScopedModelDescendant<GroupScoppedModel>(
-          builder: (context, child, model) {
-        return _GroupsListContents(
-          groups: model.groups,
-          setActiveGroup: model.setActiveGroup,
-          resetGroup: model.resetGroup,
-          reviewMap: model.reviewMap,
-          getReviewId: model.getReviewId,
-        );
-      }),
-    );
-  }
-}
-
-class _GroupsListContents extends StatelessWidget {
+class GroupsListScreen extends StatelessWidget {
+  final String pageTitle;
   final List<Group> groups;
-  final Map<String, String> reviewMap;
   final Function setActiveGroup;
   final Function resetGroup;
-  final Function getReviewId;
-  _GroupsListContents({
+  final bool isGlobalGroup;
+  GroupsListScreen({
+    this.isGlobalGroup,
     @required this.groups,
+    @required this.pageTitle,
     @required this.setActiveGroup,
     @required this.resetGroup,
-    @required this.reviewMap,
-    @required this.getReviewId,
   });
 
   Future<String> createResetGroupAlertDialog(
@@ -71,44 +49,53 @@ class _GroupsListContents extends StatelessWidget {
   }
 
   Widget _buildSubtitle(Group group, List<Word> words) {
-    final masterWords = [];
-    final otherWords = [];
-    for (var word in words) {
-      if (reviewMap[getReviewId(group, word)] == ReviewName.MASTERED) {
-        masterWords.add(word);
-      } else {
-        otherWords.add(word);
-      }
+    if (group.globalGroupId == '') {
+      final count = group.reviewMap.entries.length / 2;
+      return Text(count.toInt().toString() + ' Words');
     }
+    int masterWordsCount = 0;
+    int otherWordsCount = 0;
+    int allWordsCount = 0;
+    group.reviewMap.forEach((k, v) {
+      if (v == ReviewName.MASTERED) {
+        masterWordsCount++;
+      } else {
+        otherWordsCount++;
+      }
+      allWordsCount++;
+    });
 
-    if (masterWords.length == words.length) {
+    if (masterWordsCount == allWordsCount) {
       return Text(
-        'Mastered all ${words.length} words',
+        'Mastered all ' + allWordsCount.toString() + ' words',
         style: TextStyle(
           color: ReviewColors.mastered,
         ),
       );
     }
 
-    if (masterWords.length == 0) {
+    if (masterWordsCount == 0) {
       return Text(
-        '${words.length} words to be mastered',
+        allWordsCount.toString() + ' words to be mastered',
       );
     }
     return Text(
-      '${otherWords.length} of ${words.length} words to be mastered',
+      otherWordsCount.toString() +
+          ' of ' +
+          allWordsCount.toString() +
+          ' words to be mastered',
     );
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: AppDrawer(),
+      drawer: isGlobalGroup == true ? AppDrawer() : null,
       appBar: AppBar(
         title: Text('Groups'),
       ),
-      body: Center(
-          child: ListView(
+      body: SingleChildScrollView(
+          child: Column(
         children: groups
             .map(
               (group) => Card(
@@ -117,7 +104,7 @@ class _GroupsListContents extends StatelessWidget {
                       children: <Widget>[
                         ListTile(
                           leading: Container(
-                            child: ProgressChart.withWordsData(
+                            child: ProgressChart.fromGroup(
                               height: 100.0,
                               width: 100.0,
                               disableDiscriptions: true,
@@ -130,8 +117,7 @@ class _GroupsListContents extends StatelessWidget {
                           ),
                           subtitle: _buildSubtitle(group, group.words),
                           onTap: () {
-                            setActiveGroup(group);
-                            Navigator.of(context).pushNamed('group_detail');
+                            setActiveGroup(group, context);
                           },
                         ),
                         ButtonTheme.bar(
