@@ -50,11 +50,11 @@ class GroupScoppedModel extends Model {
       _prepareData(dmap);
     }
 
-    // _getDataFromNetwork();
-    _getDataFromDocs(); // For development only
+    getDataFromNetwork();
+    // getDataFromDocs(); // For development only
   }
 
-  _getDataFromNetwork() async {
+  getDataFromNetwork() async {
     var file = await cacheManager.downloadFile(dataUrl);
     final contents = file.file.readAsStringSync();
     Map<String, dynamic> dmap = jsonDecode(contents);
@@ -65,7 +65,7 @@ class GroupScoppedModel extends Model {
     }
   }
 
-  _getDataFromDocs() async {
+  getDataFromDocs() async {
     // Products
     Map<String, dynamic> dmap =
         await parseJsonFromAssets('docs/vocab-data.json');
