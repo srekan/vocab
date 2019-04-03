@@ -60,6 +60,18 @@ const groupsInOrder = [
     { id: 'WEEK5-DAY4', globalGroupId: 'WEEK5-GLOBAL' },
     { id: 'WEEK5-DAY5', globalGroupId: 'WEEK5-GLOBAL' },
     { id: 'WEEK5', globalGroupId: 'WEEK5-GLOBAL' },
+    { id: 'WEEK6-DAY1', globalGroupId: 'WEEK6-GLOBAL' },
+    { id: 'WEEK6-DAY2', globalGroupId: 'WEEK6-GLOBAL' },
+    { id: 'WEEK6-DAY3', globalGroupId: 'WEEK6-GLOBAL' },
+    { id: 'WEEK6-DAY4', globalGroupId: 'WEEK6-GLOBAL' },
+    { id: 'WEEK6-DAY5', globalGroupId: 'WEEK6-GLOBAL' },
+    { id: 'WEEK6', globalGroupId: 'WEEK6-GLOBAL' },
+    { id: 'WEEK7-DAY1', globalGroupId: 'WEEK7-GLOBAL' },
+    { id: 'WEEK7-DAY2', globalGroupId: 'WEEK7-GLOBAL' },
+    { id: 'WEEK7-DAY3', globalGroupId: 'WEEK7-GLOBAL' },
+    { id: 'WEEK7-DAY4', globalGroupId: 'WEEK7-GLOBAL' },
+    { id: 'WEEK7-DAY5', globalGroupId: 'WEEK7-GLOBAL' },
+    { id: 'WEEK7', globalGroupId: 'WEEK7-GLOBAL' },
 ]
 groups = groupsInOrder.map(g => {
     const group = groups.find(e => e.id === g.id)
@@ -126,7 +138,31 @@ const globalGroups = [
             'WEEK5-DAY5',
             'WEEK5',
         ],
-    }
+    },
+    {
+        id: 'WEEK6-GLOBAL',
+        displayName: 'Week 6',
+        subGroupIds: [
+            'WEEK6-DAY1',
+            'WEEK6-DAY2',
+            'WEEK6-DAY3',
+            'WEEK6-DAY4',
+            'WEEK6-DAY5',
+            'WEEK6',
+        ],
+    },
+    {
+        id: 'WEEK7-GLOBAL',
+        displayName: 'Week 7',
+        subGroupIds: [
+            'WEEK7-DAY1',
+            'WEEK7-DAY2',
+            'WEEK7-DAY3',
+            'WEEK7-DAY4',
+            'WEEK7-DAY5',
+            'WEEK7',
+        ],
+    },
 ]
 data.forEach(d => {
     d.groupIds = d.tags.map(t => groups.find(g => g.name === t).id)

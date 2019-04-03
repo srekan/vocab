@@ -1,0 +1,987 @@
+[{
+    "wordText": "accused",
+    "phoneticScript": "/əˈkyuzd/",
+    "syllable": "uh-kyoozd",
+    "definitions": [{
+        "type": "NOUN",
+        "definitionText": "A person or group of people who are charged with or on trial for a crime.",
+        "examples": ["two of the accused were sentenced to thirteen years in prison.", ""],
+        "synonyms": ["appellant", "disputant", "litigator"],
+        "otherLanguages": {
+            "telugu": "నేరము మోపఁబడినవాఁడు, ముద్దాయి,నేరారోపిత.",
+            "tamil": "",
+            "hindi": "दोषी,मुलज़िम",
+            "malayalam": ""
+        }
+    }, {
+        "type": "VERB",
+        "definitionText": "",
+        "examples": ["", ""],
+        "synonyms": [],
+        "otherLanguages": {
+            "telugu": "",
+            "tamil": "",
+            "hindi": "",
+            "malayalam": ""
+        }
+    }],
+    "tags": ["week 7", "day1"],
+    "lastEdited": 1554263332679
+}, {
+    "wordText": "anomaly",
+    "phoneticScript": "əˈnɒm ə li",
+    "syllable": "uh-nom-uh-lee",
+    "definitions": [{
+        "type": "NOUN",
+        "definitionText": "Something that deviates from what is standard, normal, or expected.",
+        "examples": ["Statistical anomalies can make it difficult to compare economic data from one year to the next.", ""],
+        "synonyms": ["abnormality", "inconsistency", "variation"],
+        "otherLanguages": {
+            "telugu": "నియమవిరుద్ధం, అసాధారణం, విపరీతం, క్రమంలేని నడక, వ్యత్యాసం, తేడా, వికృతి, విరూపం",
+            "tamil": "",
+            "hindi": "अनियम,अवैधता",
+            "malayalam": ""
+        }
+    }, {
+        "type": "VERB",
+        "definitionText": "",
+        "examples": ["", ""],
+        "synonyms": [],
+        "otherLanguages": {
+            "telugu": "",
+            "tamil": "",
+            "hindi": "",
+            "malayalam": ""
+        }
+    }],
+    "tags": ["week 7", "day4"],
+    "lastEdited": 1554264497270
+}, {
+    "wordText": "ardent",
+    "phoneticScript": "ˈɑr dnt/",
+    "syllable": "ahr-dnt",
+    "definitions": [{
+        "type": "ADJECTIVE",
+        "definitionText": "showing strong feelings",
+        "examples": ["an ardent supporter of the conservative cause", ""],
+        "synonyms": ["fierce", "intense", "passionate"],
+        "otherLanguages": {
+            "telugu": "ప్రచండమైన, ఉగ్రమైన, తీక్ష్ణమైన, వేగమైన.",
+            "tamil": "",
+            "hindi": " प्रचण्ड, उत्कट",
+            "malayalam": ""
+        }
+    }, {
+        "type": "VERB",
+        "definitionText": "",
+        "examples": ["", ""],
+        "synonyms": [],
+        "otherLanguages": {
+            "telugu": "",
+            "tamil": "",
+            "hindi": "",
+            "malayalam": ""
+        }
+    }],
+    "tags": ["week 7", "day5"],
+    "lastEdited": 1554264828942
+}, {
+    "wordText": "bleak",
+    "phoneticScript": "/blik/",
+    "syllable": "bleek",
+    "definitions": [{
+        "type": "ADJECTIVE",
+        "definitionText": "(of an area of land) lacking vegetation and exposed to the elements.",
+        "examples": ["It was a bleak, unpleasant day in December.", ""],
+        "synonyms": ["desert", "exposed", "stark"],
+        "otherLanguages": {
+            "telugu": "వెలసిపోయిన, మృగ్య, అతిస్వల్ప, నిస్తేజ, నిరాధారమైన, చల్లదనం,అతిశీతలమైన.",
+            "tamil": "",
+            "hindi": " सूना , उजाड़ , ज़ाहिर",
+            "malayalam": ""
+        }
+    }, {
+        "type": "VERB",
+        "definitionText": "",
+        "examples": ["", ""],
+        "synonyms": [],
+        "otherLanguages": {
+            "telugu": "",
+            "tamil": "",
+            "hindi": "",
+            "malayalam": ""
+        }
+    }],
+    "tags": ["week 7", "day1"],
+    "lastEdited": 1554263355135
+}, {
+    "wordText": "bureaucracy",
+    "phoneticScript": "/byʊˈrɒk rə si/",
+    "syllable": "byoo-rok-ruh-see",
+    "definitions": [{
+        "type": "NOUN",
+        "definitionText": ".A system of government in which most of the important decisions are taken by state officials rather than by elected representatives.",
+        "examples": ["The president wants to add more bureaucracy to our daily lives.", ""],
+        "synonyms": ["administration", "government", "the establishment"],
+        "otherLanguages": {
+            "telugu": "ఉద్యోగిస్వామ్యం,ఒకవిధమైన రాజ్యపరిపాలనా పద్ధతి, అంతర్విభాగరాజ్యతంత్రము",
+            "tamil": "",
+            "hindi": "अधिकारी-तन्त्र,अधिकारीवर्ग",
+            "malayalam": ""
+        }
+    }, {
+        "type": "VERB",
+        "definitionText": "",
+        "examples": ["", ""],
+        "synonyms": [],
+        "otherLanguages": {
+            "telugu": "",
+            "tamil": "",
+            "hindi": "",
+            "malayalam": ""
+        }
+    }],
+    "tags": ["week 7", "day2"],
+    "lastEdited": 1554263665761
+}, {
+    "wordText": "condemn",
+    "phoneticScript": "/kənˈdɛm/",
+    "syllable": "kuh n-dem",
+    "definitions": [{
+        "type": "VERB",
+        "definitionText": "Officially declare (something) to be unfit for use.",
+        "examples": ["The film was condemned for its dirty scenes.", ""],
+        "synonyms": ["castigate", "censure", "depreciate"],
+        "otherLanguages": {
+            "telugu": "ఖండించు, తోసిపుచ్చు, దండించు.",
+            "tamil": "",
+            "hindi": "",
+            "malayalam": " കുറ്റക്കാരനെന്നു വിധിക്കുക,  തെറ്റാണെന്നു പറയുക"
+        }
+    }, {
+        "type": "VERB",
+        "definitionText": "",
+        "examples": ["", ""],
+        "synonyms": [],
+        "otherLanguages": {
+            "telugu": "",
+            "tamil": "",
+            "hindi": "",
+            "malayalam": ""
+        }
+    }],
+    "tags": ["week 7", "day4"],
+    "lastEdited": 1554264411933
+}, {
+    "wordText": "confined",
+    "phoneticScript": "kənˈfaɪnd",
+    "syllable": "kuh n-fahynd",
+    "definitions": [{
+        "type": "ADJECTIVE",
+        "definitionText": "limited or restricted.",
+        "examples": ["Please confine your use of the phone to    business calls.", ""],
+        "synonyms": ["cramped, constricted, restricted, limited, confining, small, narrow, compact,"],
+        "otherLanguages": {
+            "telugu": "నిర్బంధమైన,ప్రసవించిన,మట్టుపడ్డ.",
+            "tamil": "",
+            "hindi": "सीमित,परिरुद्ध.",
+            "malayalam": ""
+        }
+    }, {
+        "type": "VERB",
+        "definitionText": "",
+        "examples": ["", ""],
+        "synonyms": [],
+        "otherLanguages": {
+            "telugu": "",
+            "tamil": "",
+            "hindi": "",
+            "malayalam": ""
+        }
+    }],
+    "tags": ["week 7", "day4"],
+    "lastEdited": 1554264526927
+}, {
+    "wordText": "consecutive",
+    "phoneticScript": "",
+    "syllable": "",
+    "definitions": [{
+        "type": "ADJECTIVE",
+        "definitionText": "Following each other continuously.",
+        "examples": ["This is the fifth consecutive weekend that I've spent working.", ""],
+        "synonyms": ["continuous", "in succession", "unbroken."],
+        "otherLanguages": {
+            "telugu": "వరుసగానున్న, ఒకటివెంబడి ఒకటి వచ్చెడు, నడుమను తెంపు లేకుండియున్న.",
+            "tamil": "",
+            "hindi": "क्रमागत , क्रमानुगत , तर्कसंगत",
+            "malayalam": ""
+        }
+    }, {
+        "type": "VERB",
+        "definitionText": "",
+        "examples": ["", ""],
+        "synonyms": [],
+        "otherLanguages": {
+            "telugu": "",
+            "tamil": "",
+            "hindi": "",
+            "malayalam": ""
+        }
+    }],
+    "tags": ["week 7", "day5"],
+    "lastEdited": 1554264768341
+}, {
+    "wordText": "consensus",
+    "phoneticScript": "/kənˈsɛn səs/",
+    "syllable": "kuh n-sen-suh s",
+    "definitions": [{
+        "type": "NOUN",
+        "definitionText": "a generally accepted opinion; wide agreement.",
+        "examples": ["We tried to get a consensus of opinion and it proved to be easier than I thought.’", ""],
+        "synonyms": ["agreement", "common consent", "unanimity"],
+        "otherLanguages": {
+            "telugu": "అంగీకారం, ఏకాభిప్రాయం,సమ్మతము,  అనుకూలత,బహుజన సమ్మతి.",
+            "tamil": "",
+            "hindi": "अनुकूलता ,  ऐक्य ,  मतैक्य ",
+            "malayalam": ""
+        }
+    }, {
+        "type": "VERB",
+        "definitionText": "",
+        "examples": ["", ""],
+        "synonyms": [],
+        "otherLanguages": {
+            "telugu": "",
+            "tamil": "",
+            "hindi": "",
+            "malayalam": ""
+        }
+    }],
+    "tags": ["week 7", "day5"],
+    "lastEdited": 1554264658621
+}, {
+    "wordText": "detain",
+    "phoneticScript": "/dɪˈteɪn/ ",
+    "syllable": "dih-teyn",
+    "definitions": [{
+        "type": "VERB",
+        "definitionText": "Keep (someone) from proceeding by holding them back or making claims on their attention.",
+        "examples": ["customs officers may detain goods for up to two    days.", "Several of the injured were detained overnight in hospital."],
+        "synonyms": ["delay", "hold up"],
+        "otherLanguages": {
+            "telugu": "నిలిపివేయు, నిరోధించు.",
+            "tamil": "",
+            "hindi": "",
+            "malayalam": " തടഞ്ഞുനിറുത്തുക, നിറുത്തിവയ്‌ക്കുക"
+        }
+    }, {
+        "type": "VERB",
+        "definitionText": "",
+        "examples": ["", ""],
+        "synonyms": [],
+        "otherLanguages": {
+            "telugu": "",
+            "tamil": "",
+            "hindi": "",
+            "malayalam": ""
+        }
+    }],
+    "tags": ["week 7", "day1"],
+    "lastEdited": 1554263381102
+}, {
+    "wordText": "determination",
+    "phoneticScript": "/dɪˌtɜr məˈneɪ ʃən/",
+    "syllable": "dih-tur-muh-ney-shuh n",
+    "definitions": [{
+        "type": "NOUN",
+        "definitionText": " the ability to continue trying to do something, although it is very difficult.",
+        "examples": ["You can't help but admire her determination to succeed.", ""],
+        "synonyms": ["resoluteness", "resolution", "resolve"],
+        "otherLanguages": {
+            "telugu": "సంకల్పం, పూనిక, నిష్కర్ష, (దృఢ) నిశ్చయం, (న్యాయ) నిర్ధారణ.",
+            "tamil": "",
+            "hindi": " निश्चय, संकल्प , दृढ़ संकल्प",
+            "malayalam": ""
+        }
+    }, {
+        "type": "VERB",
+        "definitionText": "",
+        "examples": ["", ""],
+        "synonyms": [],
+        "otherLanguages": {
+            "telugu": "",
+            "tamil": "",
+            "hindi": "",
+            "malayalam": ""
+        }
+    }],
+    "tags": ["week 7", "day2"],
+    "lastEdited": 1554263725110
+}, {
+    "wordText": "enormous",
+    "phoneticScript": "/ɪˈnɔr məs/",
+    "syllable": "ih-nawr-muh s",
+    "definitions": [{
+        "type": "ADJECTIVE",
+        "definitionText": "Very large in size, quantity, or extent.",
+        "examples": ["enormous sums of money’", ""],
+        "synonyms": ["huge", "vast", "wide"],
+        "otherLanguages": {
+            "telugu": "అపరిమితమైన, విస్తారమైన.అపారమైన, బ్రహ్మాండమైన.",
+            "tamil": "",
+            "hindi": " बहुत, बहुत अधिक, अत्यंत",
+            "malayalam": ""
+        }
+    }, {
+        "type": "VERB",
+        "definitionText": "",
+        "examples": ["", ""],
+        "synonyms": [],
+        "otherLanguages": {
+            "telugu": "",
+            "tamil": "",
+            "hindi": "",
+            "malayalam": ""
+        }
+    }],
+    "tags": ["week 7", "day1"],
+    "lastEdited": 1554263407278
+}, {
+    "wordText": "enthuse",
+    "phoneticScript": "/ɛnˈθuz/",
+    "syllable": "en-thooz",
+    "definitions": [{
+        "type": "VERB",
+        "definitionText": " to express excitement about something or great interest in it.",
+        "examples": ["they both enthused over my new look’", ""],
+        "synonyms": ["be effusive", "be enthusiastic", "go into raptures", "gush"],
+        "otherLanguages": {
+            "telugu": "ఉత్సాహం,ఉత్తేజితుడవ్వు.",
+            "tamil": "",
+            "hindi": " जोश में आना,उत्साह दिखाना",
+            "malayalam": ""
+        }
+    }, {
+        "type": "VERB",
+        "definitionText": "",
+        "examples": ["", ""],
+        "synonyms": [],
+        "otherLanguages": {
+            "telugu": "",
+            "tamil": "",
+            "hindi": "",
+            "malayalam": ""
+        }
+    }],
+    "tags": ["week 7", "day5"],
+    "lastEdited": 1554264806325
+}, {
+    "wordText": "flay",
+    "phoneticScript": "/fleɪ/",
+    "syllable": "fley",
+    "definitions": [{
+        "type": "VERB",
+        "definitionText": "to whip a person or animal so hard that some of their skin comes off:",
+        "examples": ["the captured general was flayed alive", ""],
+        "synonyms": ["skin", "strip the skin off."],
+        "otherLanguages": {
+            "telugu": "తీవ్రంగా విమర్శించు,తోలును తీసివేయు, చర్మమును ఒలుచు.",
+            "tamil": "",
+            "hindi": " चमड़ा उतारना, लूटना",
+            "malayalam": ""
+        }
+    }, {
+        "type": "VERB",
+        "definitionText": "",
+        "examples": ["", ""],
+        "synonyms": [],
+        "otherLanguages": {
+            "telugu": "",
+            "tamil": "",
+            "hindi": "",
+            "malayalam": ""
+        }
+    }],
+    "tags": ["week 7", "day2"],
+    "lastEdited": 1554263764006
+}, {
+    "wordText": "genre",
+    "phoneticScript": "ˈʒɒ̃rə",
+    "syllable": "zhahn-ruh",
+    "definitions": [{
+        "type": "NOUN",
+        "definitionText": "A style or category of art, music, or literature.",
+        "examples": ["What genre does the book fall into - comedy or   Tragedy?", ""],
+        "synonyms": ["category, class, classification, categorization, group, grouping."],
+        "otherLanguages": {
+            "telugu": "కళా/ సాహిత్య ప్రక్రియ.",
+            "tamil": "",
+            "hindi": "शैली,विधा.",
+            "malayalam": ""
+        }
+    }, {
+        "type": "VERB",
+        "definitionText": "",
+        "examples": ["", ""],
+        "synonyms": [],
+        "otherLanguages": {
+            "telugu": "",
+            "tamil": "",
+            "hindi": "",
+            "malayalam": ""
+        }
+    }],
+    "tags": ["week 7", "day3"],
+    "lastEdited": 1554263797206
+}, {
+    "wordText": "hunger strike",
+    "phoneticScript": "/ˈhʌŋ·ɡər ˌstrɑɪk/",
+    "syllable": "huhng-ger-strahyk",
+    "definitions": [{
+        "type": "NOUN",
+        "definitionText": "A prolonged refusal to eat.",
+        "examples": ["One hundred students began a hunger strike.", "Political prisoners who had gone on hunger strike."],
+        "synonyms": ["fasting", "voluntry fast"],
+        "otherLanguages": {
+            "telugu": "నిరాహారదీక్ష, నిరశనదీక్ష.",
+            "tamil": "",
+            "hindi": "भूख हड़ताल, अनशन",
+            "malayalam": ""
+        }
+    }, {
+        "type": "VERB",
+        "definitionText": "",
+        "examples": ["", ""],
+        "synonyms": [],
+        "otherLanguages": {
+            "telugu": "",
+            "tamil": "",
+            "hindi": "",
+            "malayalam": ""
+        }
+    }],
+    "tags": ["week 7", "day3"],
+    "lastEdited": 1554263845414
+}, {
+    "wordText": "infringe",
+    "phoneticScript": "ɪnˈfrɪndʒ",
+    "syllable": "in-frinj",
+    "definitions": [{
+        "type": "VERB",
+        "definitionText": "Actively break the terms of (a law, agreement, etc.)",
+        "examples": ["making an unauthorized copy would infringe copyright", ""],
+        "synonyms": ["break", "contravene", "transgress"],
+        "otherLanguages": {
+            "telugu": "అతిక్రమించుట,  ఉల్లంఘనముచేసుట,   తప్పుట ,  మీరుట .",
+            "tamil": "",
+            "hindi": "अतिक्रमण करना,तोड़ना,उल्लंघन करना.",
+            "malayalam": ""
+        }
+    }, {
+        "type": "VERB",
+        "definitionText": "",
+        "examples": ["", ""],
+        "synonyms": [],
+        "otherLanguages": {
+            "telugu": "",
+            "tamil": "",
+            "hindi": "",
+            "malayalam": ""
+        }
+    }],
+    "tags": ["week 7", "day1"],
+    "lastEdited": 1554263438094
+}, {
+    "wordText": "inhibit",
+    "phoneticScript": "/ɪnˈhɪb ɪt/",
+    "syllable": "in-hib-it",
+    "definitions": [{
+        "type": "VERB",
+        "definitionText": "to prevent someone from doing something by making them feel nervous or embarrassed :",
+        "examples": ["Some workers were inhibited (from speaking) by the presence of their managers.", ""],
+        "synonyms": ["discourage", "obstruct", "put a brake on"],
+        "otherLanguages": {
+            "telugu": "నిరోధించు, ఆటంకపరచు, అడ్డుపడు, ఆపు  అణచుట.",
+            "tamil": "",
+            "hindi": " बाधा डालना, अटकाना, रोकना",
+            "malayalam": ""
+        }
+    }, {
+        "type": "VERB",
+        "definitionText": "",
+        "examples": ["", ""],
+        "synonyms": [],
+        "otherLanguages": {
+            "telugu": "",
+            "tamil": "",
+            "hindi": "",
+            "malayalam": ""
+        }
+    }],
+    "tags": ["week 7", "day3"],
+    "lastEdited": 1554264379110
+}, {
+    "wordText": "leisurely",
+    "phoneticScript": "/ˈlɛʒəli/ ",
+    "syllable": "lee-zher-lee",
+    "definitions": [{
+        "type": "ADJECTIVE",
+        "definitionText": "used to describe an action that is done in a relaxed way, without hurrying.",
+        "examples": ["We enjoyed a leisurely picnic lunch on the lawn.", ""],
+        "synonyms": ["comfortable", "effortless", "relaxed", "restful"],
+        "otherLanguages": {
+            "telugu": "సావకాశముగా చేసెడు, మెల్లగానైన.",
+            "tamil": "",
+            "hindi": " धीरे से, आराम से",
+            "malayalam": ""
+        }
+    }, {
+        "type": "VERB",
+        "definitionText": "",
+        "examples": ["", ""],
+        "synonyms": [],
+        "otherLanguages": {
+            "telugu": "",
+            "tamil": "",
+            "hindi": "",
+            "malayalam": ""
+        }
+    }],
+    "tags": ["week 7", "day1"],
+    "lastEdited": 1554263464071
+}, {
+    "wordText": "massive",
+    "phoneticScript": "/ˈmæs ɪv/",
+    "syllable": "mas-iv",
+    "definitions": [{
+        "type": "ADJECTIVE",
+        "definitionText": "very large in size, amount, or number.",
+        "examples": ["They have a massive house", ""],
+        "synonyms": ["tremendous", "vast", "very large"],
+        "otherLanguages": {
+            "telugu": "స్థూలమైన, లావాటి, మిక్కిలిపెద్ద, బరువైన.",
+            "tamil": "",
+            "hindi": " भारी,भीमकाय, बड़ा",
+            "malayalam": ""
+        }
+    }, {
+        "type": "VERB",
+        "definitionText": "",
+        "examples": ["", ""],
+        "synonyms": [],
+        "otherLanguages": {
+            "telugu": "",
+            "tamil": "",
+            "hindi": "",
+            "malayalam": ""
+        }
+    }],
+    "tags": ["week 7", "day3"],
+    "lastEdited": 1554263822142
+}, {
+    "wordText": "nominal",
+    "phoneticScript": "ˈnɒm ə nl",
+    "syllable": "nom-uh-nl",
+    "definitions": [{
+        "type": "ADJECTIVE",
+        "definitionText": "in name or thought but not in fact or not as things really are.",
+        "examples": ["She's the nominal head of our college - the real work is done by her deputy.", ""],
+        "synonyms": ["formal", "in name only", "official"],
+        "otherLanguages": {
+            "telugu": "నామమాత్ర, స్వల్పమైన, చిన్న మొత్తం,పేరుకువుండే, పేరు మాత్రానికి వుండే.",
+            "tamil": "",
+            "hindi": "नामिक,जातिवाचक,संज्ञात्मक",
+            "malayalam": ""
+        }
+    }, {
+        "type": "VERB",
+        "definitionText": "",
+        "examples": ["", ""],
+        "synonyms": [],
+        "otherLanguages": {
+            "telugu": "",
+            "tamil": "",
+            "hindi": "",
+            "malayalam": ""
+        }
+    }],
+    "tags": ["week 7", "day3"],
+    "lastEdited": 1554264276630
+}, {
+    "wordText": "out-and-out",
+    "phoneticScript": "ˈaʊt nˈaʊt, -ndˈaʊt",
+    "syllable": "out-n-out, -nd-out ",
+    "definitions": [{
+        "type": "ADJECTIVE",
+        "definitionText": "complete; in all ways.",
+        "examples": ["He’s an out-and-out fraud.", ""],
+        "synonyms": ["utter, downright, thoroughgoing, perfect, consummate, surpassing."],
+        "otherLanguages": {
+            "telugu": "పూర్తిగా, బాహాటంగా",
+            "tamil": "",
+            "hindi": "पक्का.",
+            "malayalam": ""
+        }
+    }, {
+        "type": "VERB",
+        "definitionText": "",
+        "examples": ["", ""],
+        "synonyms": [],
+        "otherLanguages": {
+            "telugu": "",
+            "tamil": "",
+            "hindi": "",
+            "malayalam": ""
+        }
+    }],
+    "tags": ["week 7", "day4"],
+    "lastEdited": 1554264630509
+}, {
+    "wordText": "passersby",
+    "phoneticScript": "/ˈpæs ərˈbaɪ/",
+    "syllable": "pas-er-bahy",
+    "definitions": [{
+        "type": "NOUN",
+        "definitionText": "someone who is going past a particular place.",
+        "examples": ["A passer-by saw smoke and called the fire department.", ""],
+        "synonyms": ["bystander", "eyewitness", "witness"],
+        "otherLanguages": {
+            "telugu": "బాటసారులను.",
+            "tamil": "",
+            "hindi": " राहगीर , राही ,  राह-चलता",
+            "malayalam": ""
+        }
+    }, {
+        "type": "VERB",
+        "definitionText": "",
+        "examples": ["", ""],
+        "synonyms": [],
+        "otherLanguages": {
+            "telugu": "",
+            "tamil": "",
+            "hindi": "",
+            "malayalam": ""
+        }
+    }],
+    "tags": ["week 7", "day4"],
+    "lastEdited": 1554264581286
+}, {
+    "wordText": "plight",
+    "phoneticScript": "/plʌɪt/",
+    "syllable": "plahyt",
+    "definitions": [{
+        "type": "NOUN",
+        "definitionText": "an unpleasant condition, especially a serious, sad, or difficult one.",
+        "examples": ["Few of us can be unmoved by the plight of the refugees.", ""],
+        "synonyms": ["difficult situation", "issue", "trouble"],
+        "otherLanguages": {
+            "telugu": "దుర్దశ, దురవస్థ; కుదవ, తాకట్టు.",
+            "tamil": "",
+            "hindi": " गंभीर स्थिति, अवस्था",
+            "malayalam": ""
+        }
+    }, {
+        "type": "VERB",
+        "definitionText": "",
+        "examples": ["", ""],
+        "synonyms": [],
+        "otherLanguages": {
+            "telugu": "",
+            "tamil": "",
+            "hindi": "",
+            "malayalam": ""
+        }
+    }],
+    "tags": ["week 7", "day2"],
+    "lastEdited": 1554263611278
+}, {
+    "wordText": "plot",
+    "phoneticScript": "plɒt",
+    "syllable": "plot",
+    "definitions": [{
+        "type": "VERB",
+        "definitionText": "Secretly make plans to carry out (an illegal or harmful action).",
+        "examples": ["the two men are serving sentences for plotting a bomb campaign’", ""],
+        "synonyms": ["arrange", "organize", "plan"],
+        "otherLanguages": {
+            "telugu": "కుట్ర, పన్నాగం, చిన్న భూఖండం, ఇంటిస్థలం; కథాంశం,కల్పించు.",
+            "tamil": "",
+            "hindi": "उपाय करना,चालबाज़ी करना",
+            "malayalam": ""
+        }
+    }, {
+        "type": "VERB",
+        "definitionText": "",
+        "examples": ["", ""],
+        "synonyms": [],
+        "otherLanguages": {
+            "telugu": "",
+            "tamil": "",
+            "hindi": "",
+            "malayalam": ""
+        }
+    }],
+    "tags": ["week 7", "day3"],
+    "lastEdited": 1554263879092
+}, {
+    "wordText": "plummet",
+    "phoneticScript": "/ˈplʌm ɪt/",
+    "syllable": "pluhm-it",
+    "definitions": [{
+        "type": "VERB",
+        "definitionText": ".Fall or drop straight down at high speed.",
+        "examples": ["House prices have plummeted in recent months.", ""],
+        "synonyms": ["descend rapidly.", "fall headlong", "plunge"],
+        "otherLanguages": {
+            "telugu": "ఆదాయ వనరుగా,బరువు; లంబసూత్రం, వడంబం గుండు.",
+            "tamil": "",
+            "hindi": " गिर जाना , अचानक से गिरना , तेज़ी से गिरना",
+            "malayalam": ""
+        }
+    }, {
+        "type": "VERB",
+        "definitionText": "",
+        "examples": ["", ""],
+        "synonyms": [],
+        "otherLanguages": {
+            "telugu": "",
+            "tamil": "",
+            "hindi": "",
+            "malayalam": ""
+        }
+    }],
+    "tags": ["week 7", "day5"],
+    "lastEdited": 1554264856197
+}, {
+    "wordText": "prudent",
+    "phoneticScript": "/ˈpruːd(ə)nt/",
+    "syllable": "prood-nt",
+    "definitions": [{
+        "type": "ADJECTIVE",
+        "definitionText": "careful in the way that you make decisions or spend money so that you avoid unnecessary risks.",
+        "examples": ["His decision was prudent and timely.", ""],
+        "synonyms": ["careful", "wise"],
+        "otherLanguages": {
+            "telugu": "జాగ్రతగల,వివేకముగల, దూరదర్శియైన.",
+            "tamil": "",
+            "hindi": "वुद्धीमान, बुद्धिमत्तापूर्ण, सावधानी ",
+            "malayalam": ""
+        }
+    }, {
+        "type": "VERB",
+        "definitionText": "",
+        "examples": ["", ""],
+        "synonyms": [],
+        "otherLanguages": {
+            "telugu": "",
+            "tamil": "",
+            "hindi": "",
+            "malayalam": ""
+        }
+    }],
+    "tags": ["week 7", "day4"],
+    "lastEdited": 1554264459205
+}, {
+    "wordText": "puddle",
+    "phoneticScript": "/ˈpʌd l/",
+    "syllable": "puhd-l",
+    "definitions": [{
+        "type": "NOUN",
+        "definitionText": "A small pool of liquid, especially of rainwater on the ground.",
+        "examples": ["You have to step around the puddles in the street after a rain shower.", ""],
+        "synonyms": ["pool", "spill", "splash"],
+        "otherLanguages": {
+            "telugu": "బురదనీటి గుంట, గందరగోళం,చిన్నపల్లములో నిలుౘు బురదనీరు.",
+            "tamil": "",
+            "hindi": "डबरा,छोटा सा तालाब  ,गारा बनाना",
+            "malayalam": ""
+        }
+    }, {
+        "type": "VERB",
+        "definitionText": "",
+        "examples": ["", ""],
+        "synonyms": [],
+        "otherLanguages": {
+            "telugu": "",
+            "tamil": "",
+            "hindi": "",
+            "malayalam": ""
+        }
+    }],
+    "tags": ["week 7", "day5"],
+    "lastEdited": 1554264685342
+}, {
+    "wordText": "sapling",
+    "phoneticScript": "[sap-ling]",
+    "syllable": "sap-ling",
+    "definitions": [{
+        "type": "NOUN",
+        "definitionText": "A young tree, especially one with a slender trunk.",
+        "examples": ["Now, as a mature garden, the trees, mere saplings when planted, are fully grown.’", ""],
+        "synonyms": ["shoot", "a young tree (full of sap)"],
+        "otherLanguages": {
+            "telugu": "లేఁతచెట్టు, బాలవృక్షము,చిన్న మొక్క,అంటు.",
+            "tamil": "",
+            "hindi": " अंकुर , किशोर , जवान",
+            "malayalam": ""
+        }
+    }, {
+        "type": "VERB",
+        "definitionText": "",
+        "examples": ["", ""],
+        "synonyms": [],
+        "otherLanguages": {
+            "telugu": "",
+            "tamil": "",
+            "hindi": "",
+            "malayalam": ""
+        }
+    }],
+    "tags": ["week 7", "day4"],
+    "lastEdited": 1554264554398
+}, {
+    "wordText": "scarcity",
+    "phoneticScript": "/ˈskɛər sɪ ti/ ",
+    "syllable": "skair-si-tee",
+    "definitions": [{
+        "type": "NOUN",
+        "definitionText": "a situation in which something is not easy to find or get.",
+        "examples": ["the scarcity of skilled workers", ""],
+        "synonyms": ["poverty", "shortage", "undersupply"],
+        "otherLanguages": {
+            "telugu": "దుర్భిక్షం, కొరత, ఎద్దడి, కరువు.",
+            "tamil": "",
+            "hindi": " अनोखापन , अप्राप्यता ,  अभाव ",
+            "malayalam": ""
+        }
+    }, {
+        "type": "VERB",
+        "definitionText": "",
+        "examples": ["", ""],
+        "synonyms": [],
+        "otherLanguages": {
+            "telugu": "",
+            "tamil": "",
+            "hindi": "",
+            "malayalam": ""
+        }
+    }],
+    "tags": ["week 7", "day2"],
+    "lastEdited": 1554263579231
+}, {
+    "wordText": "scorching",
+    "phoneticScript": "/ˈskɔr tʃɪŋ/",
+    "syllable": "skawr-ching",
+    "definitions": [{
+        "type": "ADJECTIVE",
+        "definitionText": "Very hot.",
+        "examples": ["I don’t want to be outside in this scorching heat.", ""],
+        "synonyms": ["burning", "extremely hot", "red-hot"],
+        "otherLanguages": {
+            "telugu": "కాల్చే, దహించే.",
+            "tamil": "",
+            "hindi": "जलानेवाला, चिलचिलाती",
+            "malayalam": ""
+        }
+    }, {
+        "type": "VERB",
+        "definitionText": "",
+        "examples": ["", ""],
+        "synonyms": [],
+        "otherLanguages": {
+            "telugu": "",
+            "tamil": "",
+            "hindi": "",
+            "malayalam": ""
+        }
+    }],
+    "tags": ["week 7", "day5"],
+    "lastEdited": 1554264737519
+}, {
+    "wordText": "thrust",
+    "phoneticScript": "/θrʌst/",
+    "syllable": "thruhst ",
+    "definitions": [{
+        "type": "NOUN",
+        "definitionText": "Force (someone) to accept or deal with something.",
+        "examples": ["They thrust a microphone in front of me and fired questions at me.", "She thrust the money into his hand."],
+        "synonyms": [],
+        "otherLanguages": {
+            "telugu": "ఒత్తిడి, తోసుట, అణఁౘు,",
+            "tamil": "",
+            "hindi": "ज़ोर,ठेलना,जोर डालना.",
+            "malayalam": ""
+        }
+    }, {
+        "type": "VERB",
+        "definitionText": "",
+        "examples": ["", ""],
+        "synonyms": [],
+        "otherLanguages": {
+            "telugu": "",
+            "tamil": "",
+            "hindi": "",
+            "malayalam": ""
+        }
+    }],
+    "tags": ["week 7", "day2"],
+    "lastEdited": 1554263554655
+}, {
+    "wordText": "upheaval",
+    "phoneticScript": "/ʌpˈhi vəl/ ",
+    "syllable": "uhp-hee-vuh l",
+    "definitions": [{
+        "type": "NOUN",
+        "definitionText": "A violent or sudden change or disruption to something.",
+        "examples": ["major upheavals in the financial markets.", "the first upheaval produced a hill which was called Roof Mountain."],
+        "synonyms": ["disaster", "explosion"],
+        "otherLanguages": {
+            "telugu": "తిరుగుబాటు, ఉపద్రవం, విప్లవం.",
+            "tamil": "",
+            "hindi": "",
+            "malayalam": ""
+        }
+    }, {
+        "type": "VERB",
+        "definitionText": "",
+        "examples": ["", ""],
+        "synonyms": [],
+        "otherLanguages": {
+            "telugu": "",
+            "tamil": "",
+            "hindi": "",
+            "malayalam": ""
+        }
+    }],
+    "tags": ["week 7", "day2"],
+    "lastEdited": 1554263525750
+}, {
+    "wordText": "wane",
+    "phoneticScript": "weɪn",
+    "syllable": "weyn",
+    "definitions": [{
+        "type": "VERB",
+        "definitionText": "to become weaker in strength or influence.",
+        "examples": ["By the late 70s the band's popularity was beginning to wane.", ""],
+        "synonyms": ["decrease", "diminish", "disappear"],
+        "otherLanguages": {
+            "telugu": "క్షయించుట, క్షీణమవుట,తగ్గు, తక్కువగు.",
+            "tamil": "",
+            "hindi": "  ढलना, क्षीण होना, उतरना",
+            "malayalam": ""
+        }
+    }, {
+        "type": "VERB",
+        "definitionText": "",
+        "examples": ["", ""],
+        "synonyms": [],
+        "otherLanguages": {
+            "telugu": "",
+            "tamil": "",
+            "hindi": "",
+            "malayalam": ""
+        }
+    }],
+    "tags": ["week 7", "day1"],
+    "lastEdited": 1554263490454
+}]
