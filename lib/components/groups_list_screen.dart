@@ -4,6 +4,9 @@ import '../models/word.dart';
 import '../models/review.dart';
 import '../components/progress_chart.dart';
 import '../components/app_drawer.dart';
+import '../root_data.dart';
+import '../scoped_models/group_scoped_model.dart';
+import 'package:scoped_model/scoped_model.dart';
 
 class GroupsListScreen extends StatelessWidget {
   final String pageTitle;
@@ -89,67 +92,86 @@ class GroupsListScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      drawer: isGlobalGroup == true ? AppDrawer() : null,
-      appBar: AppBar(
-        title: Text('Groups'),
-      ),
-      body: SingleChildScrollView(
-          child: Column(
-        children: groups
-            .map(
-              (group) => Card(
-                    child: Column(
-                      mainAxisSize: MainAxisSize.min,
-                      children: <Widget>[
-                        ListTile(
-                          leading: Container(
-                            child: ProgressChart.fromGroup(
-                              height: 100.0,
-                              width: 100.0,
-                              disableDiscriptions: true,
-                              group: group,
-                            ),
-                          ),
-                          title: Text(
-                            group.name,
-                            style: Theme.of(context).textTheme.headline,
-                          ),
-                          subtitle: _buildSubtitle(group, group.words),
-                          onTap: () {
-                            setActiveGroup(group, context);
-                          },
-                        ),
-                        ButtonTheme.bar(
-                          // make buttons use the appropriate styles for cards
-                          child: ButtonBar(
+    return ScopedModel<GroupScoppedModel>(
+        model: rootdata.groups,
+        child: ScopedModelDescendant<GroupScoppedModel>(
+            builder: (context, child, model) {
+          return Scaffold(
+            drawer: isGlobalGroup == true ? AppDrawer() : null,
+            appBar: AppBar(
+              title: Text('Word Groups'),
+            ),
+            body: SingleChildScrollView(
+                child: Column(
+              children: groups
+                  .map(
+                    (group) => Card(
+                          elevation: 6,
+                          child: Column(
+                            mainAxisSize: MainAxisSize.min,
                             children: <Widget>[
-                              FlatButton(
-                                child: Text('Reset'),
-                                onPressed: () {
-                                  createResetGroupAlertDialog(
-                                          context, group.name)
-                                      .then((value) {
-                                    if (value == 'RESET') {
-                                      resetGroup(group);
-                                      SnackBar snackBar = SnackBar(
-                                        content: Text('Group got reset.'),
-                                      );
+                              GestureDetector(
+                                onTap: () {
+                                  print('Tap');
+                                  setActiveGroup(group, context);
+                                },
+                                child: Row(
+                                  children: <Widget>[
+                                    ProgressChart.fromGroup(
+                                      width: 100,
+                                      height: 100,
+                                      disableDiscriptions: true,
+                                      group: group,
+                                    ),
+                                    Column(
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
+                                      children: <Widget>[
+                                        Text(
+                                          group.name,
+                                          style: Theme.of(context)
+                                              .textTheme
+                                              .headline,
+                                        ),
+                                        _buildSubtitle(group, group.words)
+                                      ],
+                                    )
+                                  ],
+                                ),
+                              ),
+                              ButtonTheme.bar(
+                                // make buttons use the appropriate styles for cards
+                                child: ButtonBar(
+                                  children: <Widget>[
+                                    FlatButton(
+                                      child: Text('Reset'),
+                                      onPressed: () {
+                                        createResetGroupAlertDialog(
+                                                context, group.name)
+                                            .then((value) {
+                                          if (value == 'RESET') {
+                                            rootdata.resetGroup(group);
+                                            SnackBar snackBar = SnackBar(
+                                              content: Text('Group got reset.'),
+                                            );
+                                            /*
                                       Scaffold.of(context)
                                           .showSnackBar(snackBar);
-                                    }
-                                  });
-                                },
+                                          */
+                                          }
+                                        });
+                                      },
+                                    ),
+                                  ],
+                                ),
                               ),
                             ],
                           ),
                         ),
-                      ],
-                    ),
-                  ),
-            )
-            .toList(),
-      )),
-    );
+                  )
+                  .toList(),
+            )),
+          );
+        }));
   }
 }

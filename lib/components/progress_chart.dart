@@ -62,7 +62,6 @@ class ProgressChart extends StatelessWidget {
         labelAccessorFn: _labelAccessorFn,
       )
     ];
-
     return ProgressChart(
       seriesList,
       animate: animate == true,
@@ -93,7 +92,11 @@ class ProgressChart extends StatelessWidget {
         //          insideLabelStyleSpec: charts.TextStyleSpec(...),
         //          outsideLabelStyleSpec: charts.TextStyleSpec(...)),
         defaultRenderer: charts.ArcRendererConfig(
-            arcWidth: 60, arcRendererDecorators: [charts.ArcLabelDecorator()]));
+          arcWidth: 60,
+          arcRendererDecorators: [
+            charts.ArcLabelDecorator(),
+          ],
+        ));
 
     if (width == 0) {
       return SizedBox(
@@ -102,10 +105,20 @@ class ProgressChart extends StatelessWidget {
       );
     } else {
       return SizedBox(
-        height: height,
-        width: width,
-        child: chart,
-      );
+          height: height,
+          width: width,
+          child: Stack(
+            children: <Widget>[
+              chart,
+              GestureDetector(
+                child: Container(
+                  color: Colors.transparent,
+                  width: width,
+                  height: height,
+                ),
+              ),
+            ],
+          ));
     }
   }
 }

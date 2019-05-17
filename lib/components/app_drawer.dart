@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:share/share.dart';
 import '../theme/constants.dart';
+import '../constants.dart';
 
 class AppDrawer extends StatelessWidget {
   @override
@@ -7,40 +9,70 @@ class AppDrawer extends StatelessWidget {
     return Drawer(
       child: ListView(
         children: <Widget>[
-          DrawerHeader(
-            child: Container(
-              child: Column(
-                children: <Widget>[
-                  Material(
-                    borderRadius: BorderRadius.all(Radius.circular(10.0)),
-                    elevation: 5.0,
-                    child: Padding(
-                      padding: EdgeInsets.all(8.0),
-                      child: Image.asset(
-                        'assets/logo.jpeg',
-                        width: 150,
-                      ),
-                    ),
-                  ),
-                  SizedBox(height: 8.0),
-                  Text(
-                    'Vocabulary Builder',
-                    style: TextStyle(
-                      fontSize: 20.0,
-                      color: Colors.white,
-                    ),
-                  )
-                ],
-              ),
-            ),
+          Container(
+            padding: EdgeInsets.only(top: 8.0, bottom: 8.0),
             decoration:
                 BoxDecoration(gradient: ThemeConstants.backgroundGradient),
+            child: Column(
+              children: <Widget>[
+                Material(
+                  borderRadius: BorderRadius.all(Radius.circular(10.0)),
+                  elevation: 5.0,
+                  child: Padding(
+                    padding: EdgeInsets.all(8.0),
+                    child: Image.asset(
+                      'assets/vocab-logo.png',
+                      height: 90,
+                    ),
+                  ),
+                ),
+                SizedBox(height: 8.0),
+                Text(
+                  'Vocabulary Builder',
+                  style: TextStyle(
+                    fontSize: 20.0,
+                    color: Colors.green[800],
+                  ),
+                ),
+                SizedBox(height: 8.0),
+                Text(
+                  'by',
+                  style: TextStyle(
+                    fontSize: 15.0,
+                    color: Colors.green[800],
+                  ),
+                ),
+                SizedBox(height: 8.0),
+                Material(
+                  borderRadius: BorderRadius.all(Radius.circular(10.0)),
+                  elevation: 5.0,
+                  child: Padding(
+                    padding: EdgeInsets.all(8.0),
+                    child: Image.asset(
+                      'assets/logo.jpeg',
+                      width: 150,
+                    ),
+                  ),
+                ),
+                SizedBox(height: 8.0),
+              ],
+            ),
+          ),
+          DrawerTile(
+            icon: Icons.wb_sunny,
+            text: 'About',
+            onTap: () {
+              Navigator.of(context).pushNamed('about');
+            },
+          ),
+          DrawerTile(
+            icon: Icons.share,
+            text: 'Share This App',
+            onTap: () {
+              Share.share(AppConstants.playStroeUrl);
+            },
           ),
           /*
-          DrawerTile(
-            icon: Icons.person,
-            text: 'Profile',
-          ),
           DrawerTile(
             icon: Icons.person,
             text: 'About App',
