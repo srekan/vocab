@@ -72,6 +72,12 @@ const groupsInOrder = [
     { id: 'WEEK7-DAY4', globalGroupId: 'WEEK7-GLOBAL' },
     { id: 'WEEK7-DAY5', globalGroupId: 'WEEK7-GLOBAL' },
     { id: 'WEEK7', globalGroupId: 'WEEK7-GLOBAL' },
+    { id: 'WEEK8-DAY1', globalGroupId: 'WEEK8-GLOBAL' },
+    { id: 'WEEK8-DAY2', globalGroupId: 'WEEK8-GLOBAL' },
+    { id: 'WEEK8-DAY3', globalGroupId: 'WEEK8-GLOBAL' },
+    { id: 'WEEK8-DAY4', globalGroupId: 'WEEK8-GLOBAL' },
+    { id: 'WEEK8-DAY5', globalGroupId: 'WEEK8-GLOBAL' },
+    { id: 'WEEK8', globalGroupId: 'WEEK8-GLOBAL' },
 ]
 groups = groupsInOrder.map(g => {
     const group = groups.find(e => e.id === g.id)
@@ -161,6 +167,18 @@ const globalGroups = [
             'WEEK7-DAY4',
             'WEEK7-DAY5',
             'WEEK7',
+        ],
+    },
+    {
+        id: 'WEEK8-GLOBAL',
+        displayName: 'Week 8',
+        subGroupIds: [
+            'WEEK8-DAY1',
+            'WEEK8-DAY2',
+            'WEEK8-DAY3',
+            'WEEK8-DAY4',
+            'WEEK8-DAY5',
+            'WEEK8',
         ],
     },
 ]

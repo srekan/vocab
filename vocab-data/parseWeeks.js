@@ -5,6 +5,7 @@ const week4 = require('./weeks/week4.json')
 const week5 = require('./weeks/week5.json')
 const week6 = require('./weeks/week6.json')
 const week7 = require('./weeks/week7.json')
+const week8 = require('./weeks/week8.json')
 
 function updateDayGroups(week, weekName) {
     weekName = weekName.toUpperCase().replace(' ', '')
@@ -28,6 +29,7 @@ updateDayGroups(week4, 'Week 4')
 updateDayGroups(week5, 'Week 5')
 updateDayGroups(week6, 'Week 6')
 updateDayGroups(week7, 'Week 7')
+updateDayGroups(week8, 'Week 8')
 const weeks = [
     ...week1,
     ...week2,
@@ -36,6 +38,7 @@ const weeks = [
     ...week5,
     ...week6,
     ...week7,
+    ...week8,
 ]
 // console.log(JSON.stringify(weeks))
 module.exports = weeks
