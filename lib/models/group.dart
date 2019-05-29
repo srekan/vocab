@@ -1,5 +1,4 @@
 import './word.dart';
-import '../root_data.dart';
 import './review.dart';
 
 class Group {

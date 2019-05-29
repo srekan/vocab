@@ -14,7 +14,7 @@ Future<Map<String, dynamic>> parseJsonFromAssets(String assetsPath) async {
       .then((jsonStr) => jsonDecode(jsonStr));
 }
 
-class GroupScoppedModel extends Model {
+class GroupScopedModel extends Model {
   SharedPreferences _prefs;
   String dataVersion;
   List<Group> _groups = [];
@@ -25,6 +25,8 @@ class GroupScoppedModel extends Model {
   bool _isShowingWordDefinition = false;
   String _preferredLanguage = 'telugu'; // TODO: derive it from local storage
   Map<String, String> reviewMap = {};
+  Map<String, bool> bookMarkMap = {};
+  List<String> bookMarks = [];
   final dataUrl = 'https://srekan.github.io/vocab/vocab-data.json';
   final cacheManager = DefaultCacheManager();
 
@@ -36,7 +38,7 @@ class GroupScoppedModel extends Model {
   bool get isShowingWordDefinition => _isShowingWordDefinition;
   String get preferredLanguage => _preferredLanguage;
 
-  GroupScoppedModel() {
+  GroupScopedModel() {
     getData();
   }
 
@@ -51,6 +53,7 @@ class GroupScoppedModel extends Model {
     }
 
     getDataFromNetwork();
+    _getBookMarksFromCache();
     // getDataFromDocs(); // For development only
   }
 
@@ -233,5 +236,31 @@ class GroupScoppedModel extends Model {
 
   String getReviewId(Group group, Word word) {
     return group.globalGroupId + group.id + word.wordText;
+  }
+
+  toggleBookMark(Word word) {
+    if (bookMarkMap[word.bookMarkId] == true) {
+      bookMarkMap[word.bookMarkId] = null;
+      bookMarks.remove(word.bookMarkId);
+      _prefs.setStringList('BOOKMARKS', bookMarks);
+    } else {
+      bookMarkMap[word.bookMarkId] = true;
+      bookMarks.add(word.bookMarkId);
+      _prefs.setStringList('BOOKMARKS', bookMarks);
+    }
+    print(bookMarkMap);
+    notifyListeners();
+  }
+
+  _getBookMarksFromCache() {
+    bookMarks = _prefs.getStringList('BOOKMARKS');
+
+    if (bookMarks == null) {
+      bookMarks = [];
+    }
+    bookMarkMap = {};
+    bookMarks.forEach((bookMarkId) {
+      bookMarkMap[bookMarkId] = true;
+    });
   }
 }

@@ -6,13 +6,14 @@ import '../models/group.dart';
 import '../components/progress_chart.dart';
 import '../models/review.dart';
 import '../root_data.dart';
+import '../components/word/word_detail.dart';
 
 class GroupDetailScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return ScopedModel<GroupScoppedModel>(
+    return ScopedModel<GroupScopedModel>(
       model: rootdata.groups,
-      child: ScopedModelDescendant<GroupScoppedModel>(
+      child: ScopedModelDescendant<GroupScopedModel>(
         builder: (context, child, model) {
           return Scaffold(
             appBar: AppBar(
@@ -110,172 +111,23 @@ class _WordBrowser extends StatelessWidget {
     );
   }
 
-  Widget _buildWordLearningDescription(BuildContext context, String markName) {
-    var desc = 'This is a new word in this set';
-    var color = ReviewColors.newWordDark;
-    if (markName == ReviewName.MASTERED) {
-      desc = 'You have mastered this word';
-      color = ReviewColors.mastered;
-    }
-
-    if (Review.isLearningReview(markName) == true) {
-      var name = markName.toString();
-      var lastChar = name[name.length - 1];
-      desc = "You have to review this word $lastChar more time(s)";
-      color = ReviewColors.learningDescriptionText;
-    }
-    return Container(
-      child: Text(
-        desc,
-        style: Theme.of(context).textTheme.subtitle.merge(TextStyle(
-              color: color,
-            )),
-      ),
-    );
-  }
-
   @override
   Widget build(BuildContext context) {
-    var color;
-    final reviewId = getReviewId(activeGroup, activeWord);
-    final reviewName = activeGroup.reviewMap[reviewId];
-    if (reviewName == ReviewName.MASTERED) {
-      color = ReviewColors.mastered;
-    } else {
-      color = Theme.of(context).textTheme.display2.color;
-    }
     return Column(
       children: <Widget>[
-        SizedBox(height: 8.0),
-        Text(
-          activeWord.wordText,
-          style: Theme.of(context)
-              .textTheme
-              .display2
-              .merge(TextStyle(color: color)),
+        WordDetail(
+          activeWord: activeWord,
+          activeGroup: activeGroup,
+          preferredLanguage: preferredLanguage,
+          isShowingWordDefinition: isShowingWordDefinition,
+          gotoNextWord: gotoNextWord,
+          markWordAs: markWordAs,
+          reviewMap: reviewMap,
+          getReviewId: getReviewId,
         ),
-        Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Icon(
-              Icons.volume_up,
-              color: Colors.brown[100],
-            ),
-            Text(
-              activeWord.syllable,
-              style: Theme.of(context).textTheme.subhead,
-            )
-          ],
-        ),
-        isShowingWordDefinition == true
-            ? WordDefinition(
-                word: activeWord,
-                preferredLanguage: preferredLanguage,
-              )
-            : Container(),
-        SizedBox(height: 30.0),
-        isShowingWordDefinition == true
-            ? Container()
-            : _buildWordLearningDescription(
-                context, reviewMap[getReviewId(activeGroup, activeWord)]),
         SizedBox(height: 8.0),
         _buildButtonsRow(context),
       ],
-    );
-  }
-}
-
-class WordDefinition extends StatelessWidget {
-  final Word word;
-  final String preferredLanguage;
-  WordDefinition({
-    @required this.word,
-    @required this.preferredLanguage,
-  });
-
-  Widget _buildSynonyms(List<String> synonyms) {
-    if (synonyms.length == 0) {
-      return Container();
-    }
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: <Widget>[
-        Text(
-          'Synonyms:',
-          style: TextStyle(
-            fontStyle: FontStyle.italic,
-            color: Colors.blueGrey,
-          ),
-        ),
-        Text(synonyms.join(', '))
-      ],
-    );
-  }
-
-  Widget _buildExamples(List<String> examples) {
-    if (examples.length == 0) {
-      return Container();
-    }
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: <Widget>[
-        Text(
-          'Examples:',
-          style: TextStyle(
-            fontStyle: FontStyle.italic,
-            color: Colors.blueGrey,
-          ),
-        ),
-        Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: examples.map((sy) {
-            return Text('- ' + sy);
-          }).toList(),
-        )
-      ],
-    );
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return Column(
-      children: word.definitions.map((def) {
-        return Padding(
-          padding: EdgeInsets.only(left: 20.0, right: 20.0),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: <Widget>[
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: <Widget>[
-                  Flexible(
-                    child: Text(
-                      def.otherLanguages[preferredLanguage],
-                      style: Theme.of(context).textTheme.subhead.merge(
-                            TextStyle(
-                              color: Colors.indigo,
-                            ),
-                          ),
-                    ),
-                  ),
-                ],
-              ),
-              Text(
-                def.type.toLowerCase(),
-                style: TextStyle(
-                  fontWeight: FontWeight.w700,
-                  fontStyle: FontStyle.italic,
-                ),
-              ),
-              Text(def.definitionText),
-              Container(height: 10.0),
-              _buildExamples(def.examples),
-              Container(height: 10.0),
-              _buildSynonyms(def.synonyms),
-            ],
-          ),
-        );
-      }).toList(),
     );
   }
 }

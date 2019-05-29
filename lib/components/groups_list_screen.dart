@@ -93,9 +93,9 @@ class GroupsListScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ScopedModel<GroupScoppedModel>(
+    return ScopedModel<GroupScopedModel>(
         model: rootdata.groups,
-        child: ScopedModelDescendant<GroupScoppedModel>(
+        child: ScopedModelDescendant<GroupScopedModel>(
             builder: (context, child, model) {
           return Scaffold(
             drawer: isGlobalGroup == true ? AppDrawer() : null,

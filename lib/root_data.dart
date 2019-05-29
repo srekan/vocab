@@ -7,7 +7,7 @@ class _RootData {
   final String title = 'Vocabulary App';
   bool isAppInitialized = false;
   BuildContext _context;
-  GroupScoppedModel groups = GroupScoppedModel();
+  GroupScopedModel groups = GroupScopedModel();
 
   initApp(BuildContext context) async {
     _context = context;

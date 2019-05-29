@@ -189,6 +189,7 @@ data.forEach(d => {
         def.examples = def.examples.filter(e => e)
         def.synonyms = def.synonyms.filter(e => e)
     })
+    d.bookMarkId = [d.groupIds[d.groupIds.length - 1], d.id].join('-')
 })
 
 const structuredData = {
@@ -199,3 +200,5 @@ const structuredData = {
 }
 
 console.log(JSON.stringify(structuredData))
+// To write the data to out ut file
+// vocab-data$ node parse > ../docs/vocab-data.json 

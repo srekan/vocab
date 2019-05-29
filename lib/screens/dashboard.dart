@@ -8,9 +8,9 @@ import '../models/group.dart';
 class DashBoardScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return ScopedModel<GroupScoppedModel>(
+    return ScopedModel<GroupScopedModel>(
       model: rootdata.groups,
-      child: ScopedModelDescendant<GroupScoppedModel>(
+      child: ScopedModelDescendant<GroupScopedModel>(
           builder: (context, child, model) {
         return GroupsListScreen(
           isGlobalGroup: true,

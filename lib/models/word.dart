@@ -58,6 +58,23 @@ class Definition {
 
 class Word {
   String id;
+  String bookMarkId;
+
+  //  id is the lower case of the wordText.
+  //  While storing the review state to shared preferences,
+  //  we prepare an id relative to the group : groupId + id
+  //  The word will be in two places : A day group and the week assesment group
+
+  //  BookMarkId:
+  //  We need a unique id for this use case.
+  //  However, we cannot use existing id (wordText lowercase)
+  //  Because the same word might be there in a different group.
+  //  We cannot change the id value in the data for the id associations are already in production
+  //  We are forming the unique bookMarkId : Week${num}-Day${num}+${wordText.toLowercase()}
+  //  eg: Week8-Day2-bash
+
+  //  Going forward, We will use this bookMarkId as the unique id for the word
+
   String wordText;
   String phoneticScript;
   String syllable;
@@ -66,6 +83,7 @@ class Word {
 
   Word({
     this.id,
+    this.bookMarkId,
     this.wordText,
     this.definitions,
     this.tags,
@@ -84,6 +102,7 @@ class Word {
 
     return Word(
       id: d['id'],
+      bookMarkId: d['bookMarkId'],
       wordText: d['wordText'],
       phoneticScript: d['phoneticScript'],
       syllable: d['syllable'],
