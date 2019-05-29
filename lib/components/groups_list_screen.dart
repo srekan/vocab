@@ -7,6 +7,7 @@ import '../components/app_drawer.dart';
 import '../root_data.dart';
 import '../scoped_models/group_scoped_model.dart';
 import 'package:scoped_model/scoped_model.dart';
+import '../theme/constants.dart';
 
 class GroupsListScreen extends StatelessWidget {
   final String pageTitle;
@@ -99,7 +100,7 @@ class GroupsListScreen extends StatelessWidget {
           return Scaffold(
             drawer: isGlobalGroup == true ? AppDrawer() : null,
             appBar: AppBar(
-              title: Text('Word Groups'),
+              title: Text(pageTitle),
             ),
             body: SingleChildScrollView(
                 child: Column(
@@ -110,33 +111,37 @@ class GroupsListScreen extends StatelessWidget {
                           child: Column(
                             mainAxisSize: MainAxisSize.min,
                             children: <Widget>[
-                              GestureDetector(
+                              InkWell(
                                 onTap: () {
-                                  print('Tap');
                                   setActiveGroup(group, context);
                                 },
-                                child: Row(
-                                  children: <Widget>[
-                                    ProgressChart.fromGroup(
-                                      width: 100,
-                                      height: 100,
-                                      disableDiscriptions: true,
-                                      group: group,
-                                    ),
-                                    Column(
-                                      crossAxisAlignment:
-                                          CrossAxisAlignment.start,
-                                      children: <Widget>[
-                                        Text(
-                                          group.name,
-                                          style: Theme.of(context)
-                                              .textTheme
-                                              .headline,
-                                        ),
-                                        _buildSubtitle(group, group.words)
-                                      ],
-                                    )
-                                  ],
+                                splashColor: ThemeConstants.backgroundColor2,
+                                child: Container(
+                                  width: MediaQuery.of(context).size.width,
+                                  color: Colors.transparent,
+                                  child: Row(
+                                    children: <Widget>[
+                                      ProgressChart.fromGroup(
+                                        width: 100,
+                                        height: 100,
+                                        disableDiscriptions: true,
+                                        group: group,
+                                      ),
+                                      Column(
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
+                                        children: <Widget>[
+                                          Text(
+                                            group.name,
+                                            style: Theme.of(context)
+                                                .textTheme
+                                                .headline,
+                                          ),
+                                          _buildSubtitle(group, group.words)
+                                        ],
+                                      )
+                                    ],
+                                  ),
                                 ),
                               ),
                               ButtonTheme.bar(

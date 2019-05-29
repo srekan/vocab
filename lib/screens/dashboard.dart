@@ -14,7 +14,7 @@ class DashBoardScreen extends StatelessWidget {
           builder: (context, child, model) {
         return GroupsListScreen(
           isGlobalGroup: true,
-          pageTitle: 'Dash board',
+          pageTitle: 'Word Groups',
           groups: model.globalGroups,
           resetGroup: model.resetGroup,
           setActiveGroup: (Group globalGroup, BuildContext context) {

@@ -110,12 +110,10 @@ class ProgressChart extends StatelessWidget {
           child: Stack(
             children: <Widget>[
               chart,
-              GestureDetector(
-                child: Container(
-                  color: Colors.transparent,
-                  width: width,
-                  height: height,
-                ),
+              Container(
+                color: Colors.transparent,
+                width: width,
+                height: height,
               ),
             ],
           ));
