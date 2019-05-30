@@ -1,0 +1,36 @@
+{
+    "wordText": "adorn",
+    "phoneticScript": "/əˈdɔrn/",
+    "syllable": "uh-dawrn",
+    "definitions": [
+        {
+            "type": "VERB",
+            "definitionText": "Make more beautiful or attractive.",
+            "examples": [
+                "pictures and prints adorned his walls"
+            ],
+            "synonyms": [
+                "add ornament to",
+                "decorate",
+                "embellish"
+            ],
+            "otherLanguages": {
+                "telugu": "అలంకరించు,సజ్జీకరించు.",
+                "tamil": "",
+                "hindi": " सजाना, की शोभा बढ़ाना",
+                "malayalam": ""
+            }
+        }
+    ],
+    "tags": [
+        "WEEK1",
+        "WEEK1-DAY1"
+    ],
+    "lastEdited": 1552630893220,
+    "id": "adorn",
+    "groupIds": [
+        "WEEK1",
+        "WEEK1-DAY1"
+    ],
+    "bookMarkId": "WEEK1-DAY1-adorn"
+}
