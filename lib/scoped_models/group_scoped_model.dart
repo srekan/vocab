@@ -1,33 +1,31 @@
 import 'package:flutter/material.dart';
 import 'package:scoped_model/scoped_model.dart';
+import 'package:shared_preferences/shared_preferences.dart';
+import 'package:flutter_cache_manager/flutter_cache_manager.dart';
+import '../constants.dart';
 import '../models/group.dart';
 import '../models/word.dart';
 import '../models/review.dart';
 import 'dart:convert';
-import 'package:flutter/services.dart' show rootBundle;
-import 'package:shared_preferences/shared_preferences.dart';
-import 'package:flutter_cache_manager/flutter_cache_manager.dart';
-
-Future<Map<String, dynamic>> parseJsonFromAssets(String assetsPath) async {
-  return rootBundle
-      .loadString(assetsPath)
-      .then((jsonStr) => jsonDecode(jsonStr));
-}
 
 class GroupScopedModel extends Model {
   SharedPreferences _prefs;
   String dataVersion;
   List<Group> _groups = [];
   Map<String, Group> groupsMap = {};
+  List<Word> _words = [];
+  Map<String, Word> _wordsMap = {};
   List<Group> _globalGroups = [];
   Group _activeGroup;
   Word _activeWord;
   bool _isShowingWordDefinition = false;
-  String _preferredLanguage = 'telugu'; // TODO: derive it from local storage
+  String _preferredLanguage = 'telugu';
   Map<String, String> reviewMap = {};
   Map<String, bool> bookMarkMap = {};
   List<String> bookMarks = [];
-  final dataUrl = 'https://srekan.github.io/vocab/vocab-data.json';
+  List<Word> bookMarkedWords = [];
+
+  final dataUrl = AppConstants.dataUrl;
   final cacheManager = DefaultCacheManager();
 
   SharedPreferences get prefs => _prefs;
@@ -54,7 +52,6 @@ class GroupScopedModel extends Model {
 
     getDataFromNetwork();
     _getBookMarksFromCache();
-    // getDataFromDocs(); // For development only
   }
 
   getDataFromNetwork() async {
@@ -68,26 +65,15 @@ class GroupScopedModel extends Model {
     }
   }
 
-  getDataFromDocs() async {
-    // Products
-    Map<String, dynamic> dmap =
-        await parseJsonFromAssets('docs/vocab-data.json');
-    if (dmap['version'] != dataVersion) {
-      _prepareData(dmap);
-    } else {
-      // print('No change in the version.' + dmap['version'] + dataVersion);
-    }
-  }
-
   _prepareData(Map<String, dynamic> dmap) {
     List<Group> __groups = [];
-    List<Word> _words = [];
     dataVersion = dmap['version'];
 
     // Create words
     for (var item in dmap['words']) {
       var word = Word.fromJson(item);
       _words.add(word);
+      _wordsMap[word.id] = word;
     }
 
     // Create groups
@@ -95,7 +81,7 @@ class GroupScopedModel extends Model {
       var group = Group.fromJson(item);
       List<Word> _wordsInGroup = [];
       for (var cId in item['children']) {
-        Word word = _words.firstWhere((e) => e.id == cId);
+        Word word = _wordsMap[cId];
         _wordsInGroup.add(word);
         String mapId = getReviewId(group, word);
         reviewMap[mapId] = _getLearningReviewFromLocalStorage(mapId);
@@ -157,7 +143,6 @@ class GroupScopedModel extends Model {
     String mapId = getReviewId(_activeGroup, _activeWord);
     final nextReview = _getNextReview(markAs, reviewMap[mapId]);
     reviewMap[mapId] = nextReview;
-    _activeGroup.reviewMap[mapId] = nextReview;
     _activeGroup.reviewMap[mapId] = nextReview;
     groupsMap[_activeGroup.globalGroupId].reviewMap[mapId] = nextReview;
 
@@ -238,18 +223,36 @@ class GroupScopedModel extends Model {
     return group.globalGroupId + group.id + word.wordText;
   }
 
-  toggleBookMark(Word word) {
-    if (bookMarkMap[word.bookMarkId] == true) {
-      bookMarkMap[word.bookMarkId] = null;
-      bookMarks.remove(word.bookMarkId);
-      _prefs.setStringList('BOOKMARKS', bookMarks);
+  toggleBookMark(Word word, BuildContext context) {
+    bool isRemovingFromBookMarks = false;
+    if (bookMarkMap[word.id] == true) {
+      isRemovingFromBookMarks = true;
+      bookMarkMap[word.id] = null;
+      bookMarks.remove(word.id);
+      bookMarkedWords.remove(word);
     } else {
-      bookMarkMap[word.bookMarkId] = true;
-      bookMarks.add(word.bookMarkId);
-      _prefs.setStringList('BOOKMARKS', bookMarks);
+      bookMarkMap[word.id] = true;
+      bookMarks.add(word.id);
+      bookMarkedWords.add(word);
     }
-    print(bookMarkMap);
+    bookMarkedWords.sort((Word a, Word b) {
+      return a.wordText.compareTo(b.wordText);
+    });
+    _prefs.setStringList('BOOKMARKS', bookMarks);
     notifyListeners();
+    if (isRemovingFromBookMarks) {
+      final snackBar = SnackBar(
+        content: Text(word.wordText + ' remove from book marks'),
+        action: SnackBarAction(
+          label: 'Undo',
+          onPressed: () {
+            toggleBookMark(word, context);
+          },
+        ),
+        duration: Duration(seconds: 5),
+      );
+      Scaffold.of(context).showSnackBar(snackBar);
+    }
   }
 
   _getBookMarksFromCache() {
@@ -259,8 +262,12 @@ class GroupScopedModel extends Model {
       bookMarks = [];
     }
     bookMarkMap = {};
-    bookMarks.forEach((bookMarkId) {
-      bookMarkMap[bookMarkId] = true;
+    bookMarks.forEach((id) {
+      bookMarkMap[id] = true;
+      bookMarkedWords.add(_wordsMap[id]);
+    });
+    bookMarkedWords.sort((Word a, Word b) {
+      a.wordText.compareTo(b.wordText);
     });
   }
 }

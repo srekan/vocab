@@ -1,4 +1,5 @@
-import 'package:flutter/material.dart';
+// ignore_for_file: non_constant_identifier_names
+import 'package:flutter/material.dart'; // ignore: non_constant_identifier_names
 
 enum ReviewMark { KNOWN, UNKNOWN }
 
@@ -31,15 +32,15 @@ class Review {
   ];
   static int maxIndex = Review.reviewNames.length - 1;
   static bool isLearningReview(String name) {
-    switch (name) {
-      case 'LEARNING':
-      case 'LEARNING1':
-      case 'LEARNING2':
-      case 'LEARNING3':
-      case 'LEARNING4':
-        return true;
-      default:
-        return false;
-    }
+    final reviewMap = {
+      ReviewName.NEW: false,
+      ReviewName.LEARNING: true,
+      ReviewName.LEARNING1: true,
+      ReviewName.LEARNING2: true,
+      ReviewName.LEARNING3: true,
+      ReviewName.LEARNING4: true,
+      ReviewName.MASTERED: false,
+    };
+    return reviewMap[name];
   }
 }

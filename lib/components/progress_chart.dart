@@ -126,9 +126,9 @@ class LinearProgress {
   final int score;
   final String reviewName;
   static final reviewDisplayNames = [
-    'New',
-    'Learning',
-    'Mastered',
+    ReviewName.NEW,
+    ReviewName.LEARNING,
+    ReviewName.MASTERED,
   ];
 
   static final Map<String, charts.Color> colors = {

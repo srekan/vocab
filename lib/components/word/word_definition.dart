@@ -57,40 +57,22 @@ class WordDefinition extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: word.definitions.map((def) {
-        return Padding(
-          padding: EdgeInsets.only(left: 20.0, right: 20.0),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: <Widget>[
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: <Widget>[
-                  Flexible(
-                    child: Text(
-                      def.otherLanguages[preferredLanguage],
-                      style: Theme.of(context).textTheme.subhead.merge(
-                            TextStyle(
-                              color: Colors.indigo,
-                            ),
-                          ),
-                    ),
-                  ),
-                ],
+        return Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: <Widget>[
+            Text(
+              def.type.toLowerCase(),
+              style: TextStyle(
+                fontWeight: FontWeight.w700,
+                fontStyle: FontStyle.italic,
               ),
-              Text(
-                def.type.toLowerCase(),
-                style: TextStyle(
-                  fontWeight: FontWeight.w700,
-                  fontStyle: FontStyle.italic,
-                ),
-              ),
-              Text(def.definitionText),
-              Container(height: 10.0),
-              _buildExamples(def.examples),
-              Container(height: 10.0),
-              _buildSynonyms(def.synonyms),
-            ],
-          ),
+            ),
+            Text(def.definitionText),
+            Container(height: 10.0),
+            _buildExamples(def.examples),
+            Container(height: 10.0),
+            _buildSynonyms(def.synonyms),
+          ],
         );
       }).toList(),
     );

@@ -31,7 +31,7 @@ class SplashScreen extends StatelessWidget {
             SizedBox(height: 12.0),
             Text(
               'Vocabulary App',
-              style: ThemeVocab.textTheme.title,
+              style: themeVocab.textTheme.title,
             ),
             SizedBox(height: 12.0),
             SpinKitCubeGrid(

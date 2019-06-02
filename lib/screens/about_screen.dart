@@ -17,31 +17,31 @@ class AboutScreen extends StatelessWidget {
           child: Wrap(
             children: <Widget>[
               Text('Vocab by English House',
-                  style: ThemeVocab.textTheme.display1),
+                  style: themeVocab.textTheme.display1),
               Divider(
                 color: Colors.blueGrey,
               ),
-              Text('What is vocab', style: ThemeVocab.textTheme.headline),
+              Text('What is vocab', style: themeVocab.textTheme.headline),
               Divider(color: Colors.transparent),
               _buildVocabLogo(),
               Divider(color: Colors.transparent),
               Text(
                   'Vocab is a mobile application which helps students to master english vocabulary faster.',
-                  style: ThemeVocab.textTheme.body1),
+                  style: themeVocab.textTheme.body1),
               Divider(color: Colors.transparent),
               Divider(color: Colors.transparent),
               Text('What is English House',
-                  style: ThemeVocab.textTheme.headline),
+                  style: themeVocab.textTheme.headline),
               Text(
                   'English House is a finishing school specialised for Spoken English and Soft skills training',
-                  style: ThemeVocab.textTheme.body1),
+                  style: themeVocab.textTheme.body1),
               Divider(color: Colors.transparent),
               Text(
                   'English House creates digital training material to help students to learn English faster',
-                  style: ThemeVocab.textTheme.body1),
+                  style: themeVocab.textTheme.body1),
               Divider(color: Colors.transparent),
               Divider(color: Colors.transparent),
-              Text('Contact US', style: ThemeVocab.textTheme.headline),
+              Text('Contact Us', style: themeVocab.textTheme.headline),
               Wrap(
                 children: <Widget>[
                   _buildEngLogo(),
@@ -214,19 +214,19 @@ class AboutScreen extends StatelessWidget {
                     children: <Widget>[
                       Text(
                         'Beside SBI, Fort Jn.,',
-                        style: ThemeVocab.textTheme.title,
+                        style: themeVocab.textTheme.title,
                       ),
                       Text(
                         'Vizianagaram,',
-                        style: ThemeVocab.textTheme.title,
+                        style: themeVocab.textTheme.title,
                       ),
                       Text(
                         'Andhra Pradesh,',
-                        style: ThemeVocab.textTheme.title,
+                        style: themeVocab.textTheme.title,
                       ),
                       Text(
                         'India 535001',
-                        style: ThemeVocab.textTheme.title,
+                        style: themeVocab.textTheme.title,
                       ),
                     ],
                   ),

@@ -3,6 +3,7 @@ import './screens/splash.dart';
 import './screens/dashboard.dart';
 import './screens/group_detail.dart';
 import './screens/about_screen.dart';
+import './screens/bookmarks_screen.dart';
 
 void main() => runApp(MyApp());
 
@@ -17,6 +18,7 @@ class MyApp extends StatelessWidget {
       routes: {
         'dash_board': (context) => DashBoardScreen(),
         'group_detail': (context) => GroupDetailScreen(),
+        'bookmarks': (context) => BookmarksScreen(),
         'about': (context) => AboutScreen(),
       },
     );

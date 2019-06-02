@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-final ThemeData ThemeVocab = ThemeData(
+final ThemeData themeVocab = ThemeData(
     primarySwatch: Colors.amber,
     brightness: Brightness.light,
     primaryColor: Color(0xFFfffde7),

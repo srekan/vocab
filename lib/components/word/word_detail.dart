@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:scoped_model/scoped_model.dart';
+import 'package:vocab/components/word/bookmark_button.dart';
 import 'package:vocab/root_data.dart';
-import 'package:vocab/theme/vocab.dart';
 import '../../models/word.dart';
 import './word_definition.dart';
 import '../../models/group.dart';
 import '../../models/review.dart';
 import '../../scoped_models/group_scoped_model.dart';
+import './language_text.dart';
 
 class WordDetail extends StatelessWidget {
   final Word activeWord;
@@ -85,30 +86,10 @@ class WordDetail extends StatelessWidget {
             ),
             Align(
               alignment: Alignment.topRight,
-              child: FlatButton(
-                padding: EdgeInsets.fromLTRB(8, 0, 8, 0),
-                child: Column(children: <Widget>[
-                  Text(
-                    bookMarkMap[activeWord.bookMarkId] == true
-                        ? 'Bookmarked'
-                        : 'Bookmark',
-                    style: ThemeVocab.textTheme.caption,
-                  ),
-                  bookMarkMap[activeWord.bookMarkId] == true
-                      ? Icon(
-                          Icons.bookmark,
-                          color: Colors.blueGrey,
-                          size: 40,
-                        )
-                      : Icon(
-                          Icons.bookmark_border,
-                          color: Colors.blueGrey[300],
-                          size: 40,
-                        ),
-                ]),
-                onPressed: () {
-                  rootdata.groups.toggleBookMark(activeWord);
-                },
+              child: BookmarkButton(
+                word: activeWord,
+                bookMarkMap: rootdata.groups.bookMarkMap,
+                toggleBookMark: rootdata.groups.toggleBookMark,
               ),
             ),
           ],
@@ -127,11 +108,19 @@ class WordDetail extends StatelessWidget {
           ],
         ),
         isShowingWordDefinition == true
-            ? WordDefinition(
-                word: activeWord,
-                preferredLanguage: preferredLanguage,
-              )
+            ? LanguageText(
+                text:
+                    activeWord.definitions[0].otherLanguages[preferredLanguage])
             : Container(),
+        Padding(
+          padding: const EdgeInsets.only(left: 16, right: 16),
+          child: isShowingWordDefinition == true
+              ? WordDefinition(
+                  word: activeWord,
+                  preferredLanguage: preferredLanguage,
+                )
+              : Container(),
+        ),
         SizedBox(height: 30.0),
         isShowingWordDefinition == true
             ? Container()

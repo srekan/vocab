@@ -38,6 +38,7 @@ class Group {
       name: json['displayName'],
       globalGroupId: globalGroupId,
       subGroupIds: subGroupIds,
+      words: [],
     );
   }
   updateProgress() {
