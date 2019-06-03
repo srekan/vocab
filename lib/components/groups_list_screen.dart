@@ -5,6 +5,7 @@ import '../root_data.dart';
 import '../scoped_models/group_scoped_model.dart';
 import 'package:scoped_model/scoped_model.dart';
 import './group_list_item.dart';
+import './search_words.dart';
 
 class GroupsListScreen extends StatelessWidget {
   final String pageTitle;
@@ -33,11 +34,26 @@ class GroupsListScreen extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
                 Text(pageTitle),
-                FlatButton(
-                  child: Icon(Icons.bookmark),
-                  onPressed: () {
-                    Navigator.of(context).pushNamed('bookmarks');
-                  },
+                Row(
+                  children: <Widget>[
+                    IconButton(
+                      icon: Icon(Icons.bookmark_border),
+                      onPressed: () {
+                        Navigator.of(context).pushNamed('bookmarks');
+                      },
+                    ),
+                    IconButton(
+                      icon: Icon(Icons.search),
+                      onPressed: () {
+                        // Navigator.of(context).pushNamed('search_words');
+                        showSearch(
+                          context: context,
+                          delegate: SearchWords(),
+                          query: '',
+                        );
+                      },
+                    ),
+                  ],
                 ),
               ],
             )),

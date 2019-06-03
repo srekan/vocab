@@ -4,6 +4,7 @@ import './screens/dashboard.dart';
 import './screens/group_detail.dart';
 import './screens/about_screen.dart';
 import './screens/bookmarks_screen.dart';
+import './screens/search_words_screen.dart';
 
 void main() => runApp(MyApp());
 
@@ -19,6 +20,7 @@ class MyApp extends StatelessWidget {
         'dash_board': (context) => DashBoardScreen(),
         'group_detail': (context) => GroupDetailScreen(),
         'bookmarks': (context) => BookmarksScreen(),
+        'search_words': (context) => SearchWordsScreen(),
         'about': (context) => AboutScreen(),
       },
     );

@@ -59,6 +59,20 @@ class AppDrawer extends StatelessWidget {
             ),
           ),
           DrawerTile(
+            icon: Icons.bookmark_border,
+            text: 'Bookmarks',
+            onTap: () {
+              Navigator.of(context).pushNamed('bookmarks');
+            },
+          ),
+          DrawerTile(
+            icon: Icons.search,
+            text: 'Search Words',
+            onTap: () {
+              Navigator.of(context).pushNamed('search_words');
+            },
+          ),
+          DrawerTile(
             icon: Icons.wb_sunny,
             text: 'About',
             onTap: () {

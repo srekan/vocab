@@ -267,7 +267,7 @@ class GroupScopedModel extends Model {
       bookMarkedWords.add(_wordsMap[id]);
     });
     bookMarkedWords.sort((Word a, Word b) {
-      a.wordText.compareTo(b.wordText);
+      return a.wordText.compareTo(b.wordText);
     });
   }
 }
