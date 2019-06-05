@@ -16,7 +16,6 @@ class DashBoardScreen extends StatelessWidget {
           isGlobalGroup: true,
           pageTitle: 'Word Groups',
           groups: model.globalGroups,
-          resetGroup: model.resetGroup,
           setActiveGroup: (Group globalGroup, BuildContext context) {
             Navigator.push(
               context,
@@ -30,7 +29,6 @@ class DashBoardScreen extends StatelessWidget {
                     pageTitle: globalGroup.name,
                     groups: subGroups,
                     isGlobalGroup: false,
-                    resetGroup: model.resetGroup,
                     setActiveGroup: (Group group, BuildContext context) {
                       model.setActiveGroup(group, context);
                     },

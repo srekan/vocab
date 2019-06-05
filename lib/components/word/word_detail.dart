@@ -1,12 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:scoped_model/scoped_model.dart';
 import 'package:vocab/components/word/bookmark_button.dart';
 import 'package:vocab/root_data.dart';
 import '../../models/word.dart';
 import './word_definition.dart';
 import '../../models/group.dart';
 import '../../models/review.dart';
-import '../../scoped_models/group_scoped_model.dart';
 import './language_text.dart';
 
 class WordDetail extends StatelessWidget {
@@ -55,9 +53,9 @@ class WordDetail extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final bookMarkMap =
-        ScopedModel.of<GroupScopedModel>(context, rebuildOnChange: true)
-            .bookMarkMap;
+    // final bookMarkMap =
+    //     ScopedModel.of<GroupScopedModel>(context, rebuildOnChange: true)
+    //         .bookMarkMap;
     var color;
     final reviewId = getReviewId(activeGroup, activeWord);
     final reviewName = activeGroup.reviewMap[reviewId];

@@ -26,7 +26,6 @@ void main() {
             pageTitle: 'PageTitle',
             groups: groups,
             setActiveGroup: () {},
-            resetGroup: () {},
           ),
         ),
       );

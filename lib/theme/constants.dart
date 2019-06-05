@@ -6,6 +6,7 @@ abstract class ThemeConstants {
   static final highlightColor = Color(0xfff65aa3);
   static final foregroundColor = Colors.white;
   static final logo = AssetImage("images/logo.png");
+  static final bookMarkIconColor = Colors.yellow[800];
   static final backgroundGradient = LinearGradient(
     begin: Alignment.centerLeft,
     end: Alignment.centerRight, // 10% of the width, so there are ten blinds.

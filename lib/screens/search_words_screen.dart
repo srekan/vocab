@@ -1,14 +1,10 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-
-class Post {
-  final int userId;
-  final int id;
-  final String title;
-  final String body;
-
-  Post(this.userId, this.id, this.title, this.body);
-}
+import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
+import '../components/bookmark_list_item.dart';
+import '../theme/constants.dart';
+import '../root_data.dart';
+import '../models/word.dart';
 
 class SearchWordsScreen extends StatefulWidget {
   @override
@@ -16,113 +12,122 @@ class SearchWordsScreen extends StatefulWidget {
 }
 
 class _ListViewState extends State<SearchWordsScreen> {
-  final List<Post> items = new List();
-
+  List<Word> words = [];
+  String query = '';
+  TextEditingController searchTextInputController = TextEditingController();
   @override
   void initState() {
     super.initState();
-    setState(() {
-      items.add(new Post(
-        1,
-        2,
-        'qui est esse',
-        'est rerum tempore vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores neque\nfugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis\nqui aperiam non debitis possimus qui neque nisi nulla',
-      ));
-      items.add(new Post(
-        1,
-        3,
-        'ea molestias quasi exercitationem repellat qui ipsa sit aut',
-        'et iusto sed quo iure\nvoluptatem occaecati omnis eligendi aut ad\nvoluptatem doloribus vel accusantium quis pariatur\nmolestiae porro eius odio et labore et velit aut',
-      ));
-      items.add(new Post(
-        2,
-        4,
-        'eum et est occaecati',
-        'ullam et saepe reiciendis voluptatem adipisci\nsit amet autem assumenda provident rerum culpa\nquis hic commodi nesciunt rem tenetur doloremque ipsam iure\nquis sunt voluptatem rerum illo velit',
-      ));
-      items.add(new Post(
-        2,
-        5,
-        'nesciunt quas odio',
-        'repudiandae veniam quaerat sunt sed\nalias aut fugiat sit autem sed est\nvoluptatem omnis possimus esse voluptatibus quis\nest aut tenetur dolor neque',
-      ));
-      items.add(new Post(
-        3,
-        6,
-        'dolorem eum magni eos aperiam quia',
-        'ut aspernatur corporis harum nihil quis provident sequi\nmollitia nobis aliquid molestiae\nperspiciatis et ea nemo ab reprehenderit accusantium quas\nvoluptate dolores velit et doloremque molestiae',
-      ));
-      items.add(new Post(
-        3,
-        7,
-        'magnam facilis autem',
-        'dolore placeat quibusdam ea quo vitae\nmagni quis enim qui quis quo nemo aut saepe\nquidem repellat excepturi ut quia\nsunt ut sequi eos ea sed quas',
-      ));
-      items.add(new Post(
-        3,
-        8,
-        'dolorem dolore est ipsam',
-        'dignissimos aperiam dolorem qui eum\nfacilis quibusdam animi sint suscipit qui sint possimus cum\nquaerat magni maiores excepturi\nipsam ut commodi dolor voluptatum modi aut vitae',
-      ));
+    words = rootdata.groups.words;
+    searchTextInputController.addListener(() {
+      setState(() {
+        query = searchTextInputController.text;
+        _updateWords();
+      });
     });
   }
 
   @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('test'),
-        centerTitle: true,
-      ),
-      body: Center(
-        child: ListView.builder(
-            itemCount: items.length,
-            padding: const EdgeInsets.all(15.0),
-            itemBuilder: (context, position) {
-              return Column(
-                children: <Widget>[
-                  Divider(height: 5.0),
-                  ListTile(
-                    title: Text(
-                      '${items[position].title}',
-                      style: TextStyle(
-                        fontSize: 22.0,
-                        color: Colors.deepOrangeAccent,
-                      ),
-                    ),
-                    subtitle: Text(
-                      '${items[position].body}',
-                      style: new TextStyle(
-                        fontSize: 18.0,
-                        fontStyle: FontStyle.italic,
-                      ),
-                    ),
-                    leading: Column(
-                      children: <Widget>[
-                        CircleAvatar(
-                          backgroundColor: Colors.blueAccent,
-                          radius: 18.0,
-                          child: Text(
-                            '.',
-                            style: TextStyle(
-                              fontSize: 22.0,
-                              color: Colors.white,
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                    onTap: () => _onTapItem(context, items[position]),
-                  ),
-                ],
-              );
-            }),
-      ),
-    );
+  void dispose() {
+    // Clean up the controller when the Widget is removed from the Widget tree
+    searchTextInputController.dispose();
+    super.dispose();
   }
 
-  void _onTapItem(BuildContext context, Post post) {
-    Scaffold.of(context).showSnackBar(new SnackBar(
-        content: new Text(post.id.toString() + ' - ' + post.title)));
+  @override
+  Widget build(BuildContext context) {
+    var bookMarkMap = rootdata.groups.bookMarkMap;
+
+    return Scaffold(
+        appBar: AppBar(
+          title: ListTile(
+            title: Container(
+              child: TextField(
+                controller: searchTextInputController,
+                decoration: InputDecoration(hintText: 'Search'),
+              ),
+            ),
+            trailing: Container(
+              width: 100,
+              child: Row(
+                children: <Widget>[
+                  IconButton(
+                    icon: Icon(CupertinoIcons.clear_thick),
+                    onPressed: () {
+                      setState(() {
+                        searchTextInputController.text = '';
+                      });
+                    },
+                  ),
+                  IconButton(
+                    icon: Icon(MdiIcons.filterOutline),
+                    onPressed: () {},
+                  )
+                ],
+              ),
+            ),
+          ),
+        ),
+        body: Container(
+            height: MediaQuery.of(context).size.height,
+            child: ListView(
+              children: words
+                  .map<Widget>((Word word) => ListTile(
+                        title: Text(word.wordText),
+                        leading: IconButton(
+                          icon: bookMarkMap[word.id] == null
+                              ? Icon(
+                                  Icons.bookmark_border,
+                                  color: ThemeConstants.bookMarkIconColor,
+                                )
+                              : Icon(
+                                  Icons.bookmark,
+                                  color: ThemeConstants.bookMarkIconColor,
+                                ),
+                          onPressed: () {
+                            rootdata.groups
+                                .toggleBookMark(word, context, false);
+                            setState(() {});
+                          },
+                        ),
+                        trailing: Text(word.tags[0]),
+                        onTap: () {
+                          _createWordDetailDialog(context, word);
+                        },
+                      ))
+                  .toList(),
+            )));
+  }
+
+  _updateWords() {
+    words = rootdata.groups.words;
+    if (query != '') {
+      words = rootdata.groups.words.where((Word word) {
+        return word.wordText.contains(query);
+      }).toList();
+    }
+  }
+
+  Future<String> _createWordDetailDialog(BuildContext context, Word word) {
+    return showDialog(
+        context: context,
+        builder: (context) {
+          return AlertDialog(
+            // title: Text('Title'),
+            content: BookMarkListItem(
+              word: word,
+              bookmarkChangeSnackBarDisabled: true,
+            ),
+            actions: <Widget>[
+              MaterialButton(
+                elevation: 8.0,
+                child: Text('Close'),
+                onPressed: () {
+                  Navigator.of(context).pop('CANCEL');
+                },
+              )
+            ],
+          );
+        });
   }
 }

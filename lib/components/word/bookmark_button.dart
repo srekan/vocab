@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:vocab/theme/constants.dart';
 import '../../models/word.dart';
 import '../../theme/vocab.dart';
 
@@ -6,10 +7,12 @@ class BookmarkButton extends StatelessWidget {
   final Word word;
   final Map<String, bool> bookMarkMap;
   final Function toggleBookMark;
+  final bool shouldShowSnackbar;
   BookmarkButton({
     @required this.word,
     @required this.bookMarkMap,
     @required this.toggleBookMark,
+    this.shouldShowSnackbar,
   });
 
   @override
@@ -24,17 +27,17 @@ class BookmarkButton extends StatelessWidget {
         bookMarkMap[word.id] == true
             ? Icon(
                 Icons.bookmark,
-                color: Colors.blueGrey,
+                color: ThemeConstants.bookMarkIconColor,
                 size: themeVocab.textTheme.display1.fontSize,
               )
             : Icon(
                 Icons.bookmark_border,
-                color: Colors.blueGrey[300],
+                color: ThemeConstants.bookMarkIconColor,
                 size: 40,
               ),
       ]),
       onPressed: () {
-        toggleBookMark(word, context);
+        toggleBookMark(word, context, shouldShowSnackbar);
       },
     );
   }

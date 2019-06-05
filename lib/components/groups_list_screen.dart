@@ -5,20 +5,17 @@ import '../root_data.dart';
 import '../scoped_models/group_scoped_model.dart';
 import 'package:scoped_model/scoped_model.dart';
 import './group_list_item.dart';
-import './search_words.dart';
 
 class GroupsListScreen extends StatelessWidget {
   final String pageTitle;
   final List<Group> groups;
   final Function setActiveGroup;
-  final Function resetGroup;
   final bool isGlobalGroup;
   GroupsListScreen({
     this.isGlobalGroup,
     @required this.groups,
     @required this.pageTitle,
     @required this.setActiveGroup,
-    @required this.resetGroup,
   });
 
   @override
@@ -45,12 +42,14 @@ class GroupsListScreen extends StatelessWidget {
                     IconButton(
                       icon: Icon(Icons.search),
                       onPressed: () {
-                        // Navigator.of(context).pushNamed('search_words');
+                        Navigator.of(context).pushNamed('search_words');
+                        /*
                         showSearch(
                           context: context,
                           delegate: SearchWords(),
                           query: '',
                         );
+                        */
                       },
                     ),
                   ],

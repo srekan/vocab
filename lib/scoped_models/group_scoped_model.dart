@@ -13,7 +13,7 @@ class GroupScopedModel extends Model {
   String dataVersion;
   List<Group> _groups = [];
   Map<String, Group> groupsMap = {};
-  List<Word> _words = [];
+  List<Word> words = [];
   Map<String, Word> _wordsMap = {};
   List<Group> _globalGroups = [];
   Group _activeGroup;
@@ -72,7 +72,7 @@ class GroupScopedModel extends Model {
     // Create words
     for (var item in dmap['words']) {
       var word = Word.fromJson(item);
-      _words.add(word);
+      words.add(word);
       _wordsMap[word.id] = word;
     }
 
@@ -223,7 +223,7 @@ class GroupScopedModel extends Model {
     return group.globalGroupId + group.id + word.wordText;
   }
 
-  toggleBookMark(Word word, BuildContext context) {
+  toggleBookMark(Word word, BuildContext context, bool shouldShowSnackbar) {
     bool isRemovingFromBookMarks = false;
     if (bookMarkMap[word.id] == true) {
       isRemovingFromBookMarks = true;
@@ -240,13 +240,13 @@ class GroupScopedModel extends Model {
     });
     _prefs.setStringList('BOOKMARKS', bookMarks);
     notifyListeners();
-    if (isRemovingFromBookMarks) {
+    if (isRemovingFromBookMarks && shouldShowSnackbar) {
       final snackBar = SnackBar(
         content: Text(word.wordText + ' remove from book marks'),
         action: SnackBarAction(
           label: 'Undo',
           onPressed: () {
-            toggleBookMark(word, context);
+            toggleBookMark(word, context, shouldShowSnackbar);
           },
         ),
         duration: Duration(seconds: 5),

@@ -60,15 +60,12 @@ class GroupListItem extends StatelessWidget {
                     _createResetGroupAlertDialog(context, group.name)
                         .then((value) {
                       if (value == 'RESET') {
+                        SnackBar snackBar = SnackBar(
+                          content: Text('Group ${group.name} got reset.'),
+                        );
+
+                        Scaffold.of(context).showSnackBar(snackBar);
                         rootdata.resetGroup(group);
-                        /*
-                          SnackBar snackBar = SnackBar(
-                            content: Text('Group got reset.'),
-                          );
-                          
-                        Scaffold.of(context)
-                          .showSnackBar(snackBar);
-                        */
                       }
                     });
                   },
