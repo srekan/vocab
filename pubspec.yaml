@@ -11,7 +11,8 @@ description: English Flash Cards app with regional language translations.
 # In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
 # Read more about iOS versioning at
 # https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
-version: 1.0.0+5
+version: 1.0.0+9
+
 
 environment:
   sdk: ">=2.1.0 <3.0.0"
@@ -28,7 +29,6 @@ dependencies:
   url_launcher: ^5.0.2
   share: ^0.6.1+1
   material_design_icons_flutter: 3.2.3695
-
   
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
@@ -59,7 +59,6 @@ flutter:
   assets:
   - assets/logo.jpeg
   - assets/vocab-logo.png
-  - docs/vocab-data.json
  
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.io/assets-and-images/#resolution-aware.

@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
+import 'package:vocab/models/review.dart';
 import '../components/bookmark_list_item.dart';
 import '../theme/constants.dart';
 import '../root_data.dart';
@@ -18,7 +18,16 @@ class _ListViewState extends State<SearchWordsScreen> {
   @override
   void initState() {
     super.initState();
-    words = rootdata.groups.words;
+    var reviewMap = rootdata.groups.reviewMap;
+    print(reviewMap);
+    rootdata.groups.groups.forEach((group) {
+      group.words.forEach((word) {
+        if (ReviewName.MASTERED ==
+            reviewMap[rootdata.groups.getReviewId(group, word)]) {
+          words.add(word);
+        }
+      });
+    });
     searchTextInputController.addListener(() {
       setState(() {
         query = searchTextInputController.text;
@@ -48,7 +57,7 @@ class _ListViewState extends State<SearchWordsScreen> {
               ),
             ),
             trailing: Container(
-              width: 100,
+              width: 50,
               child: Row(
                 children: <Widget>[
                   IconButton(
@@ -59,10 +68,6 @@ class _ListViewState extends State<SearchWordsScreen> {
                       });
                     },
                   ),
-                  IconButton(
-                    icon: Icon(MdiIcons.filterOutline),
-                    onPressed: () {},
-                  )
                 ],
               ),
             ),
@@ -113,6 +118,7 @@ class _ListViewState extends State<SearchWordsScreen> {
         context: context,
         builder: (context) {
           return AlertDialog(
+            contentPadding: EdgeInsets.all(12),
             // title: Text('Title'),
             content: BookMarkListItem(
               word: word,
