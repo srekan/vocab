@@ -13,21 +13,22 @@ class SearchWordsScreen extends StatefulWidget {
 
 class _ListViewState extends State<SearchWordsScreen> {
   List<Word> words = [];
+  List<Word> masteredWords = [];
   String query = '';
   TextEditingController searchTextInputController = TextEditingController();
   @override
   void initState() {
     super.initState();
     var reviewMap = rootdata.groups.reviewMap;
-    print(reviewMap);
     rootdata.groups.groups.forEach((group) {
       group.words.forEach((word) {
         if (ReviewName.MASTERED ==
             reviewMap[rootdata.groups.getReviewId(group, word)]) {
-          words.add(word);
+          masteredWords.add(word);
         }
       });
     });
+    words = masteredWords;
     searchTextInputController.addListener(() {
       setState(() {
         query = searchTextInputController.text;
@@ -53,7 +54,7 @@ class _ListViewState extends State<SearchWordsScreen> {
             title: Container(
               child: TextField(
                 controller: searchTextInputController,
-                decoration: InputDecoration(hintText: 'Search'),
+                decoration: InputDecoration(hintText: 'search mastered words'),
               ),
             ),
             trailing: Container(
@@ -105,9 +106,8 @@ class _ListViewState extends State<SearchWordsScreen> {
   }
 
   _updateWords() {
-    words = rootdata.groups.words;
     if (query != '') {
-      words = rootdata.groups.words.where((Word word) {
+      words = masteredWords.where((Word word) {
         return word.wordText.contains(query);
       }).toList();
     }
