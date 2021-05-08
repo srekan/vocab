@@ -10,7 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "http-server": "^0.11.1",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.21",
     "moment": "^2.24.0",
     "uuid": "^3.3.2"
   }
